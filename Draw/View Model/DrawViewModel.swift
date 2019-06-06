@@ -81,6 +81,7 @@ class DrawViewModel: DrawViewModelProtocol {
 		
 		let path = CGPath.create(from: pointStorage.touchPoints)
 		context.addPath(path)
+		context.setBlendMode(.normal)
 		context.setStrokeColor(UIColor.black.cgColor)
 		context.strokePath()
 		
@@ -99,11 +100,14 @@ class DrawViewModel: DrawViewModelProtocol {
 extension CGPath {
 	static func create(from points:[[CGPoint]]) -> CGPath {
 		
-		let flattened = Array(points.joined())
+		let wholePath = CGMutablePath()
 		
-		let path = CGMutablePath()
-		path.addLines(between: flattened)
+		for array in points {
+			let path = CGMutablePath()
+			path.addLines(between: array)
+			wholePath.addPath(path)
+		}
 		
-		return path.copy(strokingWithWidth: 2, lineCap: .butt, lineJoin: .miter, miterLimit: 2)
+		return wholePath.copy(strokingWithWidth: 2, lineCap: .butt, lineJoin: .miter, miterLimit: 0)
 	}
 }
