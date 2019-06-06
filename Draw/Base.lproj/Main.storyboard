@@ -22,6 +22,9 @@
                                 <rect key="frame" x="222" y="37" width="37" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Undo"/>
+                                <connections>
+                                    <action selector="undo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1U3-bd-xrj"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iIs-On-ciy">
                                 <rect key="frame" x="277" y="37" width="66" height="30"/>

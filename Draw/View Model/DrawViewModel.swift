@@ -15,17 +15,20 @@ class DrawViewModel: DrawViewModelProtocol {
 	var lastPoint: CGPoint
 	var currentPoint: CGPoint
 	var swiped: Bool
+	var currentPoints: [CGPoint]
 	
 	init(with imageView: UIImageView) {
 		drawView = imageView
-		pointStorage = PointStorage(with: [])
+		pointStorage = PointStorage()
 		lastPoint = CGPoint.zero
 		currentPoint = CGPoint.zero
 		swiped = false
+		currentPoints = []
 	}
 	
 	func draw() {
-		pointStorage.add(point: lastPoint)
+		//pointStorage.add(point: lastPoint)
+		currentPoints.append(lastPoint)
 		
 		UIGraphicsBeginImageContext(drawView.frame.size)
 		guard let context = UIGraphicsGetCurrentContext() else {
@@ -67,4 +70,39 @@ class DrawViewModel: DrawViewModelProtocol {
 		drawView.image = nil
 	}
 	
+	func undo() {
+		UIGraphicsBeginImageContext(drawView.frame.size)
+		guard let context = UIGraphicsGetCurrentContext() else { return }
+		
+		drawView.image?.draw(in: drawView.bounds)
+		
+		if let lastPoints = pointStorage.touchPoints.last {
+			let path = CGPath.create(from: lastPoints)
+			context.addPath(path)
+			context.setStrokeColor(UIColor.white.cgColor)
+			context.strokePath()
+			
+			pointStorage.removeLast()
+		}
+		
+		drawView.image = UIGraphicsGetImageFromCurrentImageContext()
+		drawView.alpha = 1
+		UIGraphicsEndImageContext()
+	}
+	
+	func touchesEnded() {
+		pointStorage.add(points: currentPoints)
+		currentPoints = []
+	}
+	
+}
+
+extension CGPath {
+	static func create(from points:[CGPoint]) -> CGPath {
+		
+		let path = CGMutablePath()
+		path.addLines(between: points)
+		
+		return path.copy(strokingWithWidth: 2, lineCap: .butt, lineJoin: .miter, miterLimit: 2)
+	}
 }

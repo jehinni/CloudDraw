@@ -10,13 +10,17 @@ import Foundation
 import UIKit
 
 class PointStorage {
-	var touchPoints: [CGPoint]
+	var touchPoints: [[CGPoint]]
 	
-	init(with points: [CGPoint]) {
-		touchPoints = points
+	init() {
+		touchPoints = []
 	}
 	
-	func add(point: CGPoint) {
-		touchPoints.append(point)
+	func add(points: [CGPoint]) {
+		touchPoints.append(points)
+	}
+	
+	func removeLast() {
+		touchPoints.removeLast()
 	}
 }

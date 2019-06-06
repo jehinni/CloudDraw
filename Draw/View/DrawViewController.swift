@@ -34,10 +34,15 @@ class DrawViewController: UIViewController {
 	
 	override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
 		drawViewModel?.draw()
+		drawViewModel?.touchesEnded()
 	}
 	
 	@IBAction func deleteAll(_ sender: UIButton) {
 		drawViewModel?.deleteAll()
+	}
+	
+	@IBAction func undo(_ sender: Any) {
+		drawViewModel?.undo()
 	}
 	
 }

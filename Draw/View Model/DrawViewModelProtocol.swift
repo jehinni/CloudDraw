@@ -18,4 +18,6 @@ protocol DrawViewModelProtocol {
 	func draw()
 	func userSwiped(to point: CGPoint)
 	func deleteAll()
+	func undo()
+	func touchesEnded()
 }
