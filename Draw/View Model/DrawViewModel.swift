@@ -27,7 +27,6 @@ class DrawViewModel: DrawViewModelProtocol {
 	}
 	
 	func draw() {
-		//pointStorage.add(point: lastPoint)
 		currentPoints.append(lastPoint)
 		
 		UIGraphicsBeginImageContext(drawView.frame.size)
@@ -71,10 +70,10 @@ class DrawViewModel: DrawViewModelProtocol {
 	}
 	
 	func undo() {
+		pointStorage.removeLast()
+		
 		UIGraphicsBeginImageContext(drawView.frame.size)
 		guard let context = UIGraphicsGetCurrentContext() else { return }
-		
-		pointStorage.removeLast()
 		
 		drawView.image = nil
 		drawView.image?.draw(in: drawView.bounds)
@@ -82,7 +81,9 @@ class DrawViewModel: DrawViewModelProtocol {
 		let path = CGPath.create(from: pointStorage.touchPoints)
 		context.addPath(path)
 		context.setBlendMode(.normal)
+		context.setLineWidth(2)
 		context.setStrokeColor(UIColor.black.cgColor)
+		
 		context.strokePath()
 		
 		drawView.image = UIGraphicsGetImageFromCurrentImageContext()
@@ -108,6 +109,6 @@ extension CGPath {
 			wholePath.addPath(path)
 		}
 		
-		return wholePath.copy(strokingWithWidth: 2, lineCap: .butt, lineJoin: .miter, miterLimit: 0)
+		return wholePath.copy(strokingWithWidth: 1, lineCap: .butt, lineJoin: .miter, miterLimit: 0)
 	}
 }
