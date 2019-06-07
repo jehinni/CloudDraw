@@ -82,6 +82,7 @@ class DrawViewModel: DrawViewModelProtocol {
 		context.addPath(path)
 		context.setBlendMode(.normal)
 		context.setLineWidth(2)
+		context.setLineJoin(.bevel)
 		context.setStrokeColor(UIColor.black.cgColor)
 		
 		context.strokePath()
@@ -109,6 +110,6 @@ extension CGPath {
 			wholePath.addPath(path)
 		}
 		
-		return wholePath.copy(strokingWithWidth: 1, lineCap: .butt, lineJoin: .miter, miterLimit: 0)
+		return wholePath.copy(strokingWithWidth: 0.1, lineCap: .butt, lineJoin: .bevel, miterLimit: 1)
 	}
 }
