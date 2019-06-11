@@ -10,12 +10,18 @@ import UIKit
 
 class DrawViewController: UIViewController {
 
+	@IBOutlet weak var subjectLabel: UILabel!
 	@IBOutlet weak var mainImageView: UIImageView!
 	var drawViewModel: DrawViewModelProtocol?
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		drawViewModel = ViewModelFactory.createDrawViewModel(with: mainImageView)
+	}
+	
+	override func viewDidAppear(_ animated: Bool) {
+		subjectLabel.text = drawViewModel?.subject()
+		fadeOutView(view: subjectLabel)
 	}
 	
 	// MARK - UIResponder methods
@@ -45,5 +51,13 @@ class DrawViewController: UIViewController {
 		drawViewModel?.undo()
 	}
 	
+}
+
+extension DrawViewController {
+	func fadeOutView(view: UIView) {
+		UIView.animate(withDuration: 3, delay: 0, options: .curveLinear, animations: { () -> Void in
+			view.alpha = 0
+			}, completion: nil)
+	}
 }
 

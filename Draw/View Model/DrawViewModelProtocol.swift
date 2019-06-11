@@ -20,4 +20,5 @@ protocol DrawViewModelProtocol {
 	func deleteAll()
 	func undo()
 	func touchesEnded()
+	func subject() -> String
 }

@@ -78,8 +78,11 @@ class DrawViewModel: DrawViewModelProtocol {
 		drawView.image = nil
 		drawView.image?.draw(in: drawView.bounds)
 		
+		// load paths to be redrawn
 		let path = CGPath.create(from: pointStorage.touchPoints)
 		context.addPath(path)
+		
+		// visual appearance of lines
 		context.setBlendMode(.normal)
 		context.setLineWidth(2)
 		context.setLineJoin(.bevel)
@@ -95,6 +98,11 @@ class DrawViewModel: DrawViewModelProtocol {
 	func touchesEnded() {
 		pointStorage.add(points: currentPoints)
 		currentPoints = []
+	}
+	
+	func subject() -> String {
+		// TODO: chose random subject
+		return "Cat"
 	}
 	
 }
