@@ -10,7 +10,6 @@ import Foundation
 import CoreML
 import UIKit
 
-
 class ImageClassification {
     func classify(image: UIImage) {
         let model = imageCore()
@@ -44,5 +43,4 @@ class ImageClassification {
         
         return pixelBuffer
     }
-    
 }
