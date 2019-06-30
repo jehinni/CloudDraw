@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00A7661B22C8AB7F00FA9B1A /* imageCore.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 00A7661A22C8AB7F00FA9B1A /* imageCore.mlmodel */; };
+		00A7661D22C8AC3700FA9B1A /* ImageClassification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A7661C22C8AC3700FA9B1A /* ImageClassification.swift */; };
 		07368B5E2283029000621BEF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07368B5D2283029000621BEF /* AppDelegate.swift */; };
 		07368B602283029000621BEF /* DrawViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07368B5F2283029000621BEF /* DrawViewController.swift */; };
 		07368B632283029000621BEF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07368B612283029000621BEF /* Main.storyboard */; };
@@ -39,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00A7661A22C8AB7F00FA9B1A /* imageCore.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = imageCore.mlmodel; sourceTree = "<group>"; };
+		00A7661C22C8AC3700FA9B1A /* ImageClassification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageClassification.swift; sourceTree = "<group>"; };
 		07368B5A2283029000621BEF /* Draw.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Draw.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07368B5D2283029000621BEF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		07368B5F2283029000621BEF /* DrawViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawViewController.swift; sourceTree = "<group>"; };
@@ -112,7 +116,9 @@
 				07C72D8B22A921C100023FCA /* Model */,
 				07368B5D2283029000621BEF /* AppDelegate.swift */,
 				07368B642283029600621BEF /* Assets.xcassets */,
+				00A7661C22C8AC3700FA9B1A /* ImageClassification.swift */,
 				07368B612283029000621BEF /* Main.storyboard */,
+				00A7661A22C8AB7F00FA9B1A /* imageCore.mlmodel */,
 				07368B662283029600621BEF /* LaunchScreen.storyboard */,
 				07368B692283029600621BEF /* Info.plist */,
 				0738E5DA22B026000086ACA6 /* Subject.swift */,
@@ -300,6 +306,8 @@
 				0738E5DB22B026000086ACA6 /* Subject.swift in Sources */,
 				07368B602283029000621BEF /* DrawViewController.swift in Sources */,
 				07C72D9322A9443000023FCA /* ViewModelFactory.swift in Sources */,
+				00A7661B22C8AB7F00FA9B1A /* imageCore.mlmodel in Sources */,
+				00A7661D22C8AC3700FA9B1A /* ImageClassification.swift in Sources */,
 				07368B5E2283029000621BEF /* AppDelegate.swift in Sources */,
 				07368B902283803A00621BEF /* DrawViewModelProtocol.swift in Sources */,
 			);
@@ -477,14 +485,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = KAD6U8U3U5;
+				DEVELOPMENT_TEAM = 69EZ6SS56M;
 				INFOPLIST_FILE = Draw/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.jobe.Draw;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jobe.Drawk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -496,14 +504,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = KAD6U8U3U5;
+				DEVELOPMENT_TEAM = 69EZ6SS56M;
 				INFOPLIST_FILE = Draw/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.jobe.Draw;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jobe.Drawk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
