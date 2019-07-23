@@ -21,4 +21,5 @@ protocol DrawViewModelProtocol {
 	func undo()
 	func touchesEnded()
 	func subject() -> String
+	func finsih()
 }

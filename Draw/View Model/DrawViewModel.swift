@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import CoreGraphics
 
 class DrawViewModel: DrawViewModelProtocol {
 	var drawView: UIImageView
@@ -102,22 +103,39 @@ class DrawViewModel: DrawViewModelProtocol {
 	
 	func subject() -> String {
 		// TODO: chose random subject
-		return "Cat"
+		return "Draw a \n Cat"
 	}
 	
-}
-
-extension CGPath {
-	static func create(from points:[[CGPoint]]) -> CGPath {
+	func finsih() {
+		drawFinalImage()
 		
-		let wholePath = CGMutablePath()
+		let finalImage = drawView.image
+		let resizedImage = finalImage?.resizedImage(targetSize: CGSize(width: 28, height: 28))
+		let grayscaleBitmap = resizedImage!.bitMap2DimensionalArray()
+		print(grayscaleBitmap)
+	}
+	
+	func drawFinalImage() {
+		UIGraphicsBeginImageContext(drawView.frame.size)
+		guard let context = UIGraphicsGetCurrentContext() else { return }
 		
-		for array in points {
-			let path = CGMutablePath()
-			path.addLines(between: array)
-			wholePath.addPath(path)
-		}
+		drawView.image = nil
+		drawView.image?.draw(in: drawView.bounds)
 		
-		return wholePath.copy(strokingWithWidth: 0.1, lineCap: .butt, lineJoin: .bevel, miterLimit: 1)
+		// load paths to be redrawn
+		let path = CGPath.create(from: pointStorage.touchPoints)
+		context.addPath(path)
+		
+		// visual appearance of lines
+		context.setBlendMode(.normal)
+		context.setLineWidth(2)
+		context.setLineJoin(.bevel)
+		context.setStrokeColor(UIColor.black.cgColor)
+		
+		context.strokePath()
+		
+		drawView.image = UIGraphicsGetImageFromCurrentImageContext()
+		drawView.alpha = 1
+		UIGraphicsEndImageContext()
 	}
 }

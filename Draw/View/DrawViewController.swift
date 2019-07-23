@@ -51,6 +51,9 @@ class DrawViewController: UIViewController {
 		drawViewModel?.undo()
 	}
 	
+	@IBAction func finish(_ sender: Any) {
+		drawViewModel?.finsih()
+	}
 }
 
 extension DrawViewController {
