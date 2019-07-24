@@ -42,7 +42,7 @@ extension UIImage {
 		let cgImage = self.cgImage
 		
 		let xPosition = 0.0
-		let yPosition = height / 4
+		let yPosition = height / 2
 		
 		let rect = CGRect(x: xPosition, y: yPosition, width: width, height: height)
 		
