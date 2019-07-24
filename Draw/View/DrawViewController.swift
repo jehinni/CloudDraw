@@ -7,15 +7,18 @@
 //
 
 import UIKit
+import PeersUI
 
 class DrawViewController: UIViewController {
 
+	@IBOutlet weak var backgroundImageView: UIImageView!
 	@IBOutlet weak var subjectLabel: UILabel!
 	@IBOutlet weak var mainImageView: UIImageView!
 	var drawViewModel: DrawViewModelProtocol?
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
+		backgroundImageView.backgroundColor = PeersColors.intensePurple.color
 		drawViewModel = ViewModelFactory.createDrawViewModel(with: mainImageView)
 	}
 	
@@ -29,13 +32,13 @@ class DrawViewController: UIViewController {
 	override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
 		guard let firstPoint = touches.first else { return }
 		
-		drawViewModel?.lastPoint = firstPoint.location(in: view)
+		drawViewModel?.lastPoint = firstPoint.location(in: mainImageView)
 	}
 	
 	override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
 		guard let firstPoint = touches.first else { return }
 		
-		drawViewModel?.userSwiped(to: firstPoint.location(in: view))
+		drawViewModel?.userSwiped(to: firstPoint.location(in: mainImageView))
 	}
 	
 	override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
