@@ -22,6 +22,7 @@
 		07B1A00F22E5CFCF009953D2 /* UIImage+Resize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B1A00E22E5CFCF009953D2 /* UIImage+Resize.swift */; };
 		07B1A01122E5D049009953D2 /* CGPath+CreateFromPointArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B1A01022E5D049009953D2 /* CGPath+CreateFromPointArray.swift */; };
 		07B1A01322E60D7E009953D2 /* UIImage+GrayScaleBitmap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B1A01222E60D7E009953D2 /* UIImage+GrayScaleBitmap.swift */; };
+		07B1A01522E89444009953D2 /* CloudManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B1A01422E89444009953D2 /* CloudManager.swift */; };
 		07C72D9122A9223100023FCA /* PointStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C72D9022A9223100023FCA /* PointStorage.swift */; };
 		07C72D9322A9443000023FCA /* ViewModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C72D9222A9443000023FCA /* ViewModelFactory.swift */; };
 /* End PBXBuildFile section */
@@ -65,6 +66,7 @@
 		07B1A00E22E5CFCF009953D2 /* UIImage+Resize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Resize.swift"; sourceTree = "<group>"; };
 		07B1A01022E5D049009953D2 /* CGPath+CreateFromPointArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGPath+CreateFromPointArray.swift"; sourceTree = "<group>"; };
 		07B1A01222E60D7E009953D2 /* UIImage+GrayScaleBitmap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+GrayScaleBitmap.swift"; sourceTree = "<group>"; };
+		07B1A01422E89444009953D2 /* CloudManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudManager.swift; sourceTree = "<group>"; };
 		07C72D9022A9223100023FCA /* PointStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointStorage.swift; sourceTree = "<group>"; };
 		07C72D9222A9443000023FCA /* ViewModelFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -175,6 +177,7 @@
 			isa = PBXGroup;
 			children = (
 				07C72D9022A9223100023FCA /* PointStorage.swift */,
+				07B1A01422E89444009953D2 /* CloudManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -315,6 +318,7 @@
 				07B1A01322E60D7E009953D2 /* UIImage+GrayScaleBitmap.swift in Sources */,
 				0738E5DB22B026000086ACA6 /* Subject.swift in Sources */,
 				07368B602283029000621BEF /* DrawViewController.swift in Sources */,
+				07B1A01522E89444009953D2 /* CloudManager.swift in Sources */,
 				07B1A00F22E5CFCF009953D2 /* UIImage+Resize.swift in Sources */,
 				07B1A01122E5D049009953D2 /* CGPath+CreateFromPointArray.swift in Sources */,
 				07C72D9322A9443000023FCA /* ViewModelFactory.swift in Sources */,
