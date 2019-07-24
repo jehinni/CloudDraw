@@ -43,6 +43,14 @@ extension UIImage {
 				if pixel != 255 {
 					pixel = 0
 				}
+				
+				// switch color bits (Model has 255 defined as black and 0 as white)
+				if pixel == 255 {
+					pixel = 0
+				} else {
+					pixel = 255
+				}
+				
 				widthPixels.append(pixel)
 			}
 			result.append(widthPixels)
