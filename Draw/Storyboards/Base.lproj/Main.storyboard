@@ -69,13 +69,13 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I see:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vL0-ez-ch2" customClass="PeersHeadline4Label" customModule="PeersUI">
-                                <rect key="frame" x="127.99999999999999" y="635" width="44.333333333333329" height="24"/>
+                                <rect key="frame" x="119.99999999999999" y="645" width="44.333333333333329" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T92-2y-Fsx" userLabel="Prediction Label" customClass="PeersHeadline2Label" customModule="PeersUI">
-                                <rect key="frame" x="192.33333333333334" y="625" width="0.0" height="0.0"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Prediction" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T92-2y-Fsx" userLabel="Prediction Label" customClass="PeersHeadline1Label" customModule="PeersUI">
+                                <rect key="frame" x="184.33333333333337" y="625" width="172" height="61.333333333333371"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -95,9 +95,9 @@
                             <constraint firstItem="T92-2y-Fsx" firstAttribute="leading" secondItem="vL0-ez-ch2" secondAttribute="trailing" constant="20" id="JQe-10-C85"/>
                             <constraint firstItem="PH7-CM-wLl" firstAttribute="top" secondItem="gT5-zP-5qt" secondAttribute="bottom" constant="50" id="JmO-TY-g6P"/>
                             <constraint firstItem="PH7-CM-wLl" firstAttribute="top" secondItem="Ics-Fy-EaQ" secondAttribute="bottom" constant="50" id="NiV-Vd-Q0Q"/>
-                            <constraint firstItem="vL0-ez-ch2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="128" id="QpZ-bV-ZwH"/>
+                            <constraint firstItem="vL0-ez-ch2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="120" id="QpZ-bV-ZwH"/>
                             <constraint firstItem="PH7-CM-wLl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TeP-ub-9DL"/>
-                            <constraint firstItem="vL0-ez-ch2" firstAttribute="top" secondItem="PH7-CM-wLl" secondAttribute="bottom" constant="60" id="cHi-uN-sca"/>
+                            <constraint firstItem="vL0-ez-ch2" firstAttribute="top" secondItem="PH7-CM-wLl" secondAttribute="bottom" constant="70" id="cHi-uN-sca"/>
                             <constraint firstItem="iIs-On-ciy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="cPE-Bx-9fU"/>
                             <constraint firstItem="gT5-zP-5qt" firstAttribute="leading" secondItem="iIs-On-ciy" secondAttribute="trailing" constant="20" id="oxP-q4-Ty8"/>
                             <constraint firstItem="PH7-CM-wLl" firstAttribute="top" secondItem="iIs-On-ciy" secondAttribute="bottom" constant="50" id="q3a-hA-yAu"/>
@@ -108,6 +108,7 @@
                     </view>
                     <connections>
                         <outlet property="backgroundImageView" destination="f5W-p7-EHe" id="hmd-aA-xQP"/>
+                        <outlet property="iSeeLabel" destination="vL0-ez-ch2" id="isD-Bi-B1M"/>
                         <outlet property="mainImageView" destination="PH7-CM-wLl" id="tbW-Qo-30N"/>
                         <outlet property="predictionLabel" destination="T92-2y-Fsx" id="4Rn-5f-39R"/>
                     </connections>

@@ -12,6 +12,7 @@ import PeersUI
 class DrawViewController: UIViewController, DrawViewModelDelegate {
 
 	@IBOutlet weak var backgroundImageView: UIImageView!
+	@IBOutlet weak var iSeeLabel: PeersHeadline4Label!
 	@IBOutlet weak var predictionLabel: PeersHeadline2Label!
 	@IBOutlet weak var mainImageView: UIImageView!
 	var drawViewModel: DrawViewModelProtocol?
@@ -19,6 +20,9 @@ class DrawViewController: UIViewController, DrawViewModelDelegate {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		backgroundImageView.backgroundColor = PeersColors.intensePurple.color
+		iSeeLabel.isHidden = true
+		predictionLabel.isHidden = true
+		
 		drawViewModel = ViewModelFactory.createDrawViewModel(with: mainImageView)
 		drawViewModel?.drawViewModelDelegate = self
 	}
@@ -60,6 +64,8 @@ class DrawViewController: UIViewController, DrawViewModelDelegate {
 	
 	func didReceive(prediction: String) {
 		predictionLabel.text = prediction
+		predictionLabel.isHidden = false
+		iSeeLabel.isHidden = false
 	}
 }
 
