@@ -110,7 +110,9 @@ class DrawViewModel: DrawViewModelProtocol {
 		drawFinalImage()
 		
 		let finalImage = drawView.image
-		let resizedImage = finalImage?.resizedImage(targetSize: CGSize(width: 28, height: 28))
+		let screenWidth = UIScreen.main.bounds.width
+		let croppedImage = finalImage?.cropToBounds(width: Double(screenWidth), height: Double(screenWidth))
+		let resizedImage = croppedImage?.resizedImage(targetSize: CGSize(width: 28, height: 28))
 		let grayscaleBitmap = resizedImage!.bitMap2DimensionalArray()
 		print(grayscaleBitmap)
 	}

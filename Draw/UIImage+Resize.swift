@@ -37,4 +37,18 @@ extension UIImage {
 		
 		return newImage!
 	}
+	
+	func cropToBounds(width: Double, height: Double) -> UIImage? {
+		let cgImage = self.cgImage
+		
+		let xPosition = 0.0
+		let yPosition = height / 4
+		
+		let rect = CGRect(x: xPosition, y: yPosition, width: width, height: height)
+		
+		let imageRef = cgImage?.cropping(to: rect)
+		let croppedImage = UIImage(cgImage: imageRef!)
+		
+		return croppedImage
+	}
 }
