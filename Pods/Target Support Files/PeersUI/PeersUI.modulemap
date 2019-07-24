@@ -1,0 +1,6 @@
+framework module PeersUI {
+  umbrella header "PeersUI-umbrella.h"
+
+  export *
+  module * { export * }
+}

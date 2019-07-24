@@ -17,38 +17,55 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Canvas" translatesAutoresizingMaskIntoConstraints="NO" id="yMz-uw-WmU">
-                                <rect key="frame" x="0.0" y="161" width="414" height="414"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="yMz-uw-WmU" secondAttribute="height" multiplier="1:1" id="s7t-0t-rs8"/>
-                                </constraints>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="f5W-p7-EHe">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gT5-zP-5qt">
-                                <rect key="frame" x="222" y="37" width="37" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gT5-zP-5qt" customClass="PeersButton" customModule="PeersUI">
+                                <rect key="frame" x="137" y="82" width="118" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Undo"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="style">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="undo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1U3-bd-xrj"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iIs-On-ciy">
-                                <rect key="frame" x="277" y="37" width="66" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iIs-On-ciy" customClass="PeersButton" customModule="PeersUI">
+                                <rect key="frame" x="12" y="82" width="118" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Delete All"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="style">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="deleteAll:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jNQ-mS-H9J"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ics-Fy-EaQ" userLabel="Finish">
-                                <rect key="frame" x="144" y="37" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ics-Fy-EaQ" userLabel="Finish" customClass="PeersButton" customModule="PeersUI">
+                                <rect key="frame" x="312" y="82" width="87" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Finish"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="style">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="finish:" destination="BYZ-38-t0r" eventType="touchUpInside" id="N74-ub-1d1"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PH7-CM-wLl" userLabel="Main Image View">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <rect key="frame" x="0.0" y="161" width="414" height="414"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="PH7-CM-wLl" secondAttribute="height" multiplier="1:1" id="ZMY-ld-9rf"/>
+                                </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mag-3z-jMz">
                                 <rect key="frame" x="186" y="357.66666666666669" width="42" height="21"/>
@@ -59,16 +76,12 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="yMz-uw-WmU" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Ijc-we-nR5"/>
-                            <constraint firstItem="yMz-uw-WmU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Rqq-qm-PJE"/>
-                            <constraint firstItem="yMz-uw-WmU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="csG-0P-d3Q"/>
-                            <constraint firstItem="PH7-CM-wLl" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="j76-Jf-lvQ"/>
+                            <constraint firstItem="PH7-CM-wLl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="1ge-3z-FUg"/>
+                            <constraint firstItem="PH7-CM-wLl" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="4u1-uu-Ln6"/>
+                            <constraint firstItem="PH7-CM-wLl" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="EuY-W9-bqG"/>
+                            <constraint firstItem="PH7-CM-wLl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TeP-ub-9DL"/>
                             <constraint firstItem="Mag-3z-jMz" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="kSy-kr-m2W"/>
                             <constraint firstItem="Mag-3z-jMz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lzU-cv-1pX"/>
-                            <constraint firstItem="PH7-CM-wLl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qy1-qQ-MPf"/>
-                            <constraint firstAttribute="trailing" secondItem="yMz-uw-WmU" secondAttribute="trailing" id="rHQ-dK-GG6"/>
-                            <constraint firstItem="PH7-CM-wLl" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="snW-C1-in0"/>
-                            <constraint firstItem="PH7-CM-wLl" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="uF7-tS-qaD"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -83,6 +96,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Canvas" width="1270" height="1280"/>
+        <image name="background" width="1422.3333740234375" height="1066.6666259765625"/>
     </resources>
 </document>
