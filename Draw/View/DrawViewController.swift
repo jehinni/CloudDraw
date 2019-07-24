@@ -9,10 +9,10 @@
 import UIKit
 import PeersUI
 
-class DrawViewController: UIViewController {
+class DrawViewController: UIViewController, DrawViewModelDelegate {
 
 	@IBOutlet weak var backgroundImageView: UIImageView!
-	@IBOutlet weak var subjectLabel: UILabel!
+	@IBOutlet weak var predictionLabel: PeersHeadline2Label!
 	@IBOutlet weak var mainImageView: UIImageView!
 	var drawViewModel: DrawViewModelProtocol?
 	
@@ -20,14 +20,10 @@ class DrawViewController: UIViewController {
 		super.viewDidLoad()
 		backgroundImageView.backgroundColor = PeersColors.intensePurple.color
 		drawViewModel = ViewModelFactory.createDrawViewModel(with: mainImageView)
+		drawViewModel?.drawViewModelDelegate = self
 	}
 	
-	override func viewDidAppear(_ animated: Bool) {
-		subjectLabel.text = drawViewModel?.subject()
-		fadeOutView(view: subjectLabel)
-	}
-	
-	// MARK - UIResponder methods
+	// UIResponder methods
 	
 	override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
 		guard let firstPoint = touches.first else { return }
@@ -46,6 +42,8 @@ class DrawViewController: UIViewController {
 		drawViewModel?.touchesEnded()
 	}
 	
+	// IBAction methods
+	
 	@IBAction func deleteAll(_ sender: UIButton) {
 		drawViewModel?.deleteAll()
 	}
@@ -57,13 +55,11 @@ class DrawViewController: UIViewController {
 	@IBAction func finish(_ sender: Any) {
 		drawViewModel?.finsih()
 	}
-}
-
-extension DrawViewController {
-	func fadeOutView(view: UIView) {
-		UIView.animate(withDuration: 3, delay: 0, options: .curveLinear, animations: { () -> Void in
-			view.alpha = 0
-			}, completion: nil)
+	
+	// DrawViewModelDelegate methods
+	
+	func didReceive(prediction: String) {
+		predictionLabel.text = prediction
 	}
 }
 

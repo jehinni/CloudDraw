@@ -25,9 +25,8 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gT5-zP-5qt" customClass="PeersButton" customModule="PeersUI">
-                                <rect key="frame" x="137" y="82" width="118" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gT5-zP-5qt" customClass="PeersButton" customModule="PeersUI">
+                                <rect key="frame" x="141" y="61" width="101" height="50"/>
                                 <state key="normal" title="Undo"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="style">
@@ -38,9 +37,8 @@
                                     <action selector="undo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1U3-bd-xrj"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iIs-On-ciy" customClass="PeersButton" customModule="PeersUI">
-                                <rect key="frame" x="12" y="82" width="118" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iIs-On-ciy" customClass="PeersButton" customModule="PeersUI">
+                                <rect key="frame" x="20" y="61" width="101" height="50"/>
                                 <state key="normal" title="Delete All"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="style">
@@ -51,9 +49,8 @@
                                     <action selector="deleteAll:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jNQ-mS-H9J"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ics-Fy-EaQ" userLabel="Finish" customClass="PeersButton" customModule="PeersUI">
-                                <rect key="frame" x="312" y="82" width="87" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ics-Fy-EaQ" userLabel="Finish" customClass="PeersButton" customModule="PeersUI">
+                                <rect key="frame" x="293" y="61" width="101" height="50"/>
                                 <state key="normal" title="Finish"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="style">
@@ -71,8 +68,14 @@
                                     <constraint firstAttribute="width" secondItem="PH7-CM-wLl" secondAttribute="height" multiplier="1:1" id="ZMY-ld-9rf"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mag-3z-jMz">
-                                <rect key="frame" x="186" y="357.66666666666669" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I see:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vL0-ez-ch2" customClass="PeersHeadline4Label" customModule="PeersUI">
+                                <rect key="frame" x="127.99999999999999" y="635" width="44.333333333333329" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T92-2y-Fsx" userLabel="Prediction Label" customClass="PeersHeadline2Label" customModule="PeersUI">
+                                <rect key="frame" x="192.33333333333334" y="625" width="0.0" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -82,13 +85,23 @@
                         <constraints>
                             <constraint firstItem="f5W-p7-EHe" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="1Fh-MT-80h"/>
                             <constraint firstItem="PH7-CM-wLl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="1ge-3z-FUg"/>
+                            <constraint firstItem="T92-2y-Fsx" firstAttribute="top" secondItem="PH7-CM-wLl" secondAttribute="bottom" constant="50" id="4Nd-d7-TTj"/>
                             <constraint firstItem="PH7-CM-wLl" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="4u1-uu-Ln6"/>
                             <constraint firstItem="f5W-p7-EHe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="5IC-Y4-39Y"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ics-Fy-EaQ" secondAttribute="trailing" constant="20" id="6Hr-mZ-ca5"/>
                             <constraint firstAttribute="bottom" secondItem="f5W-p7-EHe" secondAttribute="bottom" id="6Lw-Zv-gJs"/>
+                            <constraint firstItem="gT5-zP-5qt" firstAttribute="width" secondItem="iIs-On-ciy" secondAttribute="width" id="7cu-ZJ-MVo"/>
                             <constraint firstItem="PH7-CM-wLl" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="EuY-W9-bqG"/>
+                            <constraint firstItem="T92-2y-Fsx" firstAttribute="leading" secondItem="vL0-ez-ch2" secondAttribute="trailing" constant="20" id="JQe-10-C85"/>
+                            <constraint firstItem="PH7-CM-wLl" firstAttribute="top" secondItem="gT5-zP-5qt" secondAttribute="bottom" constant="50" id="JmO-TY-g6P"/>
+                            <constraint firstItem="PH7-CM-wLl" firstAttribute="top" secondItem="Ics-Fy-EaQ" secondAttribute="bottom" constant="50" id="NiV-Vd-Q0Q"/>
+                            <constraint firstItem="vL0-ez-ch2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="128" id="QpZ-bV-ZwH"/>
                             <constraint firstItem="PH7-CM-wLl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TeP-ub-9DL"/>
-                            <constraint firstItem="Mag-3z-jMz" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="kSy-kr-m2W"/>
-                            <constraint firstItem="Mag-3z-jMz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lzU-cv-1pX"/>
+                            <constraint firstItem="vL0-ez-ch2" firstAttribute="top" secondItem="PH7-CM-wLl" secondAttribute="bottom" constant="60" id="cHi-uN-sca"/>
+                            <constraint firstItem="iIs-On-ciy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="cPE-Bx-9fU"/>
+                            <constraint firstItem="gT5-zP-5qt" firstAttribute="leading" secondItem="iIs-On-ciy" secondAttribute="trailing" constant="20" id="oxP-q4-Ty8"/>
+                            <constraint firstItem="PH7-CM-wLl" firstAttribute="top" secondItem="iIs-On-ciy" secondAttribute="bottom" constant="50" id="q3a-hA-yAu"/>
+                            <constraint firstItem="Ics-Fy-EaQ" firstAttribute="width" secondItem="gT5-zP-5qt" secondAttribute="width" id="ujP-0j-SiZ"/>
                             <constraint firstItem="f5W-p7-EHe" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="v5A-E1-9sz"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -96,7 +109,7 @@
                     <connections>
                         <outlet property="backgroundImageView" destination="f5W-p7-EHe" id="hmd-aA-xQP"/>
                         <outlet property="mainImageView" destination="PH7-CM-wLl" id="tbW-Qo-30N"/>
-                        <outlet property="subjectLabel" destination="Mag-3z-jMz" id="tiC-wZ-WgF"/>
+                        <outlet property="predictionLabel" destination="T92-2y-Fsx" id="4Rn-5f-39R"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

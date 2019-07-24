@@ -14,12 +14,13 @@ protocol DrawViewModelProtocol {
 	var currentPoint: CGPoint { get }
 	var swiped: Bool { get }
 	var pointStorage: PointStorage { get }
+	var cloudManager: CloudManager { get }
+	var drawViewModelDelegate: DrawViewModelDelegate? { get set}
 	
 	func draw()
 	func userSwiped(to point: CGPoint)
 	func deleteAll()
 	func undo()
 	func touchesEnded()
-	func subject() -> String
 	func finsih()
 }

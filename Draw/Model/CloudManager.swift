@@ -10,7 +10,9 @@ import Foundation
 import UIKit
 
 class CloudManager {
-	class func send (bitmap: [[UInt8]]) {
+	var cloudManagerDelegate: CloudManagerDelegate?
+	
+	func send (bitmap: [[UInt8]]) {
 		let params =  [ "image": bitmap] as Dictionary<String, Array<Any>>
 		
 		var request = URLRequest(url: URL(string: "https://us-central1-cloud-computing-247314.cloudfunctions.net/classifier")!)
@@ -24,6 +26,7 @@ class CloudManager {
 			do {
 				let json = try JSONSerialization.jsonObject(with: data!) as! Dictionary<String, AnyObject>
 				print(json)
+				self.cloudManagerDelegate?.didReceive(prediction: json)
 			} catch {
 				print("error")
 			}

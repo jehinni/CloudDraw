@@ -10,13 +10,16 @@ import Foundation
 import UIKit
 import CoreGraphics
 
-class DrawViewModel: DrawViewModelProtocol {
+class DrawViewModel: DrawViewModelProtocol, CloudManagerDelegate {
+	
 	var drawView: UIImageView
 	var pointStorage: PointStorage
 	var lastPoint: CGPoint
 	var currentPoint: CGPoint
 	var swiped: Bool
 	var currentPoints: [CGPoint]
+	var cloudManager: CloudManager
+	var drawViewModelDelegate: DrawViewModelDelegate?
 	
 	init(with imageView: UIImageView) {
 		drawView = imageView
@@ -25,6 +28,8 @@ class DrawViewModel: DrawViewModelProtocol {
 		currentPoint = CGPoint.zero
 		swiped = false
 		currentPoints = []
+		cloudManager = CloudManager()
+		cloudManager.cloudManagerDelegate = self
 	}
 	
 	func draw() {
@@ -101,11 +106,6 @@ class DrawViewModel: DrawViewModelProtocol {
 		currentPoints = []
 	}
 	
-	func subject() -> String {
-		// TODO: chose random subject
-		return "Draw a \n Cat"
-	}
-	
 	func finsih() {
 		drawFinalImage()
 		
@@ -116,7 +116,7 @@ class DrawViewModel: DrawViewModelProtocol {
 		let grayscaleBitmap = image.bitMap2DimensionalArray()
 		
 		guard let bitmap = grayscaleBitmap else { return }
-		CloudManager.send(bitmap: bitmap)
+		cloudManager.send(bitmap: bitmap)
 	}
 	
 	func drawFinalImage() {
@@ -141,5 +141,15 @@ class DrawViewModel: DrawViewModelProtocol {
 		drawView.image = UIGraphicsGetImageFromCurrentImageContext()
 		drawView.alpha = 1
 		UIGraphicsEndImageContext()
+	}
+	
+	// CloudManagerDelegate method
+	
+	func didReceive(prediction: [String : AnyObject]) {
+		let predictedObject = prediction["prediction"] as! String
+		
+		DispatchQueue.main.async {
+			self.drawViewModelDelegate?.didReceive(prediction: predictedObject)
+		}
 	}
 }
