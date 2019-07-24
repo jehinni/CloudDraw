@@ -27,25 +27,6 @@ extension UIImage {
 		return success ? byteArray : nil
 	}
 	
-	func normalizedGrayScalePixels() -> [CGFloat]? {
-		guard let cgImage = self.cgImage else { return nil }
-		guard let pixels = self.grayScalePixels() else { return nil }
-		
-		let width = cgImage.width
-		let height = cgImage.height
-		var result: [CGFloat] = []
-		
-		for y in 0..<height {
-			for x in 0..<width {
-				let index = width * y + x
-				let pixel = CGFloat(pixels[index]) / CGFloat(UInt8.max)
-				result.append(pixel)
-			}
-		}
-		
-		return result
-	}
-	
 	func bitMap2DimensionalArray() -> [[UInt8]]? {
 		guard let cgImage = self.cgImage else { return nil }
 		guard let pixels = self.grayScalePixels() else { return nil }
@@ -55,16 +36,16 @@ extension UIImage {
 		var result: [[UInt8]] = []
 		
 		for y in 0..<height {
-			var inner = [UInt8]()
+			var widthPixels = [UInt8]()
 			for x in 0..<width {
 				let index = width * y + x
 				var pixel = pixels[index]
 				if pixel != 255 {
 					pixel = 0
 				}
-				inner.append(pixel)
+				widthPixels.append(pixel)
 			}
-			result.append(inner)
+			result.append(widthPixels)
 		}
 		
 		return result
