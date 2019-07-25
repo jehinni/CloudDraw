@@ -14,7 +14,8 @@ class DrawViewController: UIViewController, DrawViewModelDelegate {
 	@IBOutlet weak var backgroundImageView: UIImageView!
 	@IBOutlet weak var iSeeLabel: PeersHeadline4Label!
 	@IBOutlet weak var predictionLabel: PeersHeadline2Label!
-	@IBOutlet weak var mainImageView: UIImageView!
+    @IBOutlet weak var drawingLabel: PeersHeadline4Label!
+    @IBOutlet weak var mainImageView: UIImageView!
 	var drawViewModel: DrawViewModelProtocol?
 	
 	override func viewDidLoad() {
@@ -25,6 +26,7 @@ class DrawViewController: UIViewController, DrawViewModelDelegate {
 		
 		drawViewModel = ViewModelFactory.createDrawViewModel(with: mainImageView)
 		drawViewModel?.drawViewModelDelegate = self
+        drawViewModel?.randomImage()
 	}
 	
 	// UIResponder methods
@@ -33,6 +35,8 @@ class DrawViewController: UIViewController, DrawViewModelDelegate {
 		guard let firstPoint = touches.first else { return }
 		
 		drawViewModel?.lastPoint = firstPoint.location(in: mainImageView)
+        iSeeLabel.isHidden = true
+        predictionLabel.isHidden = true
 	}
 	
 	override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -50,10 +54,14 @@ class DrawViewController: UIViewController, DrawViewModelDelegate {
 	
 	@IBAction func deleteAll(_ sender: UIButton) {
 		drawViewModel?.deleteAll()
+        predictionLabel.isHidden = true
+        iSeeLabel.isHidden = true
 	}
 	
 	@IBAction func undo(_ sender: Any) {
 		drawViewModel?.undo()
+        predictionLabel.isHidden = true
+        iSeeLabel.isHidden = true
 	}
 	
 	@IBAction func finish(_ sender: Any) {
@@ -67,5 +75,9 @@ class DrawViewController: UIViewController, DrawViewModelDelegate {
 		predictionLabel.isHidden = false
 		iSeeLabel.isHidden = false
 	}
+    
+    func randomImage(imageName: String) {
+        drawingLabel.text = "Please draw: " + imageName
+    }
 }
 

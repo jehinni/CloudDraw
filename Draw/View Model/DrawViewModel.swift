@@ -20,6 +20,8 @@ class DrawViewModel: DrawViewModelProtocol, CloudManagerDelegate {
 	var currentPoints: [CGPoint]
 	var cloudManager: CloudManager
 	var drawViewModelDelegate: DrawViewModelDelegate?
+    var imageElements = ["Apple", "Lightning", "Candle"]
+    var randImage: String?
 	
 	init(with imageView: UIImageView) {
 		drawView = imageView
@@ -73,6 +75,7 @@ class DrawViewModel: DrawViewModelProtocol, CloudManagerDelegate {
 	func deleteAll() {
 		pointStorage.touchPoints.removeAll()
 		drawView.image = nil
+        randomImage()
 	}
 	
 	func undo() {
@@ -116,8 +119,15 @@ class DrawViewModel: DrawViewModelProtocol, CloudManagerDelegate {
 		let grayscaleBitmap = image.bitMap2DimensionalArray()
 		
 		guard let bitmap = grayscaleBitmap else { return }
-		cloudManager.send(bitmap: bitmap)
+        if randImage == nil { return }
+        cloudManager.send(label: randImage!, bitmap: bitmap)
 	}
+    
+    func randomImage() {
+        randImage = imageElements.randomElement() ?? "No Image Elements"
+        if randImage == nil { return }
+        drawViewModelDelegate?.randomImage(imageName: randImage!)
+    }
 	
 	func drawFinalImage() {
 		UIGraphicsBeginImageContext(drawView.frame.size)
