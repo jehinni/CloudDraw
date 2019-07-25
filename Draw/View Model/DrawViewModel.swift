@@ -20,7 +20,7 @@ class DrawViewModel: DrawViewModelProtocol, CloudManagerDelegate {
 	var currentPoints: [CGPoint]
 	var cloudManager: CloudManager
 	var drawViewModelDelegate: DrawViewModelDelegate?
-    var imageElements = ["Apple", "Lightning", "Candle"]
+    var imageElements = ["apple", "candle", "lightning"]
     var randImage: String?
 	
 	init(with imageView: UIImageView) {
