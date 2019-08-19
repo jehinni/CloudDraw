@@ -1,13 +1,13 @@
 //
-//  DrawTests.swift
-//  DrawTests
+//  PeersGameDrawTests.swift
+//  PeersGameDrawTests
 //
 //  Created by Johanna Reiting on 08.05.19.
 //  Copyright © 2019 Johanna Reiting. All rights reserved.
 //
 
 import XCTest
-@testable import Draw
+@testable import PeersGameDraw
 
 class DrawTests: XCTestCase {
 

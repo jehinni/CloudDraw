@@ -1,6 +1,6 @@
 //
-//  DrawUITests.swift
-//  DrawUITests
+//  PeersGameDrawUITests.swift
+//  PeersGameDrawUITests
 //
 //  Created by Johanna Reiting on 08.05.19.
 //  Copyright © 2019 Johanna Reiting. All rights reserved.
@@ -8,7 +8,7 @@
 
 import XCTest
 
-class DrawUITests: XCTestCase {
+class PeersGameDrawUITests: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.

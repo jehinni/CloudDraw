@@ -16,7 +16,7 @@
 		07368B652283029600621BEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07368B642283029600621BEF /* Assets.xcassets */; };
 		07368B682283029600621BEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07368B662283029600621BEF /* LaunchScreen.storyboard */; };
 		07368B732283029600621BEF /* DrawTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07368B722283029600621BEF /* DrawTests.swift */; };
-		07368B7E2283029600621BEF /* DrawUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07368B7D2283029600621BEF /* DrawUITests.swift */; };
+		07368B7E2283029600621BEF /* PeersGameDrawUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07368B7D2283029600621BEF /* PeersGameDrawUITests.swift */; };
 		07368B8E22837FF100621BEF /* DrawViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07368B8D22837FF100621BEF /* DrawViewModel.swift */; };
 		07368B902283803A00621BEF /* DrawViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07368B8F2283803A00621BEF /* DrawViewModelProtocol.swift */; };
 		07B1A00F22E5CFCF009953D2 /* UIImage+Resize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B1A00E22E5CFCF009953D2 /* UIImage+Resize.swift */; };
@@ -51,18 +51,18 @@
 /* Begin PBXFileReference section */
 		00A7661A22C8AB7F00FA9B1A /* imageCore.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = imageCore.mlmodel; sourceTree = "<group>"; };
 		00A7661C22C8AC3700FA9B1A /* ImageClassification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageClassification.swift; sourceTree = "<group>"; };
-		07368B5A2283029000621BEF /* Draw.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Draw.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		07368B5A2283029000621BEF /* PeersGameDraw.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PeersGameDraw.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07368B5D2283029000621BEF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		07368B5F2283029000621BEF /* DrawViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawViewController.swift; sourceTree = "<group>"; };
 		07368B622283029000621BEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		07368B642283029600621BEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		07368B672283029600621BEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		07368B692283029600621BEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		07368B6E2283029600621BEF /* DrawTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DrawTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		07368B6E2283029600621BEF /* PeersGameDrawTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PeersGameDrawTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		07368B722283029600621BEF /* DrawTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawTests.swift; sourceTree = "<group>"; };
 		07368B742283029600621BEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		07368B792283029600621BEF /* DrawUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DrawUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		07368B7D2283029600621BEF /* DrawUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawUITests.swift; sourceTree = "<group>"; };
+		07368B792283029600621BEF /* PeersGameDrawUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PeersGameDrawUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		07368B7D2283029600621BEF /* PeersGameDrawUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeersGameDrawUITests.swift; sourceTree = "<group>"; };
 		07368B7F2283029600621BEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07368B8D22837FF100621BEF /* DrawViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawViewModel.swift; sourceTree = "<group>"; };
 		07368B8F2283803A00621BEF /* DrawViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawViewModelProtocol.swift; sourceTree = "<group>"; };
@@ -116,9 +116,9 @@
 		07368B512283029000621BEF = {
 			isa = PBXGroup;
 			children = (
-				07368B5C2283029000621BEF /* Draw */,
-				07368B712283029600621BEF /* DrawTests */,
-				07368B7C2283029600621BEF /* DrawUITests */,
+				07368B5C2283029000621BEF /* PeersGameDraw */,
+				07368B712283029600621BEF /* PeersGameDrawTests */,
+				07368B7C2283029600621BEF /* PeersGameDrawUITests */,
 				07368B5B2283029000621BEF /* Products */,
 				6DA1EB1127A5A0B7DD7C1C8A /* Pods */,
 				CF00EF5DDD85B5DF191B55D8 /* Frameworks */,
@@ -128,14 +128,14 @@
 		07368B5B2283029000621BEF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				07368B5A2283029000621BEF /* Draw.app */,
-				07368B6E2283029600621BEF /* DrawTests.xctest */,
-				07368B792283029600621BEF /* DrawUITests.xctest */,
+				07368B5A2283029000621BEF /* PeersGameDraw.app */,
+				07368B6E2283029600621BEF /* PeersGameDrawTests.xctest */,
+				07368B792283029600621BEF /* PeersGameDrawUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		07368B5C2283029000621BEF /* Draw */ = {
+		07368B5C2283029000621BEF /* PeersGameDraw */ = {
 			isa = PBXGroup;
 			children = (
 				07B1A01722E8A78D009953D2 /* CoreML */,
@@ -150,25 +150,25 @@
 				07B1A01022E5D049009953D2 /* CGPath+CreateFromPointArray.swift */,
 				07B1A01222E60D7E009953D2 /* UIImage+GrayScaleBitmap.swift */,
 			);
-			path = Draw;
+			path = PeersGameDraw;
 			sourceTree = "<group>";
 		};
-		07368B712283029600621BEF /* DrawTests */ = {
+		07368B712283029600621BEF /* PeersGameDrawTests */ = {
 			isa = PBXGroup;
 			children = (
 				07368B722283029600621BEF /* DrawTests.swift */,
 				07368B742283029600621BEF /* Info.plist */,
 			);
-			path = DrawTests;
+			path = PeersGameDrawTests;
 			sourceTree = "<group>";
 		};
-		07368B7C2283029600621BEF /* DrawUITests */ = {
+		07368B7C2283029600621BEF /* PeersGameDrawUITests */ = {
 			isa = PBXGroup;
 			children = (
-				07368B7D2283029600621BEF /* DrawUITests.swift */,
+				07368B7D2283029600621BEF /* PeersGameDrawUITests.swift */,
 				07368B7F2283029600621BEF /* Info.plist */,
 			);
-			path = DrawUITests;
+			path = PeersGameDrawUITests;
 			sourceTree = "<group>";
 		};
 		07368B8B22837DC100621BEF /* View */ = {
@@ -244,9 +244,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		07368B592283029000621BEF /* Draw */ = {
+		07368B592283029000621BEF /* PeersGameDraw */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 07368B822283029600621BEF /* Build configuration list for PBXNativeTarget "Draw" */;
+			buildConfigurationList = 07368B822283029600621BEF /* Build configuration list for PBXNativeTarget "PeersGameDraw" */;
 			buildPhases = (
 				764A609D44BAF0EC89656769 /* [CP] Check Pods Manifest.lock */,
 				07368B562283029000621BEF /* Sources */,
@@ -258,14 +258,14 @@
 			);
 			dependencies = (
 			);
-			name = Draw;
+			name = PeersGameDraw;
 			productName = Draw;
-			productReference = 07368B5A2283029000621BEF /* Draw.app */;
+			productReference = 07368B5A2283029000621BEF /* PeersGameDraw.app */;
 			productType = "com.apple.product-type.application";
 		};
-		07368B6D2283029600621BEF /* DrawTests */ = {
+		07368B6D2283029600621BEF /* PeersGameDrawTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 07368B852283029600621BEF /* Build configuration list for PBXNativeTarget "DrawTests" */;
+			buildConfigurationList = 07368B852283029600621BEF /* Build configuration list for PBXNativeTarget "PeersGameDrawTests" */;
 			buildPhases = (
 				8EBEDB5F8BADE2A925315A63 /* [CP] Check Pods Manifest.lock */,
 				07368B6A2283029600621BEF /* Sources */,
@@ -277,14 +277,14 @@
 			dependencies = (
 				07368B702283029600621BEF /* PBXTargetDependency */,
 			);
-			name = DrawTests;
+			name = PeersGameDrawTests;
 			productName = DrawTests;
-			productReference = 07368B6E2283029600621BEF /* DrawTests.xctest */;
+			productReference = 07368B6E2283029600621BEF /* PeersGameDrawTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		07368B782283029600621BEF /* DrawUITests */ = {
+		07368B782283029600621BEF /* PeersGameDrawUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 07368B882283029600621BEF /* Build configuration list for PBXNativeTarget "DrawUITests" */;
+			buildConfigurationList = 07368B882283029600621BEF /* Build configuration list for PBXNativeTarget "PeersGameDrawUITests" */;
 			buildPhases = (
 				5B0D1EF396F72D879702C388 /* [CP] Check Pods Manifest.lock */,
 				07368B752283029600621BEF /* Sources */,
@@ -296,9 +296,9 @@
 			dependencies = (
 				07368B7B2283029600621BEF /* PBXTargetDependency */,
 			);
-			name = DrawUITests;
+			name = PeersGameDrawUITests;
 			productName = DrawUITests;
-			productReference = 07368B792283029600621BEF /* DrawUITests.xctest */;
+			productReference = 07368B792283029600621BEF /* PeersGameDrawUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -324,7 +324,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 07368B552283029000621BEF /* Build configuration list for PBXProject "Draw" */;
+			buildConfigurationList = 07368B552283029000621BEF /* Build configuration list for PBXProject "PeersGameDraw" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -337,9 +337,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				07368B592283029000621BEF /* Draw */,
-				07368B6D2283029600621BEF /* DrawTests */,
-				07368B782283029600621BEF /* DrawUITests */,
+				07368B592283029000621BEF /* PeersGameDraw */,
+				07368B6D2283029600621BEF /* PeersGameDrawTests */,
+				07368B782283029600621BEF /* PeersGameDrawUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -491,7 +491,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07368B7E2283029600621BEF /* DrawUITests.swift in Sources */,
+				07368B7E2283029600621BEF /* PeersGameDrawUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -500,12 +500,12 @@
 /* Begin PBXTargetDependency section */
 		07368B702283029600621BEF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 07368B592283029000621BEF /* Draw */;
+			target = 07368B592283029000621BEF /* PeersGameDraw */;
 			targetProxy = 07368B6F2283029600621BEF /* PBXContainerItemProxy */;
 		};
 		07368B7B2283029600621BEF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 07368B592283029000621BEF /* Draw */;
+			target = 07368B592283029000621BEF /* PeersGameDraw */;
 			targetProxy = 07368B7A2283029600621BEF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -653,13 +653,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 69EZ6SS56M;
-				INFOPLIST_FILE = Draw/Info.plist;
+				INFOPLIST_FILE = PeersGameDraw/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.jobe.Drawk;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jobe.PeersGameDraw;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -673,13 +673,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 69EZ6SS56M;
-				INFOPLIST_FILE = Draw/Info.plist;
+				INFOPLIST_FILE = PeersGameDraw/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.jobe.Drawk;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jobe.PeersGameDraw;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -704,7 +704,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Draw.app/Draw";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PeersGameDraw.app/PeersGameDraw";
 			};
 			name = Debug;
 		};
@@ -726,7 +726,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Draw.app/Draw";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PeersGameDraw.app/PeersGameDraw";
 			};
 			name = Release;
 		};
@@ -775,7 +775,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		07368B552283029000621BEF /* Build configuration list for PBXProject "Draw" */ = {
+		07368B552283029000621BEF /* Build configuration list for PBXProject "PeersGameDraw" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				07368B802283029600621BEF /* Debug */,
@@ -784,7 +784,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		07368B822283029600621BEF /* Build configuration list for PBXNativeTarget "Draw" */ = {
+		07368B822283029600621BEF /* Build configuration list for PBXNativeTarget "PeersGameDraw" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				07368B832283029600621BEF /* Debug */,
@@ -793,7 +793,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		07368B852283029600621BEF /* Build configuration list for PBXNativeTarget "DrawTests" */ = {
+		07368B852283029600621BEF /* Build configuration list for PBXNativeTarget "PeersGameDrawTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				07368B862283029600621BEF /* Debug */,
@@ -802,7 +802,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		07368B882283029600621BEF /* Build configuration list for PBXNativeTarget "DrawUITests" */ = {
+		07368B882283029600621BEF /* Build configuration list for PBXNativeTarget "PeersGameDrawUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				07368B892283029600621BEF /* Debug */,
