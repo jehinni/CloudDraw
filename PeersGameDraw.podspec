@@ -6,7 +6,7 @@ Pod::Spec.new do |spec|
   spec.summary      = "One of the mini-games for the Peers-app."
   spec.description  = <<-DESC
                    Draw the randomly chosen picture in the given time and let the AI chose if it can identify your drawing!
-
+			DESC
   spec.homepage     = "https://gitlab.mi.hdm-stuttgart.de/peers/draw-game"
 
 
