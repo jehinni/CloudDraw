@@ -12,8 +12,8 @@ import UIKit
 class CloudManager {
 	var cloudManagerDelegate: CloudManagerDelegate?
 	
-	func send (bitmap: [[UInt8]]) {
-		let params =  [ "image": bitmap] as Dictionary<String, Array<Any>>
+    func send (label: String, bitmap: [[UInt8]]) {
+        let params =  [ "label": label, "image": bitmap] as [String : Any]
 		
 		var request = URLRequest(url: URL(string: "https://us-central1-cloud-computing-247314.cloudfunctions.net/classifier")!)
 		request.httpMethod = "POST"

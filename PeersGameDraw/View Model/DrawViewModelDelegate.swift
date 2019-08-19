@@ -10,4 +10,5 @@ import Foundation
 
 protocol DrawViewModelDelegate: AnyObject {
 	func didReceive(prediction: String)
+    func randomImage(imageName: String)
 }

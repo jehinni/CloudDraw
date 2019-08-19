@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina5_5" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14810.12" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14766.15"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -14,19 +13,45 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="DrawViewController" customModule="Draw" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" clipsSubviews="YES" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="f5W-p7-EHe" customClass="PeersImageView" customModule="PeersUI">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="chosenImage">
                                         <integer key="value" value="3"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PH7-CM-wLl" userLabel="Main Image View">
+                                <rect key="frame" x="0.0" y="241" width="414" height="414"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="PH7-CM-wLl" secondAttribute="height" multiplier="1:1" id="ZMY-ld-9rf"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I see:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vL0-ez-ch2" customClass="PeersHeadline4Label" customModule="PeersUI">
+                                <rect key="frame" x="120" y="725" width="44.5" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Prediction" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T92-2y-Fsx" userLabel="Prediction Label" customClass="PeersHeadline1Label" customModule="PeersUI">
+                                <rect key="frame" x="184.5" y="705" width="172" height="61.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please draw: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2aj-sx-RDM" customClass="PeersHeadline4Label" customModule="PeersUI">
+                                <rect key="frame" x="20" y="171" width="374" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gT5-zP-5qt" customClass="PeersButton" customModule="PeersUI">
-                                <rect key="frame" x="141" y="61" width="101" height="50"/>
+                                <rect key="frame" x="141" y="87" width="101" height="50"/>
                                 <state key="normal" title="Undo"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="style">
@@ -38,7 +63,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iIs-On-ciy" customClass="PeersButton" customModule="PeersUI">
-                                <rect key="frame" x="20" y="61" width="101" height="50"/>
+                                <rect key="frame" x="20" y="87" width="101" height="50"/>
                                 <state key="normal" title="Delete All"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="style">
@@ -50,7 +75,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ics-Fy-EaQ" userLabel="Finish" customClass="PeersButton" customModule="PeersUI">
-                                <rect key="frame" x="293" y="61" width="101" height="50"/>
+                                <rect key="frame" x="293" y="87" width="101" height="50"/>
                                 <state key="normal" title="Finish"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="style">
@@ -61,25 +86,6 @@
                                     <action selector="finish:" destination="BYZ-38-t0r" eventType="touchUpInside" id="N74-ub-1d1"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PH7-CM-wLl" userLabel="Main Image View">
-                                <rect key="frame" x="0.0" y="161" width="414" height="414"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="PH7-CM-wLl" secondAttribute="height" multiplier="1:1" id="ZMY-ld-9rf"/>
-                                </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I see:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vL0-ez-ch2" customClass="PeersHeadline4Label" customModule="PeersUI">
-                                <rect key="frame" x="119.99999999999999" y="645" width="44.333333333333329" height="24"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Prediction" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T92-2y-Fsx" userLabel="Prediction Label" customClass="PeersHeadline1Label" customModule="PeersUI">
-                                <rect key="frame" x="184.33333333333337" y="625" width="172" height="61.333333333333371"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -93,14 +99,14 @@
                             <constraint firstItem="gT5-zP-5qt" firstAttribute="width" secondItem="iIs-On-ciy" secondAttribute="width" id="7cu-ZJ-MVo"/>
                             <constraint firstItem="PH7-CM-wLl" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="EuY-W9-bqG"/>
                             <constraint firstItem="T92-2y-Fsx" firstAttribute="leading" secondItem="vL0-ez-ch2" secondAttribute="trailing" constant="20" id="JQe-10-C85"/>
-                            <constraint firstItem="PH7-CM-wLl" firstAttribute="top" secondItem="gT5-zP-5qt" secondAttribute="bottom" constant="50" id="JmO-TY-g6P"/>
-                            <constraint firstItem="PH7-CM-wLl" firstAttribute="top" secondItem="Ics-Fy-EaQ" secondAttribute="bottom" constant="50" id="NiV-Vd-Q0Q"/>
+                            <constraint firstItem="PH7-CM-wLl" firstAttribute="top" secondItem="gT5-zP-5qt" secondAttribute="bottom" constant="104" id="JmO-TY-g6P"/>
+                            <constraint firstItem="PH7-CM-wLl" firstAttribute="top" secondItem="Ics-Fy-EaQ" secondAttribute="bottom" constant="104" id="NiV-Vd-Q0Q"/>
                             <constraint firstItem="vL0-ez-ch2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="120" id="QpZ-bV-ZwH"/>
                             <constraint firstItem="PH7-CM-wLl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TeP-ub-9DL"/>
                             <constraint firstItem="vL0-ez-ch2" firstAttribute="top" secondItem="PH7-CM-wLl" secondAttribute="bottom" constant="70" id="cHi-uN-sca"/>
                             <constraint firstItem="iIs-On-ciy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="cPE-Bx-9fU"/>
                             <constraint firstItem="gT5-zP-5qt" firstAttribute="leading" secondItem="iIs-On-ciy" secondAttribute="trailing" constant="20" id="oxP-q4-Ty8"/>
-                            <constraint firstItem="PH7-CM-wLl" firstAttribute="top" secondItem="iIs-On-ciy" secondAttribute="bottom" constant="50" id="q3a-hA-yAu"/>
+                            <constraint firstItem="PH7-CM-wLl" firstAttribute="top" secondItem="iIs-On-ciy" secondAttribute="bottom" constant="104" id="q3a-hA-yAu"/>
                             <constraint firstItem="Ics-Fy-EaQ" firstAttribute="width" secondItem="gT5-zP-5qt" secondAttribute="width" id="ujP-0j-SiZ"/>
                             <constraint firstItem="f5W-p7-EHe" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="v5A-E1-9sz"/>
                         </constraints>
@@ -108,6 +114,7 @@
                     </view>
                     <connections>
                         <outlet property="backgroundImageView" destination="f5W-p7-EHe" id="hmd-aA-xQP"/>
+                        <outlet property="drawingLabel" destination="2aj-sx-RDM" id="Tij-hu-MD7"/>
                         <outlet property="iSeeLabel" destination="vL0-ez-ch2" id="isD-Bi-B1M"/>
                         <outlet property="mainImageView" destination="PH7-CM-wLl" id="tbW-Qo-30N"/>
                         <outlet property="predictionLabel" destination="T92-2y-Fsx" id="4Rn-5f-39R"/>
@@ -115,10 +122,10 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="52.173913043478265" y="26.086956521739133"/>
+            <point key="canvasLocation" x="52.173913043478265" y="25.446428571428569"/>
         </scene>
     </scenes>
     <resources>
-        <image name="background" width="1422.3333740234375" height="1066.6666259765625"/>
+        <image name="background" width="2133.5" height="1600"/>
     </resources>
 </document>

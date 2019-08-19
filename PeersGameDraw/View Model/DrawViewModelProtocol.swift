@@ -23,4 +23,5 @@ protocol DrawViewModelProtocol {
 	func undo()
 	func touchesEnded()
 	func finsih()
+    func randomImage()
 }
