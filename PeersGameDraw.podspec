@@ -2,7 +2,7 @@ Pod::Spec.new do |spec|
 
   # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   spec.name         = "PeersGameDraw"
-  spec.version      = "0.0.1"
+  spec.version      = "0.1.2"
   spec.summary      = "One of the mini-games for the Peers-app."
   spec.description  = <<-DESC
                    Draw the randomly chosen picture in the given time and let the AI chose if it can identify your drawing!
@@ -43,7 +43,7 @@ Pod::Spec.new do |spec|
 
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  spec.source       = { :git => "https://gitlab.mi.hdm-stuttgart.de:peers/draw-game.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "git@gitlab.mi.hdm-stuttgart.de:peers/draw-game.git", :tag => "#{spec.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -73,6 +73,5 @@ Pod::Spec.new do |spec|
 
   spec.dependency "PeersFramework"
   spec.dependency "PeersUI"
-  spec.dependency "UICircularProgressRing"
 
 end
