@@ -2,7 +2,7 @@ Pod::Spec.new do |spec|
 
   # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   spec.name         = "PeersGameDraw"
-  spec.version      = "0.1.1"
+  spec.version      = "0.1.2"
   spec.summary      = "One of the mini-games for the Peers-app."
   spec.description  = <<-DESC
                    Draw the randomly chosen picture in the given time and let the AI chose if it can identify your drawing!
