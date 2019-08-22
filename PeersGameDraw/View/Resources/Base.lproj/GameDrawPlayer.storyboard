@@ -39,13 +39,13 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I see:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vL0-ez-ch2" customClass="PeersHeadline4Label" customModule="PeersUI">
-                                <rect key="frame" x="120" y="725" width="40.5" height="20.5"/>
+                                <rect key="frame" x="120" y="725" width="44.5" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Prediction" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T92-2y-Fsx" userLabel="Prediction Label" customClass="PeersHeadline1Label" customModule="PeersUI">
-                                <rect key="frame" x="180.5" y="705" width="77.5" height="20.5"/>
+                                <rect key="frame" x="184.5" y="705" width="172" height="61.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -58,7 +58,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gT5-zP-5qt" customClass="PeersButton" customModule="PeersUI">
-                                <rect key="frame" x="106" y="107" width="66" height="30"/>
+                                <rect key="frame" x="141" y="87" width="101" height="50"/>
                                 <state key="normal" title="Undo"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="style">
@@ -70,7 +70,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iIs-On-ciy" customClass="PeersButton" customModule="PeersUI">
-                                <rect key="frame" x="20" y="107" width="66" height="30"/>
+                                <rect key="frame" x="20" y="87" width="101" height="50"/>
                                 <state key="normal" title="Delete All"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="style">
@@ -82,7 +82,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ics-Fy-EaQ" userLabel="Finish" customClass="PeersButton" customModule="PeersUI">
-                                <rect key="frame" x="328" y="107" width="66" height="30"/>
+                                <rect key="frame" x="293" y="87" width="101" height="50"/>
                                 <state key="normal" title="Finish"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="style">
@@ -131,10 +131,10 @@
             </objects>
             <point key="canvasLocation" x="52.173913043478265" y="25.446428571428569"/>
         </scene>
-        <!--Game Quiz Player Instructions View Controller-->
+        <!--Player Instructions View Controller-->
         <scene sceneID="RQQ-9Y-ra1">
             <objects>
-                <viewController storyboardIdentifier="PlayerInstructionsViewController" id="jbG-gm-aUV" customClass="GameQuizPlayerInstructionsViewController" customModule="PeersGameQuiz" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PlayerInstructionsViewController" id="jbG-gm-aUV" customClass="PlayerInstructionsViewController" customModule="PeersGameDraw" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lbC-L4-vDd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -173,10 +173,10 @@
             </objects>
             <point key="canvasLocation" x="-1042" y="25"/>
         </scene>
-        <!--Game Quiz Player Result View Controller-->
+        <!--Player Result View Controller-->
         <scene sceneID="g7b-qT-4RW">
             <objects>
-                <viewController storyboardIdentifier="PlayerResultViewController" id="c9b-li-A9U" customClass="GameQuizPlayerResultViewController" customModule="PeersGameQuiz" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PlayerResultViewController" id="c9b-li-A9U" customClass="PlayerResultViewController" customModule="PeersGameDraw" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aee-J3-ip6">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -236,7 +236,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oh no! Didn't make the first place this time. Try again next time!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ttd-qT-tPI" userLabel="text" customClass="PeersText1Label" customModule="PeersUI">
-                                        <rect key="frame" x="10" y="231.5" width="334" height="41"/>
+                                        <rect key="frame" x="10" y="231.5" width="334" height="43.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>

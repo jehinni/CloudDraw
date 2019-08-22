@@ -10,7 +10,14 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DrawInstructionsView" customModule="PeersGameDraw" customModuleProvider="target">
+            <connections>
+                <outlet property="headlineLabel" destination="CfW-Wf-sZA" id="TZe-e0-H6h"/>
+                <outlet property="instructionsLabel" destination="EcV-OM-LXq" id="CLH-mC-7em"/>
+                <outlet property="instructionsView" destination="13T-4o-gFV" id="mkd-CP-Neb"/>
+                <outlet property="progressView" destination="3fS-cB-d1t" id="TdK-Y2-Hi7"/>
+            </connections>
+        </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="13T-4o-gFV">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
