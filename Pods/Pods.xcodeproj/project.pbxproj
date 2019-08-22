@@ -3,84 +3,127 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0063684A9B2B1C1543B40DE5617613D9 /* PeersImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9408D33B8553BBCB5381283F6E5778B0 /* PeersImageView.swift */; };
-		13FDC80959753ECB1D78A1A38F594ADE /* Designables.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73D876AB45177511AE6AF606B81A098 /* Designables.swift */; };
-		1D3C4C24949A76CDFB474DB6B8BE4D9B /* BarlowSemiCondensed-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 67CFE2BC94961DDADE60AA1F9C8B0651 /* BarlowSemiCondensed-Medium.ttf */; };
-		2275ADD3E2831DC161B2DB6259100729 /* PeersTabelViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91416A6CFB46577E1312E4F9757AD429 /* PeersTabelViewCell.swift */; };
-		2348754C3B3F5A65F7F92BC3A0F18A22 /* PeersBaseLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CCAB44CFD5F8E87C7FCF6EB5D371C45 /* PeersBaseLabel.swift */; };
-		2A738901B0EE174128C27D79DE5F036C /* PeersNavigationLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8712E09B45B4B529E8390D0C7E1E632 /* PeersNavigationLabel.swift */; };
-		2EAFBF3271D383218FB809C8155D95EA /* Pods-DrawTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D299D05E7FFC188799A9BEA302C97E38 /* Pods-DrawTests-dummy.m */; };
-		3039F06CE65B8623FF20B3F85E1B2C3B /* PeersText4Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F8783F4F4ABAF539F2D7157AC2D0E4 /* PeersText4Label.swift */; };
-		32EC3EF3D1672D5DF4CB0E17560FB805 /* BarlowSemiCondensed-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B2C92E6C6AFC3319CA15D887002DF385 /* BarlowSemiCondensed-Light.ttf */; };
-		40251CB60D0D6C4FFAEB1A81AF068DF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DEA3626FEBCB187DE9C75FC24C1F94C /* Assets.xcassets */; };
-		43B35465B563DFA91C0F1697F7B78311 /* Pods-DrawTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ED4BA2E0B93558578AED9FF4CA30B4C8 /* Pods-DrawTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		50494251413D3BF6E58E6E0167FCA991 /* BarlowSemiCondensed-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 67CFE2BC94961DDADE60AA1F9C8B0651 /* BarlowSemiCondensed-Medium.ttf */; };
-		56DE93F613194EDFA2E3D245A30D253C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		584C85808E2172ABFBFB3856C8E4AA81 /* PeersColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04D00A95C994521F0FC4B84DFF42AB8 /* PeersColors.swift */; };
-		5E8DF504BCF57A0522627CF9DE182F64 /* PeersHeadline1Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7D35B01629F8693D1A75E181ABAC4F /* PeersHeadline1Label.swift */; };
-		5EC20DF3D67BF27B95656F1727959520 /* BarlowSemiCondensed-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AC84895B244BABAF4F082CAD2CCCCF7D /* BarlowSemiCondensed-SemiBold.ttf */; };
-		60F30887302728EAE41990EC6D642782 /* PeersNeonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C4F5A73309BD1D48E4EA59DAFEF571A /* PeersNeonView.swift */; };
-		67065003A3BABFB579B0DACC7CA6DF2C /* PeersUI-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5E81A317DA0B48DF56819491B8AF05 /* PeersUI-dummy.m */; };
-		6B03A5CCEF2FC070E008209C06C4C77D /* PeersCustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A42BA3C7BFBD740EB97434CEFF7C2CE4 /* PeersCustomTableViewCell.xib */; };
-		7CBE4B00922912F42EFE9FBAE97996A8 /* PeersUI-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FFD44643C56A8E140FD421ABD52BBD34 /* PeersUI-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		003E51B064A500B2E0A5199F7670A9CD /* ConnectivityEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCB595300EBB0DC329C79866E118E89 /* ConnectivityEnums.swift */; };
+		0063684A9B2B1C1543B40DE5617613D9 /* PeersImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4940EE76A4B7FB3A2E814EAECE13A931 /* PeersImageView.swift */; };
+		0263ED17C5A24A8A80CADEAB78399362 /* PlayerSendHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776F3EFF937739977047614B5885EFAE /* PlayerSendHandler.swift */; };
+		06BCF23B07C68C80D897DEEF639C5D2C /* Pods-PeersGameDrawTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C0AC6C712EBB5141FE086ECCB63B23F /* Pods-PeersGameDrawTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		07BAA2BC37EDE5A4C2CDF23C1F27CD4C /* GamePlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B987438B8DEBBA3511B80ED0FDA9AA /* GamePlayer.swift */; };
+		0CBF1F1401ACAD5B9C76376312CA0389 /* PeersFramework-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ADE0016113B6C93C5784B2805D2D9F6 /* PeersFramework-dummy.m */; };
+		0E4002FEE4DAD1CB2988E6EDA1FAE750 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEC90853D69609274746074050957A9 /* Player.swift */; };
+		13FDC80959753ECB1D78A1A38F594ADE /* Designables.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21B94A1F6E8CF34B819E8A36EC4D77E /* Designables.swift */; };
+		1D3C4C24949A76CDFB474DB6B8BE4D9B /* BarlowSemiCondensed-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1032CCD02366AF89A4A4BE2F11852737 /* BarlowSemiCondensed-Medium.ttf */; };
+		1FD14F7D1D38EBF5AC4F9819CE4C760D /* Statistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3A62AD31CB1A1DC7257153CA0E9360 /* Statistics.swift */; };
+		2275ADD3E2831DC161B2DB6259100729 /* PeersTabelViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCE519624E996A7A6119A6BB737746A /* PeersTabelViewCell.swift */; };
+		2348754C3B3F5A65F7F92BC3A0F18A22 /* PeersBaseLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9974AC39A91EC3FDFB24D7F419C496 /* PeersBaseLabel.swift */; };
+		243E16DF6E969D75096A06B769727259 /* HostMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = A759F2E1F6FFA3ED89D67B7555CBE393 /* HostMessages.swift */; };
+		268391DF905D861E26D5F6706938FA48 /* MultipeerAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257AF62456B67BFC95D9739D76947CB6 /* MultipeerAdapter.swift */; };
+		2A738901B0EE174128C27D79DE5F036C /* PeersNavigationLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08809535F75548C057D6C07E95BEBD96 /* PeersNavigationLabel.swift */; };
+		2BB50473180C1AB2CED4BC17585DC2CC /* PlayersHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7994910D87CDB2688D9DD6DA5C4E64B2 /* PlayersHandler.swift */; };
+		2EBED4E18F8F21606536366E5444C93C /* GameCompatibilityChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C452A158B22C64A56AB68232475A4AFE /* GameCompatibilityChecker.swift */; };
+		3039F06CE65B8623FF20B3F85E1B2C3B /* PeersText4Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0FA91065E2943256C3D20996E829649 /* PeersText4Label.swift */; };
+		32EC3EF3D1672D5DF4CB0E17560FB805 /* BarlowSemiCondensed-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C6B8EAFE5D982FC3967419236B50A55E /* BarlowSemiCondensed-Light.ttf */; };
+		341BA191EF2249F76A113E784A45D809 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		3504BEE3276A2D386BAFD341AE0A1C84 /* ConnectivityError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026D812B04B0ABA123DB607ED516C629 /* ConnectivityError.swift */; };
+		3556BD4A34C28A6B0C8BDCCAFD14DFB4 /* RankingGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE37F59841F4F1EA303F6CB7EC215A45 /* RankingGenerator.swift */; };
+		40251CB60D0D6C4FFAEB1A81AF068DF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64EA2109A9C10D399C0E8F56EE013CC4 /* Assets.xcassets */; };
+		48861F3665FB25A76EB91B2898E8CBD9 /* Pods-PeersGameDrawTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B88B2E0B89ED09166296649BC5230F6F /* Pods-PeersGameDrawTests-dummy.m */; };
+		4CEA1788182D3AE38A7600280A1035A5 /* HostFrameworkImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71A802730A1AF2A90E5A86A6B7AD499 /* HostFrameworkImpl.swift */; };
+		4D2DCFD143E1757CED33D37919F27DC9 /* ConnectivityFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA95D248ADCE18510B211E783C0BB4E7 /* ConnectivityFactory.swift */; };
+		50494251413D3BF6E58E6E0167FCA991 /* BarlowSemiCondensed-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1032CCD02366AF89A4A4BE2F11852737 /* BarlowSemiCondensed-Medium.ttf */; };
+		544538DAAB0099D4EBF54C6DEA614639 /* PeersFramework-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F2DC39002949618608376BCAB8C3A052 /* PeersFramework-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		574E0CEBF80A717E732E304B7938555B /* Pods-PeersGameDrawUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 463CCB93DA06D3AF5021A138767C4716 /* Pods-PeersGameDrawUITests-dummy.m */; };
+		584C85808E2172ABFBFB3856C8E4AA81 /* PeersColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559250EE3E95C606D09CBBE6A2E38E6D /* PeersColors.swift */; };
+		5AFB6458B5F4C42CEACE172C24BF29C5 /* Pods-PeersGameDrawUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 02BCAC0F57E9DC08A539F4D2492063CF /* Pods-PeersGameDrawUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5BB19A15BA30D9846A1723F2D2A1999F /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD0D87A3CA58877DFDE5160854BF962 /* Extensions.swift */; };
+		5E8DF504BCF57A0522627CF9DE182F64 /* PeersHeadline1Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946F355E138B8E41BB72BFB7E6B12B01 /* PeersHeadline1Label.swift */; };
+		5EC20DF3D67BF27B95656F1727959520 /* BarlowSemiCondensed-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2FD4C89A8F7BED7805BE4218C6D1350A /* BarlowSemiCondensed-SemiBold.ttf */; };
+		609EFC71FA95B2B7F37B4A30CA022855 /* HostMessageHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7957EBF043100D1F6E62034141FCC0B /* HostMessageHandler.swift */; };
+		60F30887302728EAE41990EC6D642782 /* PeersNeonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AAF86018890E15F89913065220B9CE /* PeersNeonView.swift */; };
+		6220AF661C9267B7E17DD9C662764D04 /* GameInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92C76D436C0AD5493F5012429776628 /* GameInfo.swift */; };
+		62CFF2768FC161D66783756C6AAB8D1C /* PlayerFramework.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECCF8BC28D7B8EBB0F797A65FB38952 /* PlayerFramework.swift */; };
+		67065003A3BABFB579B0DACC7CA6DF2C /* PeersUI-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E7B1051CEF29F6D0FB4E3CB88CF4293 /* PeersUI-dummy.m */; };
+		6B03A5CCEF2FC070E008209C06C4C77D /* PeersCustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC278B2936F5CDDB077C82E5BFA0D1E4 /* PeersCustomTableViewCell.xib */; };
+		7463568553DCC5EB9D3FDC8900F503F1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		76D717684F7357CD8762D5004CEC3FB5 /* HostFramework.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8A8CAA681652CFF66DF8CDDCC908DC /* HostFramework.swift */; };
+		79E4B615EF5DBF5C800AD8A96F04B057 /* MessageWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C1A2E8CA4BAA2076EF170D1D5F80A2 /* MessageWrapper.swift */; };
+		7CBE4B00922912F42EFE9FBAE97996A8 /* PeersUI-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FF301F892B3D586052E238D10AAC46EA /* PeersUI-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7CF28A05B63C4A5DF0FFA9A89E59F9D5 /* GameFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B99CAB00FD8E022FB7FA86D88C8DF34 /* GameFactory.swift */; };
+		7D849B16304D0EAAA61BBD2373C9222A /* MultipeerEnumsAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0FEE4D3727C3A4D38586C918478776 /* MultipeerEnumsAdapter.swift */; };
 		7FA6621225BC68AC725F25F76CAB6B36 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		81B0C1134341CC1643881060B20A9535 /* Pods-Draw-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 493963DC1F4CC9A4084CE698BB028F1D /* Pods-Draw-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		84C2EE6A61AF98DD0954D9971AB886C0 /* PeersFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AFA1F7AFA30B46017DF0E1B5A709CB /* PeersFonts.swift */; };
-		8952A2F2AAFFBBEBCACF3CEE295AFF60 /* RockSalt-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 63300138CD6839EBBCAC50B2C7EEFE67 /* RockSalt-Regular.ttf */; };
-		93626367024704D1A1B683A6028E071D /* PeersText3Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9554361136E4949F793A70B97F217F5 /* PeersText3Label.swift */; };
-		96EB12B018CC844F6C747E4B8A33EFC1 /* Pods-DrawUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7933D42FFDDCBA79882C5B1B13C793A5 /* Pods-DrawUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A8B65392D2724E6637CD42C024F0A0F2 /* PeersCustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920102B23F1105141D618FFB40A58637 /* PeersCustomTableViewCell.swift */; };
-		ABBA089CFAE18C6540214A4F6A37776C /* PeersAvailableHostCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08AF42A57DAFCDA307ABD3C77F760B35 /* PeersAvailableHostCell.xib */; };
-		AEA6CE0B58906B928D9480D08D516C46 /* PeersText2Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A3A6A00190A6F29FE2551D38075950 /* PeersText2Label.swift */; };
-		AFF74E9CCACC6C3E69DDF8E3642F59F7 /* PeersImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4392B2B9307815AD40C018051329A1E /* PeersImages.swift */; };
+		84C2EE6A61AF98DD0954D9971AB886C0 /* PeersFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40A4FD81632F7D7BBA0CAE09FE6A447 /* PeersFonts.swift */; };
+		868F7AA4D9BF5ACFE170830D64EF7A04 /* PlayerMessageHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284A5506BED4A1747C181481A3461A26 /* PlayerMessageHandler.swift */; };
+		8952A2F2AAFFBBEBCACF3CEE295AFF60 /* RockSalt-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C294CDCCA4E6722DF2EBB7C36E40E434 /* RockSalt-Regular.ttf */; };
+		89A793A64BF186C255179947BD6B2166 /* ConnectivityDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0929C331452509839EBED91326FB2101 /* ConnectivityDelegate.swift */; };
+		8D8AEA26E57C90416F4D7161AA865843 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		93626367024704D1A1B683A6028E071D /* PeersText3Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0864ADFC195477FFCBA4EE89AEDC75DA /* PeersText3Label.swift */; };
+		96BD1129280B45ED5FE90A36827B4050 /* Pods-PeersGameDraw-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ADAE23C1F73C7496D57417D0BAB54337 /* Pods-PeersGameDraw-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		96D2F630CFA4ED87E65A5ED9571A8F31 /* FrameworkFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C69DB966B18C5BAC8F56553B75CAD1 /* FrameworkFactory.swift */; };
+		9ACF4A82122FBA18D02E92228A2698A4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		A8B65392D2724E6637CD42C024F0A0F2 /* PeersCustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894B17A39FA48B9E29AA69ECE143C6DC /* PeersCustomTableViewCell.swift */; };
+		ABBA089CFAE18C6540214A4F6A37776C /* PeersAvailableHostCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65812E9715C27A34E0912B9F654F3F01 /* PeersAvailableHostCell.xib */; };
+		AD6B80B15E4E558AE1BEBC474D1D0FB8 /* Peer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF118A9C462B64F8321D48646D867D4C /* Peer.swift */; };
+		AEA6CE0B58906B928D9480D08D516C46 /* PeersText2Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C39E6DE47A267ACF38B4D4C4D037714 /* PeersText2Label.swift */; };
+		AFF74E9CCACC6C3E69DDF8E3642F59F7 /* PeersImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D51AEBBA4BFAE74FC89DDDAF5ECA0C6 /* PeersImages.swift */; };
+		B1B05AACA4641CD8E3426CFF4718B32A /* PlayerMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB47DE1873217EB44DAEE827E393D8B /* PlayerMessages.swift */; };
 		BA9F221C935EA3A52E7C9ACFC5811D89 /* uielements-pod.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A0D554DAF06959D53A3E56A9609BF8C6 /* uielements-pod.bundle */; };
-		C003C26E0FF82382C871D63052C679E8 /* PeersHeadline2Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF94C56F53B180F248C6FCC1B14D721D /* PeersHeadline2Label.swift */; };
-		C1F61D03953BF3EB840CF92C025CAB26 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		C4F75446B20417AE0D11ABD569CEA901 /* PeersButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7B3D2520F9A8A18BD98D5A43FDBB05 /* PeersButtons.swift */; };
-		CDC25FF71806C66216873439FD65E7F7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		CF19F8731D0003031E28E7800B4DAD39 /* BarlowSemiCondensed-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 42C53FC1CFEBBE3BDA119F84DDD61798 /* BarlowSemiCondensed-Bold.ttf */; };
-		D2F52830CC74524AF20A746CD558A359 /* Pods-Draw-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B530BFA696CA383B90FF6178F2349B /* Pods-Draw-dummy.m */; };
-		D421FDF360F950492662CC420115740E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DEA3626FEBCB187DE9C75FC24C1F94C /* Assets.xcassets */; };
-		D7B72739B28FF0BD907FF9F630B920BD /* PeersAvailableHostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC75018055A5F93BC22145228F330F03 /* PeersAvailableHostCell.swift */; };
-		DE43A1889564E25834EB2267B3BD8462 /* Pods-DrawUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 474DEE122D3A26DF56DBBAC20224BCD6 /* Pods-DrawUITests-dummy.m */; };
-		E05DC44425A48C5CBDB11E4B9592906F /* PeersText1Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF514196FBE4D4A13F4D274B52AEE04 /* PeersText1Label.swift */; };
-		E212382138F36D0285BBE7C8EB1C160C /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA9EFF6102C746458CFDEC293133177 /* BlurView.swift */; };
-		E3EC4A496820A29ED487CDE5C3FB1D1F /* BarlowSemiCondensed-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AC84895B244BABAF4F082CAD2CCCCF7D /* BarlowSemiCondensed-SemiBold.ttf */; };
-		E4B8388FE8A997EA3BA1B074B0E27BFD /* RockSalt-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 63300138CD6839EBBCAC50B2C7EEFE67 /* RockSalt-Regular.ttf */; };
-		EEADD48F3DAC1972E04DA59E4636FB7A /* BarlowSemiCondensed-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7AE67CC061444F521EEE79B11D5CCC97 /* BarlowSemiCondensed-Regular.ttf */; };
-		FAC4D6D77DC6DF8B409E60C0AE8AAAD2 /* BarlowSemiCondensed-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 42C53FC1CFEBBE3BDA119F84DDD61798 /* BarlowSemiCondensed-Bold.ttf */; };
-		FB14AED443A56FBEB5BB237B60C1FC75 /* PeersHeadline4Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1DCDA980896FDC88A6A0C76BAAF545 /* PeersHeadline4Label.swift */; };
-		FCDEF1E60289CAB75E04785A7BBAABD4 /* BarlowSemiCondensed-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B2C92E6C6AFC3319CA15D887002DF385 /* BarlowSemiCondensed-Light.ttf */; };
-		FD7BB87F59D6F4DBE6750D1AF9E72112 /* PeersNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C69C2D651E600B6448956A7DF89EFCE /* PeersNavigationController.swift */; };
-		FDBC38C8B00E81AA81B0E4237ECE739A /* PeersHeadline3Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D77A7E86362D103BACC3F1B0809107 /* PeersHeadline3Label.swift */; };
-		FF8A6FDF6D4C28E708DB9339B13A2762 /* BarlowSemiCondensed-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7AE67CC061444F521EEE79B11D5CCC97 /* BarlowSemiCondensed-Regular.ttf */; };
+		BD4645CB9148C2B2DED8E8D8D7B81DBA /* GamePartFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E956677814800ADB4D6F2A03B1078B /* GamePartFactory.swift */; };
+		BF8236D3455ADAFAE03F011A07FC226E /* FrameworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522C526A33F27A14ACB790287A0D51F1 /* FrameworkError.swift */; };
+		C003C26E0FF82382C871D63052C679E8 /* PeersHeadline2Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BA6695D559DDE3D0F94D700CD59EC4 /* PeersHeadline2Label.swift */; };
+		C4F75446B20417AE0D11ABD569CEA901 /* PeersButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC6459BC226ED04BEADC957FB83DE1E /* PeersButtons.swift */; };
+		C6A7580FC1BD2B3203F2C7628C6AB362 /* AppDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152F962533808D14391D94F0B54F90F4 /* AppDelegates.swift */; };
+		C9EEF8C619D74E53A5164694A178DBF0 /* GameDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743A3D6E711F8C03B2C8C132DD00DE6C /* GameDelegates.swift */; };
+		CF19F8731D0003031E28E7800B4DAD39 /* BarlowSemiCondensed-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8482206A3F29968127582EE57CA2F416 /* BarlowSemiCondensed-Bold.ttf */; };
+		D421FDF360F950492662CC420115740E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64EA2109A9C10D399C0E8F56EE013CC4 /* Assets.xcassets */; };
+		D7B72739B28FF0BD907FF9F630B920BD /* PeersAvailableHostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82FB906A9E3A4E1C3B4B3708BFD0356 /* PeersAvailableHostCell.swift */; };
+		E05DC44425A48C5CBDB11E4B9592906F /* PeersText1Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37E674EA49C16157786DE5CB5162748 /* PeersText1Label.swift */; };
+		E212382138F36D0285BBE7C8EB1C160C /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6082CCE31FE45FEFBD9AFC09C27E715 /* BlurView.swift */; };
+		E34DAF8CA1D7A533221FD08BACDC3FA4 /* HostSendHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5068BCB8D5F8C95B2808E0B68C1EDFBD /* HostSendHandler.swift */; };
+		E3EC4A496820A29ED487CDE5C3FB1D1F /* BarlowSemiCondensed-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2FD4C89A8F7BED7805BE4218C6D1350A /* BarlowSemiCondensed-SemiBold.ttf */; };
+		E4B8388FE8A997EA3BA1B074B0E27BFD /* RockSalt-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C294CDCCA4E6722DF2EBB7C36E40E434 /* RockSalt-Regular.ttf */; };
+		E84EE56CB43AC521904A85D408B404D0 /* PlayerFrameworkImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023A3D228A61E3185D08D0167758C534 /* PlayerFrameworkImpl.swift */; };
+		EEADD48F3DAC1972E04DA59E4636FB7A /* BarlowSemiCondensed-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3DECE858F57720E826B7820D0189D3B7 /* BarlowSemiCondensed-Regular.ttf */; };
+		FAC4D6D77DC6DF8B409E60C0AE8AAAD2 /* BarlowSemiCondensed-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8482206A3F29968127582EE57CA2F416 /* BarlowSemiCondensed-Bold.ttf */; };
+		FB14AED443A56FBEB5BB237B60C1FC75 /* PeersHeadline4Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8448D8C0C9898889ABDDC476D6C9C013 /* PeersHeadline4Label.swift */; };
+		FCDEF1E60289CAB75E04785A7BBAABD4 /* BarlowSemiCondensed-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C6B8EAFE5D982FC3967419236B50A55E /* BarlowSemiCondensed-Light.ttf */; };
+		FD7BB87F59D6F4DBE6750D1AF9E72112 /* PeersNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8238003993A3B3195D17D2430E6BA567 /* PeersNavigationController.swift */; };
+		FD96B122AF2AC1F3DA8314A53E7ED8E8 /* Connectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A78D003316ACCE235DAC92C8F1EFE3 /* Connectivity.swift */; };
+		FDBC38C8B00E81AA81B0E4237ECE739A /* PeersHeadline3Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D60C5AAFBACEFD331B5B07394E4C83 /* PeersHeadline3Label.swift */; };
+		FF53BBDC097B1DB6472BEFFC4405CD3F /* Pods-PeersGameDraw-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BF75A32E8EB7231E72B9429986B47F5 /* Pods-PeersGameDraw-dummy.m */; };
+		FF8A6FDF6D4C28E708DB9339B13A2762 /* BarlowSemiCondensed-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3DECE858F57720E826B7820D0189D3B7 /* BarlowSemiCondensed-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		1D98C8C78591039186123A2E8B2C72A7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 0CC4E1797FA1E47E03C908CBA6CEFC64;
-			remoteInfo = "Pods-Draw";
-		};
-		223FAA5F00850F22928090F7DF665D49 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 0CC4E1797FA1E47E03C908CBA6CEFC64;
-			remoteInfo = "Pods-Draw";
-		};
-		459DE20ED9934489A82F94E75023E63E /* PBXContainerItemProxy */ = {
+		0CDDB941A86D5D9482646A1776D6212F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = A4788CAAB23F8920A4305203E8D421A1;
 			remoteInfo = PeersUI;
+		};
+		487EEB29B259EBBF9BAF21CA3A28251D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ECD7485EA2BCB07EA86F2972468F00F6;
+			remoteInfo = "Pods-PeersGameDraw";
+		};
+		4ABDCC90B3972B208E094173C762B57E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ECD7485EA2BCB07EA86F2972468F00F6;
+			remoteInfo = "Pods-PeersGameDraw";
+		};
+		6F7015412522BF1398362768CD008E91 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0DEA0CD9180CD167840422613638B925;
+			remoteInfo = PeersFramework;
 		};
 		E31B9F8A39050C39F0DDF9432406E2EE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -92,95 +135,119 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0048EE0125B5D2D31366D93517F273A8 /* Pods-Draw.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Draw.debug.xcconfig"; sourceTree = "<group>"; };
-		08AF42A57DAFCDA307ABD3C77F760B35 /* PeersAvailableHostCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = PeersAvailableHostCell.xib; path = "uielements-pod/PeersAvailableHostCell.xib"; sourceTree = "<group>"; };
-		17B530BFA696CA383B90FF6178F2349B /* Pods-Draw-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Draw-dummy.m"; sourceTree = "<group>"; };
-		1CCAB44CFD5F8E87C7FCF6EB5D371C45 /* PeersBaseLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PeersBaseLabel.swift; path = "uielements-pod/Classes/PeersBaseLabel.swift"; sourceTree = "<group>"; };
-		2F7D35B01629F8693D1A75E181ABAC4F /* PeersHeadline1Label.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PeersHeadline1Label.swift; path = "uielements-pod/Classes/PeersHeadline1Label.swift"; sourceTree = "<group>"; };
-		2FA9EFF6102C746458CFDEC293133177 /* BlurView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BlurView.swift; path = "uielements-pod/Classes/BlurView.swift"; sourceTree = "<group>"; };
+		023A3D228A61E3185D08D0167758C534 /* PlayerFrameworkImpl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PlayerFrameworkImpl.swift; path = Framework/PlayerFramework/PlayerFrameworkImpl.swift; sourceTree = "<group>"; };
+		026D812B04B0ABA123DB607ED516C629 /* ConnectivityError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConnectivityError.swift; path = Framework/Errors/ConnectivityError.swift; sourceTree = "<group>"; };
+		02BCAC0F57E9DC08A539F4D2492063CF /* Pods-PeersGameDrawUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PeersGameDrawUITests-umbrella.h"; sourceTree = "<group>"; };
+		079FBDF33B1AECACEA1405699E843D87 /* Pods-PeersGameDrawUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PeersGameDrawUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		0864ADFC195477FFCBA4EE89AEDC75DA /* PeersText3Label.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PeersText3Label.swift; path = "uielements-pod/Classes/PeersText3Label.swift"; sourceTree = "<group>"; };
+		08809535F75548C057D6C07E95BEBD96 /* PeersNavigationLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PeersNavigationLabel.swift; path = "uielements-pod/Classes/PeersNavigationLabel.swift"; sourceTree = "<group>"; };
+		08B987438B8DEBBA3511B80ED0FDA9AA /* GamePlayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GamePlayer.swift; path = Framework/Models/GamePlayer.swift; sourceTree = "<group>"; };
+		0929C331452509839EBED91326FB2101 /* ConnectivityDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConnectivityDelegate.swift; path = Framework/Connectivity/ConnectivityDelegate.swift; sourceTree = "<group>"; };
+		1032CCD02366AF89A4A4BE2F11852737 /* BarlowSemiCondensed-Medium.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "BarlowSemiCondensed-Medium.ttf"; path = "uielements-pod/Fonts/BarlowSemiCondensed-Medium.ttf"; sourceTree = "<group>"; };
+		10D60C5AAFBACEFD331B5B07394E4C83 /* PeersHeadline3Label.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PeersHeadline3Label.swift; path = "uielements-pod/Classes/PeersHeadline3Label.swift"; sourceTree = "<group>"; };
+		152F962533808D14391D94F0B54F90F4 /* AppDelegates.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AppDelegates.swift; path = Framework/Protocols/Delegates/AppDelegates.swift; sourceTree = "<group>"; };
+		1BCCE85541787DB931BF90098A6C2655 /* Pods-PeersGameDraw-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PeersGameDraw-Info.plist"; sourceTree = "<group>"; };
+		257AF62456B67BFC95D9739D76947CB6 /* MultipeerAdapter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipeerAdapter.swift; path = Framework/Connectivity/MultipeerAdapter.swift; sourceTree = "<group>"; };
+		284A5506BED4A1747C181481A3461A26 /* PlayerMessageHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PlayerMessageHandler.swift; path = Framework/PlayerFramework/PlayerMessageHandler.swift; sourceTree = "<group>"; };
+		2D51AEBBA4BFAE74FC89DDDAF5ECA0C6 /* PeersImages.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PeersImages.swift; path = "uielements-pod/Classes/PeersImages.swift"; sourceTree = "<group>"; };
+		2FD4C89A8F7BED7805BE4218C6D1350A /* BarlowSemiCondensed-SemiBold.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "BarlowSemiCondensed-SemiBold.ttf"; path = "uielements-pod/Fonts/BarlowSemiCondensed-SemiBold.ttf"; sourceTree = "<group>"; };
+		30C1A2E8CA4BAA2076EF170D1D5F80A2 /* MessageWrapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MessageWrapper.swift; path = Framework/Messages/MessageWrapper.swift; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		34F8783F4F4ABAF539F2D7157AC2D0E4 /* PeersText4Label.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PeersText4Label.swift; path = "uielements-pod/Classes/PeersText4Label.swift"; sourceTree = "<group>"; };
-		359500D086C2867616C59A6EA0980054 /* Pods-Draw-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Draw-frameworks.sh"; sourceTree = "<group>"; };
-		41E446A478FA0B206EF9EF9E9DDB21E8 /* PeersUI-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PeersUI-prefix.pch"; sourceTree = "<group>"; };
-		42C53FC1CFEBBE3BDA119F84DDD61798 /* BarlowSemiCondensed-Bold.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "BarlowSemiCondensed-Bold.ttf"; path = "uielements-pod/Fonts/BarlowSemiCondensed-Bold.ttf"; sourceTree = "<group>"; };
-		42EC87C54D97B02A222CAEA5155DE898 /* Pods-DrawTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DrawTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		474DEE122D3A26DF56DBBAC20224BCD6 /* Pods-DrawUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DrawUITests-dummy.m"; sourceTree = "<group>"; };
-		493963DC1F4CC9A4084CE698BB028F1D /* Pods-Draw-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Draw-umbrella.h"; sourceTree = "<group>"; };
-		493B9C16A8940DFE7997C914419A6BEA /* Pods_Draw.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Draw.framework; path = "Pods-Draw.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4AF514196FBE4D4A13F4D274B52AEE04 /* PeersText1Label.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PeersText1Label.swift; path = "uielements-pod/Classes/PeersText1Label.swift"; sourceTree = "<group>"; };
-		4DEA3626FEBCB187DE9C75FC24C1F94C /* Assets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "uielements-pod/Assets.xcassets"; sourceTree = "<group>"; };
-		5916088B57543978D62F3922D65042F6 /* PeersUI.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PeersUI.xcconfig; sourceTree = "<group>"; };
-		5F66FBD52FE3F430CC29CC3A7DB545C4 /* Pods-DrawUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DrawUITests.modulemap"; sourceTree = "<group>"; };
-		62AFA1F7AFA30B46017DF0E1B5A709CB /* PeersFonts.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PeersFonts.swift; path = "uielements-pod/Classes/PeersFonts.swift"; sourceTree = "<group>"; };
-		63300138CD6839EBBCAC50B2C7EEFE67 /* RockSalt-Regular.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "RockSalt-Regular.ttf"; path = "uielements-pod/Fonts/RockSalt-Regular.ttf"; sourceTree = "<group>"; };
-		63429D443D5754421A9B3DD8E7528125 /* PeersUI.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PeersUI.modulemap; sourceTree = "<group>"; };
-		6376AF50E8E7E4F95745DE7DBE6F0834 /* Pods_DrawTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DrawTests.framework; path = "Pods-DrawTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		67CFE2BC94961DDADE60AA1F9C8B0651 /* BarlowSemiCondensed-Medium.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "BarlowSemiCondensed-Medium.ttf"; path = "uielements-pod/Fonts/BarlowSemiCondensed-Medium.ttf"; sourceTree = "<group>"; };
-		6B1C8675687893031F5FD8242D034BEC /* Pods-DrawUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DrawUITests.release.xcconfig"; sourceTree = "<group>"; };
-		6C4F5A73309BD1D48E4EA59DAFEF571A /* PeersNeonView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PeersNeonView.swift; path = "uielements-pod/Classes/PeersNeonView.swift"; sourceTree = "<group>"; };
-		6C69C2D651E600B6448956A7DF89EFCE /* PeersNavigationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PeersNavigationController.swift; path = "uielements-pod/Classes/PeersNavigationController.swift"; sourceTree = "<group>"; };
-		73D77A7E86362D103BACC3F1B0809107 /* PeersHeadline3Label.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PeersHeadline3Label.swift; path = "uielements-pod/Classes/PeersHeadline3Label.swift"; sourceTree = "<group>"; };
-		7933D42FFDDCBA79882C5B1B13C793A5 /* Pods-DrawUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DrawUITests-umbrella.h"; sourceTree = "<group>"; };
-		7AE67CC061444F521EEE79B11D5CCC97 /* BarlowSemiCondensed-Regular.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "BarlowSemiCondensed-Regular.ttf"; path = "uielements-pod/Fonts/BarlowSemiCondensed-Regular.ttf"; sourceTree = "<group>"; };
-		8703783A7DBA296B503CEA0282E31CD9 /* Pods-Draw-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Draw-acknowledgements.plist"; sourceTree = "<group>"; };
-		8B18F23988F032A5D7E8A94EA66E1EE6 /* Pods-DrawUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DrawUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		91416A6CFB46577E1312E4F9757AD429 /* PeersTabelViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PeersTabelViewCell.swift; path = "uielements-pod/Classes/PeersTabelViewCell.swift"; sourceTree = "<group>"; };
-		920102B23F1105141D618FFB40A58637 /* PeersCustomTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PeersCustomTableViewCell.swift; path = "uielements-pod/Classes/PeersCustomTableViewCell.swift"; sourceTree = "<group>"; };
-		9408D33B8553BBCB5381283F6E5778B0 /* PeersImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PeersImageView.swift; path = "uielements-pod/Classes/PeersImageView.swift"; sourceTree = "<group>"; };
-		96896155ECE4DEDFDD382403736061E0 /* Pods-DrawUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DrawUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		34BA6695D559DDE3D0F94D700CD59EC4 /* PeersHeadline2Label.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PeersHeadline2Label.swift; path = "uielements-pod/Classes/PeersHeadline2Label.swift"; sourceTree = "<group>"; };
+		35876822A540DA2C310117285FD8BA06 /* Pods-PeersGameDrawUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PeersGameDrawUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		3B99CAB00FD8E022FB7FA86D88C8DF34 /* GameFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GameFactory.swift; path = Framework/Protocols/GameFactory.swift; sourceTree = "<group>"; };
+		3C6E1B93336026F58E731955F56E836B /* Pods-PeersGameDrawTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PeersGameDrawTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3DECE858F57720E826B7820D0189D3B7 /* BarlowSemiCondensed-Regular.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "BarlowSemiCondensed-Regular.ttf"; path = "uielements-pod/Fonts/BarlowSemiCondensed-Regular.ttf"; sourceTree = "<group>"; };
+		3E7B1051CEF29F6D0FB4E3CB88CF4293 /* PeersUI-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PeersUI-dummy.m"; sourceTree = "<group>"; };
+		406CC8B3D6BB9C16449E4847697EFABB /* Pods-PeersGameDraw-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PeersGameDraw-acknowledgements.plist"; sourceTree = "<group>"; };
+		463CCB93DA06D3AF5021A138767C4716 /* Pods-PeersGameDrawUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PeersGameDrawUITests-dummy.m"; sourceTree = "<group>"; };
+		4940EE76A4B7FB3A2E814EAECE13A931 /* PeersImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PeersImageView.swift; path = "uielements-pod/Classes/PeersImageView.swift"; sourceTree = "<group>"; };
+		4ADE0016113B6C93C5784B2805D2D9F6 /* PeersFramework-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PeersFramework-dummy.m"; sourceTree = "<group>"; };
+		4C0AC6C712EBB5141FE086ECCB63B23F /* Pods-PeersGameDrawTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PeersGameDrawTests-umbrella.h"; sourceTree = "<group>"; };
+		4CBF19DBF35CF2B7837240C9F83A67C0 /* Pods_PeersGameDrawUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PeersGameDrawUITests.framework; path = "Pods-PeersGameDrawUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4EB47DE1873217EB44DAEE827E393D8B /* PlayerMessages.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PlayerMessages.swift; path = Framework/Messages/PlayerMessages.swift; sourceTree = "<group>"; };
+		5068BCB8D5F8C95B2808E0B68C1EDFBD /* HostSendHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HostSendHandler.swift; path = Framework/HostFramework/HostSendHandler.swift; sourceTree = "<group>"; };
+		508A342947625D2174FE3627B785DFA8 /* Pods-PeersGameDrawUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PeersGameDrawUITests.modulemap"; sourceTree = "<group>"; };
+		522C526A33F27A14ACB790287A0D51F1 /* FrameworkError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FrameworkError.swift; path = Framework/Errors/FrameworkError.swift; sourceTree = "<group>"; };
+		52AAF86018890E15F89913065220B9CE /* PeersNeonView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PeersNeonView.swift; path = "uielements-pod/Classes/PeersNeonView.swift"; sourceTree = "<group>"; };
+		545887AA034544A8238339E0D0185809 /* PeersFramework.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PeersFramework.modulemap; sourceTree = "<group>"; };
+		559250EE3E95C606D09CBBE6A2E38E6D /* PeersColors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PeersColors.swift; path = "uielements-pod/Classes/PeersColors.swift"; sourceTree = "<group>"; };
+		5E49448D7E289EA569C5B3E81D762DF7 /* Pods-PeersGameDraw.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PeersGameDraw.release.xcconfig"; sourceTree = "<group>"; };
+		61BE28849E2ACC6FBB0B5CF94E11DB9D /* ResourceBundle-uielements-pod-PeersUI-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-uielements-pod-PeersUI-Info.plist"; sourceTree = "<group>"; };
+		64EA2109A9C10D399C0E8F56EE013CC4 /* Assets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "uielements-pod/Assets.xcassets"; sourceTree = "<group>"; };
+		65812E9715C27A34E0912B9F654F3F01 /* PeersAvailableHostCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = PeersAvailableHostCell.xib; path = "uielements-pod/PeersAvailableHostCell.xib"; sourceTree = "<group>"; };
+		70E956677814800ADB4D6F2A03B1078B /* GamePartFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GamePartFactory.swift; path = Framework/Protocols/GamePartFactory.swift; sourceTree = "<group>"; };
+		7371CE559D2898FE28924283CE43EC62 /* PeersFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PeersFramework.framework; path = PeersFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		743A3D6E711F8C03B2C8C132DD00DE6C /* GameDelegates.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GameDelegates.swift; path = Framework/Protocols/Delegates/GameDelegates.swift; sourceTree = "<group>"; };
+		776F3EFF937739977047614B5885EFAE /* PlayerSendHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PlayerSendHandler.swift; path = Framework/PlayerFramework/PlayerSendHandler.swift; sourceTree = "<group>"; };
+		7994910D87CDB2688D9DD6DA5C4E64B2 /* PlayersHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PlayersHandler.swift; path = Framework/HostFramework/PlayersHandler.swift; sourceTree = "<group>"; };
+		7A504AF95407DC796891FCA835D2B915 /* Pods_PeersGameDrawTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PeersGameDrawTests.framework; path = "Pods-PeersGameDrawTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C39E6DE47A267ACF38B4D4C4D037714 /* PeersText2Label.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PeersText2Label.swift; path = "uielements-pod/Classes/PeersText2Label.swift"; sourceTree = "<group>"; };
+		80CFDFA083A23600E5EDAF3A6D38B2CF /* Pods-PeersGameDraw-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PeersGameDraw-acknowledgements.markdown"; sourceTree = "<group>"; };
+		8238003993A3B3195D17D2430E6BA567 /* PeersNavigationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PeersNavigationController.swift; path = "uielements-pod/Classes/PeersNavigationController.swift"; sourceTree = "<group>"; };
+		8448D8C0C9898889ABDDC476D6C9C013 /* PeersHeadline4Label.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PeersHeadline4Label.swift; path = "uielements-pod/Classes/PeersHeadline4Label.swift"; sourceTree = "<group>"; };
+		8482206A3F29968127582EE57CA2F416 /* BarlowSemiCondensed-Bold.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "BarlowSemiCondensed-Bold.ttf"; path = "uielements-pod/Fonts/BarlowSemiCondensed-Bold.ttf"; sourceTree = "<group>"; };
+		8819564CD6B02BB5F1C8C877C300A329 /* Pods-PeersGameDraw.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PeersGameDraw.debug.xcconfig"; sourceTree = "<group>"; };
+		894B17A39FA48B9E29AA69ECE143C6DC /* PeersCustomTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PeersCustomTableViewCell.swift; path = "uielements-pod/Classes/PeersCustomTableViewCell.swift"; sourceTree = "<group>"; };
+		8BF75A32E8EB7231E72B9429986B47F5 /* Pods-PeersGameDraw-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PeersGameDraw-dummy.m"; sourceTree = "<group>"; };
+		946F355E138B8E41BB72BFB7E6B12B01 /* PeersHeadline1Label.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PeersHeadline1Label.swift; path = "uielements-pod/Classes/PeersHeadline1Label.swift"; sourceTree = "<group>"; };
+		9546CB747107DF22D496BACABAECF1B3 /* PeersFramework-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PeersFramework-prefix.pch"; sourceTree = "<group>"; };
+		9B9974AC39A91EC3FDFB24D7F419C496 /* PeersBaseLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PeersBaseLabel.swift; path = "uielements-pod/Classes/PeersBaseLabel.swift"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9E1DCDA980896FDC88A6A0C76BAAF545 /* PeersHeadline4Label.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PeersHeadline4Label.swift; path = "uielements-pod/Classes/PeersHeadline4Label.swift"; sourceTree = "<group>"; };
+		9DC6459BC226ED04BEADC957FB83DE1E /* PeersButtons.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PeersButtons.swift; path = "uielements-pod/Classes/PeersButtons.swift"; sourceTree = "<group>"; };
+		9FBB654FB6A607DBD9DE24C3060391AC /* Pods-PeersGameDrawUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PeersGameDrawUITests-Info.plist"; sourceTree = "<group>"; };
+		9FD0D87A3CA58877DFDE5160854BF962 /* Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = Framework/Helpers/Extensions.swift; sourceTree = "<group>"; };
 		A0D554DAF06959D53A3E56A9609BF8C6 /* uielements-pod.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "uielements-pod.bundle"; path = "PeersUI-uielements-pod.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A42BA3C7BFBD740EB97434CEFF7C2CE4 /* PeersCustomTableViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = PeersCustomTableViewCell.xib; path = "uielements-pod/PeersCustomTableViewCell.xib"; sourceTree = "<group>"; };
-		AB7B3D2520F9A8A18BD98D5A43FDBB05 /* PeersButtons.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PeersButtons.swift; path = "uielements-pod/Classes/PeersButtons.swift"; sourceTree = "<group>"; };
-		AC84895B244BABAF4F082CAD2CCCCF7D /* BarlowSemiCondensed-SemiBold.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "BarlowSemiCondensed-SemiBold.ttf"; path = "uielements-pod/Fonts/BarlowSemiCondensed-SemiBold.ttf"; sourceTree = "<group>"; };
-		AD32C174B9ED334DC7864983B843F869 /* Pods-DrawTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DrawTests-Info.plist"; sourceTree = "<group>"; };
-		B04D00A95C994521F0FC4B84DFF42AB8 /* PeersColors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PeersColors.swift; path = "uielements-pod/Classes/PeersColors.swift"; sourceTree = "<group>"; };
-		B1F46BEF1F28EE3BE58866119BD9B568 /* Pods-DrawUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DrawUITests-Info.plist"; sourceTree = "<group>"; };
-		B2C92E6C6AFC3319CA15D887002DF385 /* BarlowSemiCondensed-Light.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "BarlowSemiCondensed-Light.ttf"; path = "uielements-pod/Fonts/BarlowSemiCondensed-Light.ttf"; sourceTree = "<group>"; };
-		B6906DCE2EDEE35B530F4CF55FCFDE0C /* PeersUI-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "PeersUI-Info.plist"; sourceTree = "<group>"; };
-		B8E1BA9121644E30FBA8E6B510C625B3 /* Pods-Draw.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Draw.modulemap"; sourceTree = "<group>"; };
-		C06B78E7DECEB263F526AAC0ED233B98 /* Pods_DrawUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DrawUITests.framework; path = "Pods-DrawUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C3ED1840A87E11E935298A70562660C2 /* Pods-DrawTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DrawTests.modulemap"; sourceTree = "<group>"; };
-		C4392B2B9307815AD40C018051329A1E /* PeersImages.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PeersImages.swift; path = "uielements-pod/Classes/PeersImages.swift"; sourceTree = "<group>"; };
-		C4A3A6A00190A6F29FE2551D38075950 /* PeersText2Label.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PeersText2Label.swift; path = "uielements-pod/Classes/PeersText2Label.swift"; sourceTree = "<group>"; };
-		C73D876AB45177511AE6AF606B81A098 /* Designables.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Designables.swift; path = "uielements-pod/Classes/Designables.swift"; sourceTree = "<group>"; };
-		CAF9F73F332EE80E1A481C047A940202 /* Pods-DrawTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DrawTests.release.xcconfig"; sourceTree = "<group>"; };
-		D299D05E7FFC188799A9BEA302C97E38 /* Pods-DrawTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DrawTests-dummy.m"; sourceTree = "<group>"; };
-		D9554361136E4949F793A70B97F217F5 /* PeersText3Label.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PeersText3Label.swift; path = "uielements-pod/Classes/PeersText3Label.swift"; sourceTree = "<group>"; };
-		DF94C56F53B180F248C6FCC1B14D721D /* PeersHeadline2Label.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PeersHeadline2Label.swift; path = "uielements-pod/Classes/PeersHeadline2Label.swift"; sourceTree = "<group>"; };
-		DFB0B52691FEA1479E51C28CB759F4E4 /* Pods-DrawTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DrawTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		E2C9F7E790FAF5D12018B72D7E97B47B /* Pods-DrawTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DrawTests.debug.xcconfig"; sourceTree = "<group>"; };
-		E8712E09B45B4B529E8390D0C7E1E632 /* PeersNavigationLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PeersNavigationLabel.swift; path = "uielements-pod/Classes/PeersNavigationLabel.swift"; sourceTree = "<group>"; };
-		E90EBF939D28E64DF6501DC9C2D7DA02 /* Pods-Draw-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Draw-Info.plist"; sourceTree = "<group>"; };
-		EC9C33812EBD6C5F4103C5974E4F7BB8 /* Pods-Draw-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Draw-acknowledgements.markdown"; sourceTree = "<group>"; };
-		ED4BA2E0B93558578AED9FF4CA30B4C8 /* Pods-DrawTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DrawTests-umbrella.h"; sourceTree = "<group>"; };
-		EF5E81A317DA0B48DF56819491B8AF05 /* PeersUI-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PeersUI-dummy.m"; sourceTree = "<group>"; };
-		F03E801522F6112AFCA3BE78969BEA58 /* Pods-Draw.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Draw.release.xcconfig"; sourceTree = "<group>"; };
+		A131C35BE87B8A892A7CFB2EEBDE2F2E /* PeersFramework-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "PeersFramework-Info.plist"; sourceTree = "<group>"; };
+		A37E674EA49C16157786DE5CB5162748 /* PeersText1Label.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PeersText1Label.swift; path = "uielements-pod/Classes/PeersText1Label.swift"; sourceTree = "<group>"; };
+		A4A78D003316ACCE235DAC92C8F1EFE3 /* Connectivity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Connectivity.swift; path = Framework/Connectivity/Connectivity.swift; sourceTree = "<group>"; };
+		A65A2815DFE71EA3016B0A4FF7DFF2A0 /* PeersUI-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PeersUI-prefix.pch"; sourceTree = "<group>"; };
+		A759F2E1F6FFA3ED89D67B7555CBE393 /* HostMessages.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HostMessages.swift; path = Framework/Messages/HostMessages.swift; sourceTree = "<group>"; };
+		A82F6E85CD7D8460DBAB88D7F20D3531 /* Pods-PeersGameDraw-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PeersGameDraw-frameworks.sh"; sourceTree = "<group>"; };
+		A92C76D436C0AD5493F5012429776628 /* GameInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GameInfo.swift; path = Framework/Models/GameInfo.swift; sourceTree = "<group>"; };
+		ADAE23C1F73C7496D57417D0BAB54337 /* Pods-PeersGameDraw-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PeersGameDraw-umbrella.h"; sourceTree = "<group>"; };
+		B40A4FD81632F7D7BBA0CAE09FE6A447 /* PeersFonts.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PeersFonts.swift; path = "uielements-pod/Classes/PeersFonts.swift"; sourceTree = "<group>"; };
+		B5C69DB966B18C5BAC8F56553B75CAD1 /* FrameworkFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FrameworkFactory.swift; path = Framework/FrameworkFactory.swift; sourceTree = "<group>"; };
+		B7EE0C41585AA2EA564904123EBF767F /* Pods-PeersGameDrawUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PeersGameDrawUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B82FB906A9E3A4E1C3B4B3708BFD0356 /* PeersAvailableHostCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PeersAvailableHostCell.swift; path = "uielements-pod/Classes/PeersAvailableHostCell.swift"; sourceTree = "<group>"; };
+		B88B2E0B89ED09166296649BC5230F6F /* Pods-PeersGameDrawTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PeersGameDrawTests-dummy.m"; sourceTree = "<group>"; };
+		BC278B2936F5CDDB077C82E5BFA0D1E4 /* PeersCustomTableViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = PeersCustomTableViewCell.xib; path = "uielements-pod/PeersCustomTableViewCell.xib"; sourceTree = "<group>"; };
+		BE0FEE4D3727C3A4D38586C918478776 /* MultipeerEnumsAdapter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipeerEnumsAdapter.swift; path = Framework/Connectivity/MultipeerEnumsAdapter.swift; sourceTree = "<group>"; };
+		BEB487F4A2CD09002FBED954B8B272D6 /* Pods-PeersGameDrawTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PeersGameDrawTests.modulemap"; sourceTree = "<group>"; };
+		BF3A62AD31CB1A1DC7257153CA0E9360 /* Statistics.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Statistics.swift; path = Framework/Models/Statistics.swift; sourceTree = "<group>"; };
+		C21B94A1F6E8CF34B819E8A36EC4D77E /* Designables.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Designables.swift; path = "uielements-pod/Classes/Designables.swift"; sourceTree = "<group>"; };
+		C294CDCCA4E6722DF2EBB7C36E40E434 /* RockSalt-Regular.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "RockSalt-Regular.ttf"; path = "uielements-pod/Fonts/RockSalt-Regular.ttf"; sourceTree = "<group>"; };
+		C452A158B22C64A56AB68232475A4AFE /* GameCompatibilityChecker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GameCompatibilityChecker.swift; path = Framework/HostFramework/GameCompatibilityChecker.swift; sourceTree = "<group>"; };
+		C6B8EAFE5D982FC3967419236B50A55E /* BarlowSemiCondensed-Light.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "BarlowSemiCondensed-Light.ttf"; path = "uielements-pod/Fonts/BarlowSemiCondensed-Light.ttf"; sourceTree = "<group>"; };
+		CD0156F7173EEE3CF661CEB8D0D6CDD0 /* PeersUI.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PeersUI.modulemap; sourceTree = "<group>"; };
+		CDCB595300EBB0DC329C79866E118E89 /* ConnectivityEnums.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConnectivityEnums.swift; path = Framework/Connectivity/ConnectivityEnums.swift; sourceTree = "<group>"; };
+		CE82CCFCC3658B92FB327159EB798471 /* Pods-PeersGameDrawTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PeersGameDrawTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D60633C21EB45304FBC00691B3251C31 /* Pods-PeersGameDrawTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PeersGameDrawTests-Info.plist"; sourceTree = "<group>"; };
+		D6082CCE31FE45FEFBD9AFC09C27E715 /* BlurView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BlurView.swift; path = "uielements-pod/Classes/BlurView.swift"; sourceTree = "<group>"; };
+		DA95D248ADCE18510B211E783C0BB4E7 /* ConnectivityFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConnectivityFactory.swift; path = Framework/Connectivity/ConnectivityFactory.swift; sourceTree = "<group>"; };
+		DDEC90853D69609274746074050957A9 /* Player.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Player.swift; path = Framework/Models/Player.swift; sourceTree = "<group>"; };
+		E23B7E4B25BB2917319B87CC6A9DBE51 /* PeersUI-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "PeersUI-Info.plist"; sourceTree = "<group>"; };
+		E71A802730A1AF2A90E5A86A6B7AD499 /* HostFrameworkImpl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HostFrameworkImpl.swift; path = Framework/HostFramework/HostFrameworkImpl.swift; sourceTree = "<group>"; };
+		EA8A8CAA681652CFF66DF8CDDCC908DC /* HostFramework.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HostFramework.swift; path = Framework/Protocols/HostFramework.swift; sourceTree = "<group>"; };
+		EAB33DF3A96A902B2B8E7194ED0140EE /* Pods-PeersGameDrawTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PeersGameDrawTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		EECCF8BC28D7B8EBB0F797A65FB38952 /* PlayerFramework.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PlayerFramework.swift; path = Framework/Protocols/PlayerFramework.swift; sourceTree = "<group>"; };
+		EF1520639FF85DA9C611CDE94446BBD6 /* PeersUI.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PeersUI.xcconfig; sourceTree = "<group>"; };
+		F0CE55C16C96555C930E2BE081C012CB /* Pods_PeersGameDraw.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PeersGameDraw.framework; path = "Pods-PeersGameDraw.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0FA91065E2943256C3D20996E829649 /* PeersText4Label.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PeersText4Label.swift; path = "uielements-pod/Classes/PeersText4Label.swift"; sourceTree = "<group>"; };
 		F17A990EC4704659F77B5D766DDE3A67 /* PeersUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PeersUI.framework; path = PeersUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F3BC18562B98BB06C6B5404AA1BABA04 /* Pods-DrawUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DrawUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		F57BDD3BC3693157BCE9DE441BE9C423 /* ResourceBundle-uielements-pod-PeersUI-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-uielements-pod-PeersUI-Info.plist"; sourceTree = "<group>"; };
-		FC75018055A5F93BC22145228F330F03 /* PeersAvailableHostCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PeersAvailableHostCell.swift; path = "uielements-pod/Classes/PeersAvailableHostCell.swift"; sourceTree = "<group>"; };
-		FFD44643C56A8E140FD421ABD52BBD34 /* PeersUI-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PeersUI-umbrella.h"; sourceTree = "<group>"; };
+		F23F71CF8AFBCE8FFE4D5AEF43A91A71 /* Pods-PeersGameDraw.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PeersGameDraw.modulemap"; sourceTree = "<group>"; };
+		F2DC39002949618608376BCAB8C3A052 /* PeersFramework-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PeersFramework-umbrella.h"; sourceTree = "<group>"; };
+		F4A95B91DB2B31047E80757BABF66424 /* PeersFramework.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PeersFramework.xcconfig; sourceTree = "<group>"; };
+		F6D43262D35DF6D38BEBD770129093E5 /* Pods-PeersGameDrawUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PeersGameDrawUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F7957EBF043100D1F6E62034141FCC0B /* HostMessageHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HostMessageHandler.swift; path = Framework/HostFramework/HostMessageHandler.swift; sourceTree = "<group>"; };
+		FC6FFDE5160E9C79E054FC088659135D /* Pods-PeersGameDrawTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PeersGameDrawTests.release.xcconfig"; sourceTree = "<group>"; };
+		FE37F59841F4F1EA303F6CB7EC215A45 /* RankingGenerator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RankingGenerator.swift; path = Framework/HostFramework/RankingGenerator.swift; sourceTree = "<group>"; };
+		FF118A9C462B64F8321D48646D867D4C /* Peer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Peer.swift; path = Framework/Models/Peer.swift; sourceTree = "<group>"; };
+		FF301F892B3D586052E238D10AAC46EA /* PeersUI-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PeersUI-umbrella.h"; sourceTree = "<group>"; };
+		FFCE519624E996A7A6119A6BB737746A /* PeersTabelViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PeersTabelViewCell.swift; path = "uielements-pod/Classes/PeersTabelViewCell.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		06DC166C8E4CE20135B1C91B6764A815 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C1F61D03953BF3EB840CF92C025CAB26 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2BD286C304F410DB27C20A6542D2D7D5 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				56DE93F613194EDFA2E3D245A30D253C /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		2DD898FD6BC7153CE985D343592C1DA8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -188,11 +255,35 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CAB4447B0D9E58BB08C09463112585C3 /* Frameworks */ = {
+		469BE683073BD1D19CD827CA8A9E3002 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CDC25FF71806C66216873439FD65E7F7 /* Foundation.framework in Frameworks */,
+				8D8AEA26E57C90416F4D7161AA865843 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A7B5788AABAFCFB47E86A0C8FB80466 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9ACF4A82122FBA18D02E92228A2698A4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C058EC70F9FDF9F0A723926F1AA76111 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7463568553DCC5EB9D3FDC8900F503F1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEC911386A1E311F0B61FBDA7EA23A26 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				341BA191EF2249F76A113E784A45D809 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,102 +298,136 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		256AAF48B23E975435CF3DCA3A9D9D5A /* Pods-DrawUITests */ = {
+		003AEDC61261D637420F10F5030BCFAB /* Pods-PeersGameDraw */ = {
 			isa = PBXGroup;
 			children = (
-				5F66FBD52FE3F430CC29CC3A7DB545C4 /* Pods-DrawUITests.modulemap */,
-				F3BC18562B98BB06C6B5404AA1BABA04 /* Pods-DrawUITests-acknowledgements.markdown */,
-				8B18F23988F032A5D7E8A94EA66E1EE6 /* Pods-DrawUITests-acknowledgements.plist */,
-				474DEE122D3A26DF56DBBAC20224BCD6 /* Pods-DrawUITests-dummy.m */,
-				B1F46BEF1F28EE3BE58866119BD9B568 /* Pods-DrawUITests-Info.plist */,
-				7933D42FFDDCBA79882C5B1B13C793A5 /* Pods-DrawUITests-umbrella.h */,
-				96896155ECE4DEDFDD382403736061E0 /* Pods-DrawUITests.debug.xcconfig */,
-				6B1C8675687893031F5FD8242D034BEC /* Pods-DrawUITests.release.xcconfig */,
+				F23F71CF8AFBCE8FFE4D5AEF43A91A71 /* Pods-PeersGameDraw.modulemap */,
+				80CFDFA083A23600E5EDAF3A6D38B2CF /* Pods-PeersGameDraw-acknowledgements.markdown */,
+				406CC8B3D6BB9C16449E4847697EFABB /* Pods-PeersGameDraw-acknowledgements.plist */,
+				8BF75A32E8EB7231E72B9429986B47F5 /* Pods-PeersGameDraw-dummy.m */,
+				A82F6E85CD7D8460DBAB88D7F20D3531 /* Pods-PeersGameDraw-frameworks.sh */,
+				1BCCE85541787DB931BF90098A6C2655 /* Pods-PeersGameDraw-Info.plist */,
+				ADAE23C1F73C7496D57417D0BAB54337 /* Pods-PeersGameDraw-umbrella.h */,
+				8819564CD6B02BB5F1C8C877C300A329 /* Pods-PeersGameDraw.debug.xcconfig */,
+				5E49448D7E289EA569C5B3E81D762DF7 /* Pods-PeersGameDraw.release.xcconfig */,
 			);
-			name = "Pods-DrawUITests";
-			path = "Target Support Files/Pods-DrawUITests";
+			name = "Pods-PeersGameDraw";
+			path = "Target Support Files/Pods-PeersGameDraw";
 			sourceTree = "<group>";
 		};
-		4D5121FC862F3AA948C4A4B7AF7BA8DA /* Resources */ = {
+		0C4549D4168D1D185D60ACB9393305B6 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				4DEA3626FEBCB187DE9C75FC24C1F94C /* Assets.xcassets */,
-				42C53FC1CFEBBE3BDA119F84DDD61798 /* BarlowSemiCondensed-Bold.ttf */,
-				B2C92E6C6AFC3319CA15D887002DF385 /* BarlowSemiCondensed-Light.ttf */,
-				67CFE2BC94961DDADE60AA1F9C8B0651 /* BarlowSemiCondensed-Medium.ttf */,
-				7AE67CC061444F521EEE79B11D5CCC97 /* BarlowSemiCondensed-Regular.ttf */,
-				AC84895B244BABAF4F082CAD2CCCCF7D /* BarlowSemiCondensed-SemiBold.ttf */,
-				08AF42A57DAFCDA307ABD3C77F760B35 /* PeersAvailableHostCell.xib */,
-				A42BA3C7BFBD740EB97434CEFF7C2CE4 /* PeersCustomTableViewCell.xib */,
-				63300138CD6839EBBCAC50B2C7EEFE67 /* RockSalt-Regular.ttf */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		4FBB52CE484A8CE97926A7914B8CF737 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				B119801267635C8FE72317E572784143 /* PeersUI */,
+				C91C7E1003D2A78C3D65F7D09455F056 /* PeersFramework */,
+				5E57436DAE921818D7C150B063BB0CCD /* PeersUI */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		8B588EE3839AE53E682056DA42FBC304 /* Targets Support Files */ = {
+		4045B8E86CC6F21070C0F8A24265351B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E6B6D59BAD4C36A86D4A673C76E85582 /* Pods-Draw */,
-				A9982CEA0A706463B45F6E94D9DF266F /* Pods-DrawTests */,
-				256AAF48B23E975435CF3DCA3A9D9D5A /* Pods-DrawUITests */,
+				7371CE559D2898FE28924283CE43EC62 /* PeersFramework.framework */,
+				F17A990EC4704659F77B5D766DDE3A67 /* PeersUI.framework */,
+				F0CE55C16C96555C930E2BE081C012CB /* Pods_PeersGameDraw.framework */,
+				7A504AF95407DC796891FCA835D2B915 /* Pods_PeersGameDrawTests.framework */,
+				4CBF19DBF35CF2B7837240C9F83A67C0 /* Pods_PeersGameDrawUITests.framework */,
+				A0D554DAF06959D53A3E56A9609BF8C6 /* uielements-pod.bundle */,
 			);
-			name = "Targets Support Files";
+			name = Products;
 			sourceTree = "<group>";
 		};
-		A9982CEA0A706463B45F6E94D9DF266F /* Pods-DrawTests */ = {
+		4266F10750472787CF1ADC125BF4FA31 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				C3ED1840A87E11E935298A70562660C2 /* Pods-DrawTests.modulemap */,
-				DFB0B52691FEA1479E51C28CB759F4E4 /* Pods-DrawTests-acknowledgements.markdown */,
-				42EC87C54D97B02A222CAEA5155DE898 /* Pods-DrawTests-acknowledgements.plist */,
-				D299D05E7FFC188799A9BEA302C97E38 /* Pods-DrawTests-dummy.m */,
-				AD32C174B9ED334DC7864983B843F869 /* Pods-DrawTests-Info.plist */,
-				ED4BA2E0B93558578AED9FF4CA30B4C8 /* Pods-DrawTests-umbrella.h */,
-				E2C9F7E790FAF5D12018B72D7E97B47B /* Pods-DrawTests.debug.xcconfig */,
-				CAF9F73F332EE80E1A481C047A940202 /* Pods-DrawTests.release.xcconfig */,
+				545887AA034544A8238339E0D0185809 /* PeersFramework.modulemap */,
+				F4A95B91DB2B31047E80757BABF66424 /* PeersFramework.xcconfig */,
+				4ADE0016113B6C93C5784B2805D2D9F6 /* PeersFramework-dummy.m */,
+				A131C35BE87B8A892A7CFB2EEBDE2F2E /* PeersFramework-Info.plist */,
+				9546CB747107DF22D496BACABAECF1B3 /* PeersFramework-prefix.pch */,
+				F2DC39002949618608376BCAB8C3A052 /* PeersFramework-umbrella.h */,
 			);
-			name = "Pods-DrawTests";
-			path = "Target Support Files/Pods-DrawTests";
+			name = "Support Files";
+			path = "../Target Support Files/PeersFramework";
 			sourceTree = "<group>";
 		};
-		B119801267635C8FE72317E572784143 /* PeersUI */ = {
+		4EF9CDC6213FC68F0D6DF017BBB5FFF7 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				2FA9EFF6102C746458CFDEC293133177 /* BlurView.swift */,
-				C73D876AB45177511AE6AF606B81A098 /* Designables.swift */,
-				FC75018055A5F93BC22145228F330F03 /* PeersAvailableHostCell.swift */,
-				1CCAB44CFD5F8E87C7FCF6EB5D371C45 /* PeersBaseLabel.swift */,
-				AB7B3D2520F9A8A18BD98D5A43FDBB05 /* PeersButtons.swift */,
-				B04D00A95C994521F0FC4B84DFF42AB8 /* PeersColors.swift */,
-				920102B23F1105141D618FFB40A58637 /* PeersCustomTableViewCell.swift */,
-				62AFA1F7AFA30B46017DF0E1B5A709CB /* PeersFonts.swift */,
-				2F7D35B01629F8693D1A75E181ABAC4F /* PeersHeadline1Label.swift */,
-				DF94C56F53B180F248C6FCC1B14D721D /* PeersHeadline2Label.swift */,
-				73D77A7E86362D103BACC3F1B0809107 /* PeersHeadline3Label.swift */,
-				9E1DCDA980896FDC88A6A0C76BAAF545 /* PeersHeadline4Label.swift */,
-				C4392B2B9307815AD40C018051329A1E /* PeersImages.swift */,
-				9408D33B8553BBCB5381283F6E5778B0 /* PeersImageView.swift */,
-				6C69C2D651E600B6448956A7DF89EFCE /* PeersNavigationController.swift */,
-				E8712E09B45B4B529E8390D0C7E1E632 /* PeersNavigationLabel.swift */,
-				6C4F5A73309BD1D48E4EA59DAFEF571A /* PeersNeonView.swift */,
-				91416A6CFB46577E1312E4F9757AD429 /* PeersTabelViewCell.swift */,
-				4AF514196FBE4D4A13F4D274B52AEE04 /* PeersText1Label.swift */,
-				C4A3A6A00190A6F29FE2551D38075950 /* PeersText2Label.swift */,
-				D9554361136E4949F793A70B97F217F5 /* PeersText3Label.swift */,
-				34F8783F4F4ABAF539F2D7157AC2D0E4 /* PeersText4Label.swift */,
-				4D5121FC862F3AA948C4A4B7AF7BA8DA /* Resources */,
-				CDC80F556D99606D7DE9A3E78769E6D2 /* Support Files */,
+				CD0156F7173EEE3CF661CEB8D0D6CDD0 /* PeersUI.modulemap */,
+				EF1520639FF85DA9C611CDE94446BBD6 /* PeersUI.xcconfig */,
+				3E7B1051CEF29F6D0FB4E3CB88CF4293 /* PeersUI-dummy.m */,
+				E23B7E4B25BB2917319B87CC6A9DBE51 /* PeersUI-Info.plist */,
+				A65A2815DFE71EA3016B0A4FF7DFF2A0 /* PeersUI-prefix.pch */,
+				FF301F892B3D586052E238D10AAC46EA /* PeersUI-umbrella.h */,
+				61BE28849E2ACC6FBB0B5CF94E11DB9D /* ResourceBundle-uielements-pod-PeersUI-Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/PeersUI";
+			sourceTree = "<group>";
+		};
+		5E57436DAE921818D7C150B063BB0CCD /* PeersUI */ = {
+			isa = PBXGroup;
+			children = (
+				D6082CCE31FE45FEFBD9AFC09C27E715 /* BlurView.swift */,
+				C21B94A1F6E8CF34B819E8A36EC4D77E /* Designables.swift */,
+				B82FB906A9E3A4E1C3B4B3708BFD0356 /* PeersAvailableHostCell.swift */,
+				9B9974AC39A91EC3FDFB24D7F419C496 /* PeersBaseLabel.swift */,
+				9DC6459BC226ED04BEADC957FB83DE1E /* PeersButtons.swift */,
+				559250EE3E95C606D09CBBE6A2E38E6D /* PeersColors.swift */,
+				894B17A39FA48B9E29AA69ECE143C6DC /* PeersCustomTableViewCell.swift */,
+				B40A4FD81632F7D7BBA0CAE09FE6A447 /* PeersFonts.swift */,
+				946F355E138B8E41BB72BFB7E6B12B01 /* PeersHeadline1Label.swift */,
+				34BA6695D559DDE3D0F94D700CD59EC4 /* PeersHeadline2Label.swift */,
+				10D60C5AAFBACEFD331B5B07394E4C83 /* PeersHeadline3Label.swift */,
+				8448D8C0C9898889ABDDC476D6C9C013 /* PeersHeadline4Label.swift */,
+				2D51AEBBA4BFAE74FC89DDDAF5ECA0C6 /* PeersImages.swift */,
+				4940EE76A4B7FB3A2E814EAECE13A931 /* PeersImageView.swift */,
+				8238003993A3B3195D17D2430E6BA567 /* PeersNavigationController.swift */,
+				08809535F75548C057D6C07E95BEBD96 /* PeersNavigationLabel.swift */,
+				52AAF86018890E15F89913065220B9CE /* PeersNeonView.swift */,
+				FFCE519624E996A7A6119A6BB737746A /* PeersTabelViewCell.swift */,
+				A37E674EA49C16157786DE5CB5162748 /* PeersText1Label.swift */,
+				7C39E6DE47A267ACF38B4D4C4D037714 /* PeersText2Label.swift */,
+				0864ADFC195477FFCBA4EE89AEDC75DA /* PeersText3Label.swift */,
+				F0FA91065E2943256C3D20996E829649 /* PeersText4Label.swift */,
+				A16D811534BD43509B96F0EA757DC4BC /* Resources */,
+				4EF9CDC6213FC68F0D6DF017BBB5FFF7 /* Support Files */,
 			);
 			name = PeersUI;
 			path = PeersUI;
+			sourceTree = "<group>";
+		};
+		97E2C760BF134D52EB9E3D049CBC85C5 /* Pods-PeersGameDrawUITests */ = {
+			isa = PBXGroup;
+			children = (
+				508A342947625D2174FE3627B785DFA8 /* Pods-PeersGameDrawUITests.modulemap */,
+				F6D43262D35DF6D38BEBD770129093E5 /* Pods-PeersGameDrawUITests-acknowledgements.markdown */,
+				35876822A540DA2C310117285FD8BA06 /* Pods-PeersGameDrawUITests-acknowledgements.plist */,
+				463CCB93DA06D3AF5021A138767C4716 /* Pods-PeersGameDrawUITests-dummy.m */,
+				9FBB654FB6A607DBD9DE24C3060391AC /* Pods-PeersGameDrawUITests-Info.plist */,
+				02BCAC0F57E9DC08A539F4D2492063CF /* Pods-PeersGameDrawUITests-umbrella.h */,
+				079FBDF33B1AECACEA1405699E843D87 /* Pods-PeersGameDrawUITests.debug.xcconfig */,
+				B7EE0C41585AA2EA564904123EBF767F /* Pods-PeersGameDrawUITests.release.xcconfig */,
+			);
+			name = "Pods-PeersGameDrawUITests";
+			path = "Target Support Files/Pods-PeersGameDrawUITests";
+			sourceTree = "<group>";
+		};
+		A16D811534BD43509B96F0EA757DC4BC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				64EA2109A9C10D399C0E8F56EE013CC4 /* Assets.xcassets */,
+				8482206A3F29968127582EE57CA2F416 /* BarlowSemiCondensed-Bold.ttf */,
+				C6B8EAFE5D982FC3967419236B50A55E /* BarlowSemiCondensed-Light.ttf */,
+				1032CCD02366AF89A4A4BE2F11852737 /* BarlowSemiCondensed-Medium.ttf */,
+				3DECE858F57720E826B7820D0189D3B7 /* BarlowSemiCondensed-Regular.ttf */,
+				2FD4C89A8F7BED7805BE4218C6D1350A /* BarlowSemiCondensed-SemiBold.ttf */,
+				65812E9715C27A34E0912B9F654F3F01 /* PeersAvailableHostCell.xib */,
+				BC278B2936F5CDDB077C82E5BFA0D1E4 /* PeersCustomTableViewCell.xib */,
+				C294CDCCA4E6722DF2EBB7C36E40E434 /* RockSalt-Regular.ttf */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
@@ -313,19 +438,56 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		CDC80F556D99606D7DE9A3E78769E6D2 /* Support Files */ = {
+		C804FC863432A1EBC223D783326C807D /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				63429D443D5754421A9B3DD8E7528125 /* PeersUI.modulemap */,
-				5916088B57543978D62F3922D65042F6 /* PeersUI.xcconfig */,
-				EF5E81A317DA0B48DF56819491B8AF05 /* PeersUI-dummy.m */,
-				B6906DCE2EDEE35B530F4CF55FCFDE0C /* PeersUI-Info.plist */,
-				41E446A478FA0B206EF9EF9E9DDB21E8 /* PeersUI-prefix.pch */,
-				FFD44643C56A8E140FD421ABD52BBD34 /* PeersUI-umbrella.h */,
-				F57BDD3BC3693157BCE9DE441BE9C423 /* ResourceBundle-uielements-pod-PeersUI-Info.plist */,
+				003AEDC61261D637420F10F5030BCFAB /* Pods-PeersGameDraw */,
+				D594FFBBC4DC5729A08F20B84CBFCAE6 /* Pods-PeersGameDrawTests */,
+				97E2C760BF134D52EB9E3D049CBC85C5 /* Pods-PeersGameDrawUITests */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/PeersUI";
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		C91C7E1003D2A78C3D65F7D09455F056 /* PeersFramework */ = {
+			isa = PBXGroup;
+			children = (
+				152F962533808D14391D94F0B54F90F4 /* AppDelegates.swift */,
+				A4A78D003316ACCE235DAC92C8F1EFE3 /* Connectivity.swift */,
+				0929C331452509839EBED91326FB2101 /* ConnectivityDelegate.swift */,
+				CDCB595300EBB0DC329C79866E118E89 /* ConnectivityEnums.swift */,
+				026D812B04B0ABA123DB607ED516C629 /* ConnectivityError.swift */,
+				DA95D248ADCE18510B211E783C0BB4E7 /* ConnectivityFactory.swift */,
+				9FD0D87A3CA58877DFDE5160854BF962 /* Extensions.swift */,
+				522C526A33F27A14ACB790287A0D51F1 /* FrameworkError.swift */,
+				B5C69DB966B18C5BAC8F56553B75CAD1 /* FrameworkFactory.swift */,
+				C452A158B22C64A56AB68232475A4AFE /* GameCompatibilityChecker.swift */,
+				743A3D6E711F8C03B2C8C132DD00DE6C /* GameDelegates.swift */,
+				3B99CAB00FD8E022FB7FA86D88C8DF34 /* GameFactory.swift */,
+				A92C76D436C0AD5493F5012429776628 /* GameInfo.swift */,
+				70E956677814800ADB4D6F2A03B1078B /* GamePartFactory.swift */,
+				08B987438B8DEBBA3511B80ED0FDA9AA /* GamePlayer.swift */,
+				EA8A8CAA681652CFF66DF8CDDCC908DC /* HostFramework.swift */,
+				E71A802730A1AF2A90E5A86A6B7AD499 /* HostFrameworkImpl.swift */,
+				F7957EBF043100D1F6E62034141FCC0B /* HostMessageHandler.swift */,
+				A759F2E1F6FFA3ED89D67B7555CBE393 /* HostMessages.swift */,
+				5068BCB8D5F8C95B2808E0B68C1EDFBD /* HostSendHandler.swift */,
+				30C1A2E8CA4BAA2076EF170D1D5F80A2 /* MessageWrapper.swift */,
+				257AF62456B67BFC95D9739D76947CB6 /* MultipeerAdapter.swift */,
+				BE0FEE4D3727C3A4D38586C918478776 /* MultipeerEnumsAdapter.swift */,
+				FF118A9C462B64F8321D48646D867D4C /* Peer.swift */,
+				DDEC90853D69609274746074050957A9 /* Player.swift */,
+				EECCF8BC28D7B8EBB0F797A65FB38952 /* PlayerFramework.swift */,
+				023A3D228A61E3185D08D0167758C534 /* PlayerFrameworkImpl.swift */,
+				284A5506BED4A1747C181481A3461A26 /* PlayerMessageHandler.swift */,
+				4EB47DE1873217EB44DAEE827E393D8B /* PlayerMessages.swift */,
+				776F3EFF937739977047614B5885EFAE /* PlayerSendHandler.swift */,
+				7994910D87CDB2688D9DD6DA5C4E64B2 /* PlayersHandler.swift */,
+				FE37F59841F4F1EA303F6CB7EC215A45 /* RankingGenerator.swift */,
+				BF3A62AD31CB1A1DC7257153CA0E9360 /* Statistics.swift */,
+				4266F10750472787CF1ADC125BF4FA31 /* Support Files */,
+			);
+			name = PeersFramework;
+			path = PeersFramework;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -333,9 +495,9 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				4FBB52CE484A8CE97926A7914B8CF737 /* Pods */,
-				F88B916A0BADCB7BB22E2FBF1ECC60B3 /* Products */,
-				8B588EE3839AE53E682056DA42FBC304 /* Targets Support Files */,
+				0C4549D4168D1D185D60ACB9393305B6 /* Pods */,
+				4045B8E86CC6F21070C0F8A24265351B /* Products */,
+				C804FC863432A1EBC223D783326C807D /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -347,59 +509,54 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		E6B6D59BAD4C36A86D4A673C76E85582 /* Pods-Draw */ = {
+		D594FFBBC4DC5729A08F20B84CBFCAE6 /* Pods-PeersGameDrawTests */ = {
 			isa = PBXGroup;
 			children = (
-				B8E1BA9121644E30FBA8E6B510C625B3 /* Pods-Draw.modulemap */,
-				EC9C33812EBD6C5F4103C5974E4F7BB8 /* Pods-Draw-acknowledgements.markdown */,
-				8703783A7DBA296B503CEA0282E31CD9 /* Pods-Draw-acknowledgements.plist */,
-				17B530BFA696CA383B90FF6178F2349B /* Pods-Draw-dummy.m */,
-				359500D086C2867616C59A6EA0980054 /* Pods-Draw-frameworks.sh */,
-				E90EBF939D28E64DF6501DC9C2D7DA02 /* Pods-Draw-Info.plist */,
-				493963DC1F4CC9A4084CE698BB028F1D /* Pods-Draw-umbrella.h */,
-				0048EE0125B5D2D31366D93517F273A8 /* Pods-Draw.debug.xcconfig */,
-				F03E801522F6112AFCA3BE78969BEA58 /* Pods-Draw.release.xcconfig */,
+				BEB487F4A2CD09002FBED954B8B272D6 /* Pods-PeersGameDrawTests.modulemap */,
+				3C6E1B93336026F58E731955F56E836B /* Pods-PeersGameDrawTests-acknowledgements.markdown */,
+				EAB33DF3A96A902B2B8E7194ED0140EE /* Pods-PeersGameDrawTests-acknowledgements.plist */,
+				B88B2E0B89ED09166296649BC5230F6F /* Pods-PeersGameDrawTests-dummy.m */,
+				D60633C21EB45304FBC00691B3251C31 /* Pods-PeersGameDrawTests-Info.plist */,
+				4C0AC6C712EBB5141FE086ECCB63B23F /* Pods-PeersGameDrawTests-umbrella.h */,
+				CE82CCFCC3658B92FB327159EB798471 /* Pods-PeersGameDrawTests.debug.xcconfig */,
+				FC6FFDE5160E9C79E054FC088659135D /* Pods-PeersGameDrawTests.release.xcconfig */,
 			);
-			name = "Pods-Draw";
-			path = "Target Support Files/Pods-Draw";
-			sourceTree = "<group>";
-		};
-		F88B916A0BADCB7BB22E2FBF1ECC60B3 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				F17A990EC4704659F77B5D766DDE3A67 /* PeersUI.framework */,
-				493B9C16A8940DFE7997C914419A6BEA /* Pods_Draw.framework */,
-				6376AF50E8E7E4F95745DE7DBE6F0834 /* Pods_DrawTests.framework */,
-				C06B78E7DECEB263F526AAC0ED233B98 /* Pods_DrawUITests.framework */,
-				A0D554DAF06959D53A3E56A9609BF8C6 /* uielements-pod.bundle */,
-			);
-			name = Products;
+			name = "Pods-PeersGameDrawTests";
+			path = "Target Support Files/Pods-PeersGameDrawTests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		00CB602E18ACFC68960189A0E8DB06A8 /* Headers */ = {
+		5394E4CC85FFFAE99BFC262535296D84 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				96EB12B018CC844F6C747E4B8A33EFC1 /* Pods-DrawUITests-umbrella.h in Headers */,
+				5AFB6458B5F4C42CEACE172C24BF29C5 /* Pods-PeersGameDrawUITests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		06516170470F4D48EFB913D003CB76D6 /* Headers */ = {
+		5922EC66AFFDF1811CA66167413CA7DF /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81B0C1134341CC1643881060B20A9535 /* Pods-Draw-umbrella.h in Headers */,
+				544538DAAB0099D4EBF54C6DEA614639 /* PeersFramework-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3015843EDEA10738A3157ACA419C38E9 /* Headers */ = {
+		7321E9EE25AAB2CB7CD861D10E847296 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				43B35465B563DFA91C0F1697F7B78311 /* Pods-DrawTests-umbrella.h in Headers */,
+				06BCF23B07C68C80D897DEEF639C5D2C /* Pods-PeersGameDrawTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92493593D2E19415A10C959A0AC5A281 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96BD1129280B45ED5FE90A36827B4050 /* Pods-PeersGameDraw-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,42 +571,22 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		0CC4E1797FA1E47E03C908CBA6CEFC64 /* Pods-Draw */ = {
+		0DEA0CD9180CD167840422613638B925 /* PeersFramework */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 07738C72E2766A619A3C85100CE49B1F /* Build configuration list for PBXNativeTarget "Pods-Draw" */;
+			buildConfigurationList = 2BF423095D7524D7E853EF35F8C08BEC /* Build configuration list for PBXNativeTarget "PeersFramework" */;
 			buildPhases = (
-				06516170470F4D48EFB913D003CB76D6 /* Headers */,
-				40222A6648021F9DFB5D4BCCE88BB7EC /* Sources */,
-				2BD286C304F410DB27C20A6542D2D7D5 /* Frameworks */,
-				B5655516EA809ABBE91421975690BF94 /* Resources */,
+				5922EC66AFFDF1811CA66167413CA7DF /* Headers */,
+				3B2E438588EC0275D1D9416AF27A4C7F /* Sources */,
+				469BE683073BD1D19CD827CA8A9E3002 /* Frameworks */,
+				68051E3F3FAC785D16673BB97F681F6B /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				428E2BBF60FFAC3F16773434E6AE6DF6 /* PBXTargetDependency */,
 			);
-			name = "Pods-Draw";
-			productName = "Pods-Draw";
-			productReference = 493B9C16A8940DFE7997C914419A6BEA /* Pods_Draw.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		22673237E070702A5834216477816A8C /* Pods-DrawUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 35AC34CED2E4B9B8D6D74D8FB8518C09 /* Build configuration list for PBXNativeTarget "Pods-DrawUITests" */;
-			buildPhases = (
-				00CB602E18ACFC68960189A0E8DB06A8 /* Headers */,
-				957EFA3D4370D4AB702A6C9F9F0A1BD9 /* Sources */,
-				CAB4447B0D9E58BB08C09463112585C3 /* Frameworks */,
-				E51C7333F7F849D4F64C6E9F7CC11726 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				9955A68CD08A0E763C46D575A2DFFCFD /* PBXTargetDependency */,
-			);
-			name = "Pods-DrawUITests";
-			productName = "Pods-DrawUITests";
-			productReference = C06B78E7DECEB263F526AAC0ED233B98 /* Pods_DrawUITests.framework */;
+			name = PeersFramework;
+			productName = PeersFramework;
+			productReference = 7371CE559D2898FE28924283CE43EC62 /* PeersFramework.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		40B16EE5512D78DFC7069761D098AD9F /* PeersUI-uielements-pod */ = {
@@ -468,6 +605,25 @@
 			productName = "PeersUI-uielements-pod";
 			productReference = A0D554DAF06959D53A3E56A9609BF8C6 /* uielements-pod.bundle */;
 			productType = "com.apple.product-type.bundle";
+		};
+		4688F40B6207556C858C6DA958A65AF1 /* Pods-PeersGameDrawTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B518B480B1D1E9173DDBDE2DAB61E735 /* Build configuration list for PBXNativeTarget "Pods-PeersGameDrawTests" */;
+			buildPhases = (
+				7321E9EE25AAB2CB7CD861D10E847296 /* Headers */,
+				D33DE3510EB02B480859B52DC8D78030 /* Sources */,
+				C058EC70F9FDF9F0A723926F1AA76111 /* Frameworks */,
+				4604AB3C1E8272D7E685539818D120E7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				68F2D0CA83262581EC7BC05B072AD27D /* PBXTargetDependency */,
+			);
+			name = "Pods-PeersGameDrawTests";
+			productName = "Pods-PeersGameDrawTests";
+			productReference = 7A504AF95407DC796891FCA835D2B915 /* Pods_PeersGameDrawTests.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 		A4788CAAB23F8920A4305203E8D421A1 /* PeersUI */ = {
 			isa = PBXNativeTarget;
@@ -488,23 +644,43 @@
 			productReference = F17A990EC4704659F77B5D766DDE3A67 /* PeersUI.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		E232A8ADD47B0BD244C0A9F833ACEC9D /* Pods-DrawTests */ = {
+		CE45192689A5D62B45319E4B4930934E /* Pods-PeersGameDrawUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8307E7532657F3D3B5317794BB44767D /* Build configuration list for PBXNativeTarget "Pods-DrawTests" */;
+			buildConfigurationList = 62002540F0C430D9C6F3D21DA3E81BC4 /* Build configuration list for PBXNativeTarget "Pods-PeersGameDrawUITests" */;
 			buildPhases = (
-				3015843EDEA10738A3157ACA419C38E9 /* Headers */,
-				EBD4B62D7E26DE61085AB8AA754526B5 /* Sources */,
-				06DC166C8E4CE20135B1C91B6764A815 /* Frameworks */,
-				6114CB3FA1EAEDD8C8ECE28A07F200D4 /* Resources */,
+				5394E4CC85FFFAE99BFC262535296D84 /* Headers */,
+				246F8FD993CB2332C2491C3E8E8C962A /* Sources */,
+				7A7B5788AABAFCFB47E86A0C8FB80466 /* Frameworks */,
+				181F05279530A90F597190239E3F93B9 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				CFFC72364E5FC580F8968E5FC83AE657 /* PBXTargetDependency */,
+				7CC860665E56D8EB0D7D658AA6C1047D /* PBXTargetDependency */,
 			);
-			name = "Pods-DrawTests";
-			productName = "Pods-DrawTests";
-			productReference = 6376AF50E8E7E4F95745DE7DBE6F0834 /* Pods_DrawTests.framework */;
+			name = "Pods-PeersGameDrawUITests";
+			productName = "Pods-PeersGameDrawUITests";
+			productReference = 4CBF19DBF35CF2B7837240C9F83A67C0 /* Pods_PeersGameDrawUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		ECD7485EA2BCB07EA86F2972468F00F6 /* Pods-PeersGameDraw */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03C1672B757981017071A4102A2152A8 /* Build configuration list for PBXNativeTarget "Pods-PeersGameDraw" */;
+			buildPhases = (
+				92493593D2E19415A10C959A0AC5A281 /* Headers */,
+				101352EB59BD7EE47371030E922819BF /* Sources */,
+				DEC911386A1E311F0B61FBDA7EA23A26 /* Frameworks */,
+				35293367FDE464D699A3B15A93A7C427 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8B39FA1BD812B16202F8BB4EA41B94B4 /* PBXTargetDependency */,
+				9A812F658409664FE59998B47C94F88C /* PBXTargetDependency */,
+			);
+			name = "Pods-PeersGameDraw";
+			productName = "Pods-PeersGameDraw";
+			productReference = F0CE55C16C96555C930E2BE081C012CB /* Pods_PeersGameDraw.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -517,28 +693,50 @@
 				LastUpgradeCheck = 1100;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = F88B916A0BADCB7BB22E2FBF1ECC60B3 /* Products */;
+			productRefGroup = 4045B8E86CC6F21070C0F8A24265351B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				0DEA0CD9180CD167840422613638B925 /* PeersFramework */,
 				A4788CAAB23F8920A4305203E8D421A1 /* PeersUI */,
 				40B16EE5512D78DFC7069761D098AD9F /* PeersUI-uielements-pod */,
-				0CC4E1797FA1E47E03C908CBA6CEFC64 /* Pods-Draw */,
-				E232A8ADD47B0BD244C0A9F833ACEC9D /* Pods-DrawTests */,
-				22673237E070702A5834216477816A8C /* Pods-DrawUITests */,
+				ECD7485EA2BCB07EA86F2972468F00F6 /* Pods-PeersGameDraw */,
+				4688F40B6207556C858C6DA958A65AF1 /* Pods-PeersGameDrawTests */,
+				CE45192689A5D62B45319E4B4930934E /* Pods-PeersGameDrawUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		6114CB3FA1EAEDD8C8ECE28A07F200D4 /* Resources */ = {
+		181F05279530A90F597190239E3F93B9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35293367FDE464D699A3B15A93A7C427 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4604AB3C1E8272D7E685539818D120E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68051E3F3FAC785D16673BB97F681F6B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -559,13 +757,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B5655516EA809ABBE91421975690BF94 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		C4B7DB1D7EB6612E86510DB5AB22BE04 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -583,21 +774,63 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E51C7333F7F849D4F64C6E9F7CC11726 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		40222A6648021F9DFB5D4BCCE88BB7EC /* Sources */ = {
+		101352EB59BD7EE47371030E922819BF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2F52830CC74524AF20A746CD558A359 /* Pods-Draw-dummy.m in Sources */,
+				FF53BBDC097B1DB6472BEFFC4405CD3F /* Pods-PeersGameDraw-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		246F8FD993CB2332C2491C3E8E8C962A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				574E0CEBF80A717E732E304B7938555B /* Pods-PeersGameDrawUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B2E438588EC0275D1D9416AF27A4C7F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6A7580FC1BD2B3203F2C7628C6AB362 /* AppDelegates.swift in Sources */,
+				FD96B122AF2AC1F3DA8314A53E7ED8E8 /* Connectivity.swift in Sources */,
+				89A793A64BF186C255179947BD6B2166 /* ConnectivityDelegate.swift in Sources */,
+				003E51B064A500B2E0A5199F7670A9CD /* ConnectivityEnums.swift in Sources */,
+				3504BEE3276A2D386BAFD341AE0A1C84 /* ConnectivityError.swift in Sources */,
+				4D2DCFD143E1757CED33D37919F27DC9 /* ConnectivityFactory.swift in Sources */,
+				5BB19A15BA30D9846A1723F2D2A1999F /* Extensions.swift in Sources */,
+				BF8236D3455ADAFAE03F011A07FC226E /* FrameworkError.swift in Sources */,
+				96D2F630CFA4ED87E65A5ED9571A8F31 /* FrameworkFactory.swift in Sources */,
+				2EBED4E18F8F21606536366E5444C93C /* GameCompatibilityChecker.swift in Sources */,
+				C9EEF8C619D74E53A5164694A178DBF0 /* GameDelegates.swift in Sources */,
+				7CF28A05B63C4A5DF0FFA9A89E59F9D5 /* GameFactory.swift in Sources */,
+				6220AF661C9267B7E17DD9C662764D04 /* GameInfo.swift in Sources */,
+				BD4645CB9148C2B2DED8E8D8D7B81DBA /* GamePartFactory.swift in Sources */,
+				07BAA2BC37EDE5A4C2CDF23C1F27CD4C /* GamePlayer.swift in Sources */,
+				76D717684F7357CD8762D5004CEC3FB5 /* HostFramework.swift in Sources */,
+				4CEA1788182D3AE38A7600280A1035A5 /* HostFrameworkImpl.swift in Sources */,
+				609EFC71FA95B2B7F37B4A30CA022855 /* HostMessageHandler.swift in Sources */,
+				243E16DF6E969D75096A06B769727259 /* HostMessages.swift in Sources */,
+				E34DAF8CA1D7A533221FD08BACDC3FA4 /* HostSendHandler.swift in Sources */,
+				79E4B615EF5DBF5C800AD8A96F04B057 /* MessageWrapper.swift in Sources */,
+				268391DF905D861E26D5F6706938FA48 /* MultipeerAdapter.swift in Sources */,
+				7D849B16304D0EAAA61BBD2373C9222A /* MultipeerEnumsAdapter.swift in Sources */,
+				AD6B80B15E4E558AE1BEBC474D1D0FB8 /* Peer.swift in Sources */,
+				0CBF1F1401ACAD5B9C76376312CA0389 /* PeersFramework-dummy.m in Sources */,
+				0E4002FEE4DAD1CB2988E6EDA1FAE750 /* Player.swift in Sources */,
+				62CFF2768FC161D66783756C6AAB8D1C /* PlayerFramework.swift in Sources */,
+				E84EE56CB43AC521904A85D408B404D0 /* PlayerFrameworkImpl.swift in Sources */,
+				868F7AA4D9BF5ACFE170830D64EF7A04 /* PlayerMessageHandler.swift in Sources */,
+				B1B05AACA4641CD8E3426CFF4718B32A /* PlayerMessages.swift in Sources */,
+				0263ED17C5A24A8A80CADEAB78399362 /* PlayerSendHandler.swift in Sources */,
+				2BB50473180C1AB2CED4BC17585DC2CC /* PlayersHandler.swift in Sources */,
+				3556BD4A34C28A6B0C8BDCCAFD14DFB4 /* RankingGenerator.swift in Sources */,
+				1FD14F7D1D38EBF5AC4F9819CE4C760D /* Statistics.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -608,19 +841,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		957EFA3D4370D4AB702A6C9F9F0A1BD9 /* Sources */ = {
+		D33DE3510EB02B480859B52DC8D78030 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE43A1889564E25834EB2267B3BD8462 /* Pods-DrawUITests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EBD4B62D7E26DE61085AB8AA754526B5 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2EAFBF3271D383218FB809C8155D95EA /* Pods-DrawTests-dummy.m in Sources */,
+				48861F3665FB25A76EB91B2898E8CBD9 /* Pods-PeersGameDrawTests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -657,17 +882,29 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		428E2BBF60FFAC3F16773434E6AE6DF6 /* PBXTargetDependency */ = {
+		68F2D0CA83262581EC7BC05B072AD27D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-PeersGameDraw";
+			target = ECD7485EA2BCB07EA86F2972468F00F6 /* Pods-PeersGameDraw */;
+			targetProxy = 487EEB29B259EBBF9BAF21CA3A28251D /* PBXContainerItemProxy */;
+		};
+		7CC860665E56D8EB0D7D658AA6C1047D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-PeersGameDraw";
+			target = ECD7485EA2BCB07EA86F2972468F00F6 /* Pods-PeersGameDraw */;
+			targetProxy = 4ABDCC90B3972B208E094173C762B57E /* PBXContainerItemProxy */;
+		};
+		8B39FA1BD812B16202F8BB4EA41B94B4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PeersFramework;
+			target = 0DEA0CD9180CD167840422613638B925 /* PeersFramework */;
+			targetProxy = 6F7015412522BF1398362768CD008E91 /* PBXContainerItemProxy */;
+		};
+		9A812F658409664FE59998B47C94F88C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = PeersUI;
 			target = A4788CAAB23F8920A4305203E8D421A1 /* PeersUI */;
-			targetProxy = 459DE20ED9934489A82F94E75023E63E /* PBXContainerItemProxy */;
-		};
-		9955A68CD08A0E763C46D575A2DFFCFD /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-Draw";
-			target = 0CC4E1797FA1E47E03C908CBA6CEFC64 /* Pods-Draw */;
-			targetProxy = 1D98C8C78591039186123A2E8B2C72A7 /* PBXContainerItemProxy */;
+			targetProxy = 0CDDB941A86D5D9482646A1776D6212F /* PBXContainerItemProxy */;
 		};
 		A73345E144C78C4F44D548E788AE45F2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -675,18 +912,87 @@
 			target = 40B16EE5512D78DFC7069761D098AD9F /* PeersUI-uielements-pod */;
 			targetProxy = E31B9F8A39050C39F0DDF9432406E2EE /* PBXContainerItemProxy */;
 		};
-		CFFC72364E5FC580F8968E5FC83AE657 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-Draw";
-			target = 0CC4E1797FA1E47E03C908CBA6CEFC64 /* Pods-Draw */;
-			targetProxy = 223FAA5F00850F22928090F7DF665D49 /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		02CB11702D0BFA80013BA1BE21AB5F13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4A95B91DB2B31047E80757BABF66424 /* PeersFramework.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PeersFramework/PeersFramework-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PeersFramework/PeersFramework-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/PeersFramework/PeersFramework.modulemap";
+				PRODUCT_MODULE_NAME = PeersFramework;
+				PRODUCT_NAME = PeersFramework;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		0D37207242D8AA1B90DB8A853BA81521 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7EE0C41585AA2EA564904123EBF767F /* Pods-PeersGameDrawUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-PeersGameDrawUITests/Pods-PeersGameDrawUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PeersGameDrawUITests/Pods-PeersGameDrawUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		1250F08841C2E925B580F1FBEACD178F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5916088B57543978D62F3922D65042F6 /* PeersUI.xcconfig */;
+			baseConfigurationReference = EF1520639FF85DA9C611CDE94446BBD6 /* PeersUI.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/PeersUI";
@@ -697,6 +1003,44 @@
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		2081A9A2ED304FF36AFAD5D79FF87394 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE82CCFCC3658B92FB327159EB798471 /* Pods-PeersGameDrawTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-PeersGameDrawTests/Pods-PeersGameDrawTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PeersGameDrawTests/Pods-PeersGameDrawTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
@@ -760,9 +1104,9 @@
 			};
 			name = Release;
 		};
-		343D7F9FBD9B5B17BB12F616199395CC /* Release */ = {
+		285A35D2398A1B7EC96EEB638475D2FB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F03E801522F6112AFCA3BE78969BEA58 /* Pods-Draw.release.xcconfig */;
+			baseConfigurationReference = 5E49448D7E289EA569C5B3E81D762DF7 /* Pods-PeersGameDraw.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -775,7 +1119,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Draw/Pods-Draw-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-PeersGameDraw/Pods-PeersGameDraw-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -784,7 +1128,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Draw/Pods-Draw.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-PeersGameDraw/Pods-PeersGameDraw.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -799,9 +1143,9 @@
 			};
 			name = Release;
 		};
-		3F94D3040B6A44E7C0D53CE1805AA352 /* Debug */ = {
+		3942FF55E27DA543B09EB0BCFCB54731 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E2C9F7E790FAF5D12018B72D7E97B47B /* Pods-DrawTests.debug.xcconfig */;
+			baseConfigurationReference = 8819564CD6B02BB5F1C8C877C300A329 /* Pods-PeersGameDraw.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -814,7 +1158,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-DrawTests/Pods-DrawTests-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-PeersGameDraw/Pods-PeersGameDraw-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -823,7 +1167,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-DrawTests/Pods-DrawTests.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-PeersGameDraw/Pods-PeersGameDraw.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -839,7 +1183,7 @@
 		};
 		49363AAEFE97ED668EBD8E5A89321F94 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5916088B57543978D62F3922D65042F6 /* PeersUI.xcconfig */;
+			baseConfigurationReference = EF1520639FF85DA9C611CDE94446BBD6 /* PeersUI.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -863,6 +1207,43 @@
 				MODULEMAP_FILE = "Target Support Files/PeersUI/PeersUI.modulemap";
 				PRODUCT_MODULE_NAME = PeersUI;
 				PRODUCT_NAME = PeersUI;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4A435C95D77ADA1227A9A3FE1A219CE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4A95B91DB2B31047E80757BABF66424 /* PeersFramework.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PeersFramework/PeersFramework-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PeersFramework/PeersFramework-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/PeersFramework/PeersFramework.modulemap";
+				PRODUCT_MODULE_NAME = PeersFramework;
+				PRODUCT_NAME = PeersFramework;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -876,7 +1257,7 @@
 		};
 		6BCD5CB77D4638B96D8896BE979E8860 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5916088B57543978D62F3922D65042F6 /* PeersUI.xcconfig */;
+			baseConfigurationReference = EF1520639FF85DA9C611CDE94446BBD6 /* PeersUI.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/PeersUI";
@@ -890,9 +1271,9 @@
 			};
 			name = Release;
 		};
-		76F44A64B5E014473CEE7447734D73CA /* Release */ = {
+		9081B6D0634314F897CEEFFD195FE2DF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6B1C8675687893031F5FD8242D034BEC /* Pods-DrawUITests.release.xcconfig */;
+			baseConfigurationReference = FC6FFDE5160E9C79E054FC088659135D /* Pods-PeersGameDrawTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -905,7 +1286,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-DrawUITests/Pods-DrawUITests-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-PeersGameDrawTests/Pods-PeersGameDrawTests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -914,7 +1295,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-DrawUITests/Pods-DrawUITests.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-PeersGameDrawTests/Pods-PeersGameDrawTests.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -929,47 +1310,9 @@
 			};
 			name = Release;
 		};
-		82E23A6CB7804E837973D6D6EB5F572E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0048EE0125B5D2D31366D93517F273A8 /* Pods-Draw.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Draw/Pods-Draw-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Draw/Pods-Draw.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		975A2A944BFD4C7352607608A219C4BA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5916088B57543978D62F3922D65042F6 /* PeersUI.xcconfig */;
+			baseConfigurationReference = EF1520639FF85DA9C611CDE94446BBD6 /* PeersUI.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -1003,9 +1346,9 @@
 			};
 			name = Debug;
 		};
-		9E8E34CCD8F59037D23B6CEFEE6D1163 /* Debug */ = {
+		CC68B4E745E3EA56E452C40ACDCA4079 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 96896155ECE4DEDFDD382403736061E0 /* Pods-DrawUITests.debug.xcconfig */;
+			baseConfigurationReference = 079FBDF33B1AECACEA1405699E843D87 /* Pods-PeersGameDrawUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -1018,7 +1361,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-DrawUITests/Pods-DrawUITests-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-PeersGameDrawUITests/Pods-PeersGameDrawUITests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1027,7 +1370,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-DrawUITests/Pods-DrawUITests.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-PeersGameDrawUITests/Pods-PeersGameDrawUITests.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -1040,45 +1383,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
-		};
-		9EF54EB3E345C5D33043AB541B665C77 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = CAF9F73F332EE80E1A481C047A940202 /* Pods-DrawTests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-DrawTests/Pods-DrawTests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-DrawTests/Pods-DrawTests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
 		};
 		DD8F832993327D1DD8046C3CBCBD97CD /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1147,11 +1451,11 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		07738C72E2766A619A3C85100CE49B1F /* Build configuration list for PBXNativeTarget "Pods-Draw" */ = {
+		03C1672B757981017071A4102A2152A8 /* Build configuration list for PBXNativeTarget "Pods-PeersGameDraw" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				82E23A6CB7804E837973D6D6EB5F572E /* Debug */,
-				343D7F9FBD9B5B17BB12F616199395CC /* Release */,
+				3942FF55E27DA543B09EB0BCFCB54731 /* Debug */,
+				285A35D2398A1B7EC96EEB638475D2FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1165,11 +1469,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		35AC34CED2E4B9B8D6D74D8FB8518C09 /* Build configuration list for PBXNativeTarget "Pods-DrawUITests" */ = {
+		2BF423095D7524D7E853EF35F8C08BEC /* Build configuration list for PBXNativeTarget "PeersFramework" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9E8E34CCD8F59037D23B6CEFEE6D1163 /* Debug */,
-				76F44A64B5E014473CEE7447734D73CA /* Release */,
+				02CB11702D0BFA80013BA1BE21AB5F13 /* Debug */,
+				4A435C95D77ADA1227A9A3FE1A219CE4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1183,11 +1487,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8307E7532657F3D3B5317794BB44767D /* Build configuration list for PBXNativeTarget "Pods-DrawTests" */ = {
+		62002540F0C430D9C6F3D21DA3E81BC4 /* Build configuration list for PBXNativeTarget "Pods-PeersGameDrawUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3F94D3040B6A44E7C0D53CE1805AA352 /* Debug */,
-				9EF54EB3E345C5D33043AB541B665C77 /* Release */,
+				CC68B4E745E3EA56E452C40ACDCA4079 /* Debug */,
+				0D37207242D8AA1B90DB8A853BA81521 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B518B480B1D1E9173DDBDE2DAB61E735 /* Build configuration list for PBXNativeTarget "Pods-PeersGameDrawTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2081A9A2ED304FF36AFAD5D79FF87394 /* Debug */,
+				9081B6D0634314F897CEEFFD195FE2DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

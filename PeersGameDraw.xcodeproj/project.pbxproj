@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		01833CD91BB56FD06BC8580B /* Pods_DrawUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B826811D8AEF0EC0051718DE /* Pods_DrawUITests.framework */; };
 		07368B5E2283029000621BEF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07368B5D2283029000621BEF /* AppDelegate.swift */; };
 		07368B602283029000621BEF /* DrawViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07368B5F2283029000621BEF /* DrawViewController.swift */; };
 		07368B632283029000621BEF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07368B612283029000621BEF /* Main.storyboard */; };
@@ -17,6 +16,7 @@
 		07368B7E2283029600621BEF /* PeersGameDrawUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07368B7D2283029600621BEF /* PeersGameDrawUITests.swift */; };
 		07368B8E22837FF100621BEF /* DrawViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07368B8D22837FF100621BEF /* DrawViewModel.swift */; };
 		07368B902283803A00621BEF /* DrawViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07368B8F2283803A00621BEF /* DrawViewModelProtocol.swift */; };
+		0787CDF9230EAACC00E409C6 /* GameDrawSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0787CDF8230EAACC00E409C6 /* GameDrawSetup.swift */; };
 		07B1A00F22E5CFCF009953D2 /* UIImage+Resize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B1A00E22E5CFCF009953D2 /* UIImage+Resize.swift */; };
 		07B1A01122E5D049009953D2 /* CGPath+CreateFromPointArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B1A01022E5D049009953D2 /* CGPath+CreateFromPointArray.swift */; };
 		07B1A01322E60D7E009953D2 /* UIImage+GrayScaleBitmap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B1A01222E60D7E009953D2 /* UIImage+GrayScaleBitmap.swift */; };
@@ -25,8 +25,9 @@
 		07B1A01B22E8BC77009953D2 /* DrawViewModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B1A01A22E8BC77009953D2 /* DrawViewModelDelegate.swift */; };
 		07C72D9122A9223100023FCA /* PointStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C72D9022A9223100023FCA /* PointStorage.swift */; };
 		07C72D9322A9443000023FCA /* ViewModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C72D9222A9443000023FCA /* ViewModelFactory.swift */; };
-		1A74E0C46057D08AE0549DCA /* Pods_DrawTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BFCE020D15A38901B7C115C /* Pods_DrawTests.framework */; };
-		348C99F6FEA5EC1CEB7E048A /* Pods_Draw.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEDEA8DC19AD34D70F3F9F82 /* Pods_Draw.framework */; };
+		59D98CCC2FB163E3728B17FA /* Pods_PeersGameDraw.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02716CDA74520A14B5D69283 /* Pods_PeersGameDraw.framework */; };
+		831D6910FB34B7ADB3756541 /* Pods_PeersGameDrawTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4751FD0438D2540377C5055D /* Pods_PeersGameDrawTests.framework */; };
+		B6F037939D8D0CF217457FC7 /* Pods_PeersGameDrawUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4774998F38F92F0D6AB2F3AC /* Pods_PeersGameDrawUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		02716CDA74520A14B5D69283 /* Pods_PeersGameDraw.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PeersGameDraw.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		07368B5A2283029000621BEF /* PeersGameDraw.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PeersGameDraw.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07368B5D2283029000621BEF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		07368B5F2283029000621BEF /* DrawViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawViewController.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 		07368B7F2283029600621BEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07368B8D22837FF100621BEF /* DrawViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawViewModel.swift; sourceTree = "<group>"; };
 		07368B8F2283803A00621BEF /* DrawViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawViewModelProtocol.swift; sourceTree = "<group>"; };
+		0787CDF8230EAACC00E409C6 /* GameDrawSetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDrawSetup.swift; sourceTree = "<group>"; };
 		07B1A00E22E5CFCF009953D2 /* UIImage+Resize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Resize.swift"; sourceTree = "<group>"; };
 		07B1A01022E5D049009953D2 /* CGPath+CreateFromPointArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGPath+CreateFromPointArray.swift"; sourceTree = "<group>"; };
 		07B1A01222E60D7E009953D2 /* UIImage+GrayScaleBitmap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+GrayScaleBitmap.swift"; sourceTree = "<group>"; };
@@ -71,12 +74,17 @@
 		07C72D9022A9223100023FCA /* PointStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointStorage.swift; sourceTree = "<group>"; };
 		07C72D9222A9443000023FCA /* ViewModelFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelFactory.swift; sourceTree = "<group>"; };
 		198CC4ED4CF9E356FF47A864 /* Pods-DrawUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrawUITests.release.xcconfig"; path = "Target Support Files/Pods-DrawUITests/Pods-DrawUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2730901C596C9D199B1729A3 /* Pods-PeersGameDraw.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PeersGameDraw.release.xcconfig"; path = "Target Support Files/Pods-PeersGameDraw/Pods-PeersGameDraw.release.xcconfig"; sourceTree = "<group>"; };
+		4751FD0438D2540377C5055D /* Pods_PeersGameDrawTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PeersGameDrawTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4774998F38F92F0D6AB2F3AC /* Pods_PeersGameDrawUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PeersGameDrawUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F779C9AC0C5DD94F197B038 /* Pods-PeersGameDrawTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PeersGameDrawTests.release.xcconfig"; path = "Target Support Files/Pods-PeersGameDrawTests/Pods-PeersGameDrawTests.release.xcconfig"; sourceTree = "<group>"; };
 		6D60B08BE6BDC16812D82FE4 /* Pods-DrawTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrawTests.debug.xcconfig"; path = "Target Support Files/Pods-DrawTests/Pods-DrawTests.debug.xcconfig"; sourceTree = "<group>"; };
 		814414B29C50CDE1DE604454 /* Pods-Draw.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Draw.debug.xcconfig"; path = "Target Support Files/Pods-Draw/Pods-Draw.debug.xcconfig"; sourceTree = "<group>"; };
-		8BFCE020D15A38901B7C115C /* Pods_DrawTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DrawTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B826811D8AEF0EC0051718DE /* Pods_DrawUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DrawUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BEDEA8DC19AD34D70F3F9F82 /* Pods_Draw.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Draw.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F76AA81AE88FF3CED628F7D /* Pods-PeersGameDraw.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PeersGameDraw.debug.xcconfig"; path = "Target Support Files/Pods-PeersGameDraw/Pods-PeersGameDraw.debug.xcconfig"; sourceTree = "<group>"; };
 		C210CDCAC38199934F7BB6D7 /* Pods-DrawTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrawTests.release.xcconfig"; path = "Target Support Files/Pods-DrawTests/Pods-DrawTests.release.xcconfig"; sourceTree = "<group>"; };
+		D026A9E0A1D6644E681B84ED /* Pods-PeersGameDrawUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PeersGameDrawUITests.debug.xcconfig"; path = "Target Support Files/Pods-PeersGameDrawUITests/Pods-PeersGameDrawUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		DF098ACCE101B9555928792F /* Pods-PeersGameDrawUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PeersGameDrawUITests.release.xcconfig"; path = "Target Support Files/Pods-PeersGameDrawUITests/Pods-PeersGameDrawUITests.release.xcconfig"; sourceTree = "<group>"; };
+		EF237363FA20A65FD8B8FCEA /* Pods-PeersGameDrawTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PeersGameDrawTests.debug.xcconfig"; path = "Target Support Files/Pods-PeersGameDrawTests/Pods-PeersGameDrawTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F1D6ED55DE4D91C282B57048 /* Pods-DrawUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrawUITests.debug.xcconfig"; path = "Target Support Files/Pods-DrawUITests/Pods-DrawUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		F35BA8F9685E21A338A54603 /* Pods-Draw.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Draw.release.xcconfig"; path = "Target Support Files/Pods-Draw/Pods-Draw.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -86,7 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				348C99F6FEA5EC1CEB7E048A /* Pods_Draw.framework in Frameworks */,
+				59D98CCC2FB163E3728B17FA /* Pods_PeersGameDraw.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,7 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A74E0C46057D08AE0549DCA /* Pods_DrawTests.framework in Frameworks */,
+				831D6910FB34B7ADB3756541 /* Pods_PeersGameDrawTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,7 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				01833CD91BB56FD06BC8580B /* Pods_DrawUITests.framework in Frameworks */,
+				B6F037939D8D0CF217457FC7 /* Pods_PeersGameDrawUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,16 +142,15 @@
 		07368B5C2283029000621BEF /* PeersGameDraw */ = {
 			isa = PBXGroup;
 			children = (
+				0787CDF7230EAAB100E409C6 /* PeersIntegration */,
 				07B1A01622E8A775009953D2 /* Storyboards */,
 				07368B8B22837DC100621BEF /* View */,
 				07368B8C22837DC900621BEF /* View Model */,
 				07C72D8B22A921C100023FCA /* Model */,
+				0787CDF6230EAA8B00E409C6 /* Extensions */,
 				07368B5D2283029000621BEF /* AppDelegate.swift */,
 				07368B642283029600621BEF /* Assets.xcassets */,
 				07368B692283029600621BEF /* Info.plist */,
-				07B1A00E22E5CFCF009953D2 /* UIImage+Resize.swift */,
-				07B1A01022E5D049009953D2 /* CGPath+CreateFromPointArray.swift */,
-				07B1A01222E60D7E009953D2 /* UIImage+GrayScaleBitmap.swift */,
 			);
 			path = PeersGameDraw;
 			sourceTree = "<group>";
@@ -185,6 +192,24 @@
 			path = "View Model";
 			sourceTree = "<group>";
 		};
+		0787CDF6230EAA8B00E409C6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				07B1A00E22E5CFCF009953D2 /* UIImage+Resize.swift */,
+				07B1A01022E5D049009953D2 /* CGPath+CreateFromPointArray.swift */,
+				07B1A01222E60D7E009953D2 /* UIImage+GrayScaleBitmap.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		0787CDF7230EAAB100E409C6 /* PeersIntegration */ = {
+			isa = PBXGroup;
+			children = (
+				0787CDF8230EAACC00E409C6 /* GameDrawSetup.swift */,
+			);
+			path = PeersIntegration;
+			sourceTree = "<group>";
+		};
 		07B1A01622E8A775009953D2 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
@@ -213,6 +238,12 @@
 				C210CDCAC38199934F7BB6D7 /* Pods-DrawTests.release.xcconfig */,
 				F1D6ED55DE4D91C282B57048 /* Pods-DrawUITests.debug.xcconfig */,
 				198CC4ED4CF9E356FF47A864 /* Pods-DrawUITests.release.xcconfig */,
+				8F76AA81AE88FF3CED628F7D /* Pods-PeersGameDraw.debug.xcconfig */,
+				2730901C596C9D199B1729A3 /* Pods-PeersGameDraw.release.xcconfig */,
+				EF237363FA20A65FD8B8FCEA /* Pods-PeersGameDrawTests.debug.xcconfig */,
+				5F779C9AC0C5DD94F197B038 /* Pods-PeersGameDrawTests.release.xcconfig */,
+				D026A9E0A1D6644E681B84ED /* Pods-PeersGameDrawUITests.debug.xcconfig */,
+				DF098ACCE101B9555928792F /* Pods-PeersGameDrawUITests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -220,9 +251,9 @@
 		CF00EF5DDD85B5DF191B55D8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				BEDEA8DC19AD34D70F3F9F82 /* Pods_Draw.framework */,
-				8BFCE020D15A38901B7C115C /* Pods_DrawTests.framework */,
-				B826811D8AEF0EC0051718DE /* Pods_DrawUITests.framework */,
+				02716CDA74520A14B5D69283 /* Pods_PeersGameDraw.framework */,
+				4751FD0438D2540377C5055D /* Pods_PeersGameDrawTests.framework */,
+				4774998F38F92F0D6AB2F3AC /* Pods_PeersGameDrawUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -364,15 +395,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Draw/Pods-Draw-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-PeersGameDraw/Pods-PeersGameDraw-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Draw/Pods-Draw-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-PeersGameDraw/Pods-PeersGameDraw-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Draw/Pods-Draw-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PeersGameDraw/Pods-PeersGameDraw-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		5B0D1EF396F72D879702C388 /* [CP] Check Pods Manifest.lock */ = {
@@ -390,7 +421,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-DrawUITests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-PeersGameDrawUITests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -412,7 +443,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Draw-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-PeersGameDraw-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -434,7 +465,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-DrawTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-PeersGameDrawTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -458,6 +489,7 @@
 				07B1A01922E8BA9F009953D2 /* CloudManagerDelegate.swift in Sources */,
 				07C72D9322A9443000023FCA /* ViewModelFactory.swift in Sources */,
 				07B1A01B22E8BC77009953D2 /* DrawViewModelDelegate.swift in Sources */,
+				0787CDF9230EAACC00E409C6 /* GameDrawSetup.swift in Sources */,
 				07368B5E2283029000621BEF /* AppDelegate.swift in Sources */,
 				07368B902283803A00621BEF /* DrawViewModelProtocol.swift in Sources */,
 			);
@@ -632,7 +664,7 @@
 		};
 		07368B832283029600621BEF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 814414B29C50CDE1DE604454 /* Pods-Draw.debug.xcconfig */;
+			baseConfigurationReference = 8F76AA81AE88FF3CED628F7D /* Pods-PeersGameDraw.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -652,7 +684,7 @@
 		};
 		07368B842283029600621BEF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F35BA8F9685E21A338A54603 /* Pods-Draw.release.xcconfig */;
+			baseConfigurationReference = 2730901C596C9D199B1729A3 /* Pods-PeersGameDraw.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -672,7 +704,7 @@
 		};
 		07368B862283029600621BEF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6D60B08BE6BDC16812D82FE4 /* Pods-DrawTests.debug.xcconfig */;
+			baseConfigurationReference = EF237363FA20A65FD8B8FCEA /* Pods-PeersGameDrawTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -694,7 +726,7 @@
 		};
 		07368B872283029600621BEF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C210CDCAC38199934F7BB6D7 /* Pods-DrawTests.release.xcconfig */;
+			baseConfigurationReference = 5F779C9AC0C5DD94F197B038 /* Pods-PeersGameDrawTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -716,7 +748,7 @@
 		};
 		07368B892283029600621BEF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F1D6ED55DE4D91C282B57048 /* Pods-DrawUITests.debug.xcconfig */;
+			baseConfigurationReference = D026A9E0A1D6644E681B84ED /* Pods-PeersGameDrawUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -737,7 +769,7 @@
 		};
 		07368B8A2283029600621BEF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 198CC4ED4CF9E356FF47A864 /* Pods-DrawUITests.release.xcconfig */;
+			baseConfigurationReference = DF098ACCE101B9555928792F /* Pods-PeersGameDrawUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

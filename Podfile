@@ -2,16 +2,17 @@ platform :ios, '11.0'
 
 source 'git@gitlab.mi.hdm-stuttgart.de:peers/specs.git'
 
-target 'Draw' do
+target 'PeersGameDraw' do
   use_frameworks!
 
   pod 'PeersUI' # our custom UI elements
+  pod 'PeersFramework'
 
-  target 'DrawTests' do
+  target 'PeersGameDrawTests' do
     inherit! :search_paths
   end
 
-  target 'DrawUITests' do
+  target 'PeersGameDrawUITests' do
     inherit! :search_paths
   end
 
