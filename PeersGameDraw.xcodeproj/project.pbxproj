@@ -32,6 +32,8 @@
 		07C72D9122A9223100023FCA /* PointStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C72D9022A9223100023FCA /* PointStorage.swift */; };
 		07C72D9322A9443000023FCA /* ViewModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C72D9222A9443000023FCA /* ViewModelFactory.swift */; };
 		07F9999C230EDC79002A9433 /* DrawInstructionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F9999B230EDC79002A9433 /* DrawInstructionsView.swift */; };
+		07F9999F230EE0D6002A9433 /* GameDrawHostMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F9999E230EE0D6002A9433 /* GameDrawHostMessages.swift */; };
+		07F999A1230EE2CD002A9433 /* GameDrawPlayerMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F999A0230EE2CD002A9433 /* GameDrawPlayerMessages.swift */; };
 		59D98CCC2FB163E3728B17FA /* Pods_PeersGameDraw.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02716CDA74520A14B5D69283 /* Pods_PeersGameDraw.framework */; };
 		831D6910FB34B7ADB3756541 /* Pods_PeersGameDrawTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4751FD0438D2540377C5055D /* Pods_PeersGameDrawTests.framework */; };
 		B6F037939D8D0CF217457FC7 /* Pods_PeersGameDrawUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4774998F38F92F0D6AB2F3AC /* Pods_PeersGameDrawUITests.framework */; };
@@ -87,6 +89,8 @@
 		07C72D9022A9223100023FCA /* PointStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointStorage.swift; sourceTree = "<group>"; };
 		07C72D9222A9443000023FCA /* ViewModelFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelFactory.swift; sourceTree = "<group>"; };
 		07F9999B230EDC79002A9433 /* DrawInstructionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawInstructionsView.swift; sourceTree = "<group>"; };
+		07F9999E230EE0D6002A9433 /* GameDrawHostMessages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDrawHostMessages.swift; sourceTree = "<group>"; };
+		07F999A0230EE2CD002A9433 /* GameDrawPlayerMessages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDrawPlayerMessages.swift; sourceTree = "<group>"; };
 		198CC4ED4CF9E356FF47A864 /* Pods-DrawUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrawUITests.release.xcconfig"; path = "Target Support Files/Pods-DrawUITests/Pods-DrawUITests.release.xcconfig"; sourceTree = "<group>"; };
 		2730901C596C9D199B1729A3 /* Pods-PeersGameDraw.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PeersGameDraw.release.xcconfig"; path = "Target Support Files/Pods-PeersGameDraw/Pods-PeersGameDraw.release.xcconfig"; sourceTree = "<group>"; };
 		4751FD0438D2540377C5055D /* Pods_PeersGameDrawTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PeersGameDrawTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -221,6 +225,8 @@
 				0787CDF8230EAACC00E409C6 /* GameDrawSetup.swift */,
 				0787CDFA230EAD1300E409C6 /* GameDrawPlayerGameImpl.swift */,
 				0787CDFC230EAE7300E409C6 /* GameDrawHostGameImpl.swift */,
+				07F9999E230EE0D6002A9433 /* GameDrawHostMessages.swift */,
+				07F999A0230EE2CD002A9433 /* GameDrawPlayerMessages.swift */,
 			);
 			path = PeersIntegration;
 			sourceTree = "<group>";
@@ -526,8 +532,10 @@
 				07B1A01522E89444009953D2 /* CloudManager.swift in Sources */,
 				07B1A00F22E5CFCF009953D2 /* UIImage+Resize.swift in Sources */,
 				07B1A01122E5D049009953D2 /* CGPath+CreateFromPointArray.swift in Sources */,
+				07F999A1230EE2CD002A9433 /* GameDrawPlayerMessages.swift in Sources */,
 				07B1A01922E8BA9F009953D2 /* CloudManagerDelegate.swift in Sources */,
 				0787CDFD230EAE7300E409C6 /* GameDrawHostGameImpl.swift in Sources */,
+				07F9999F230EE0D6002A9433 /* GameDrawHostMessages.swift in Sources */,
 				0787CDFB230EAD1300E409C6 /* GameDrawPlayerGameImpl.swift in Sources */,
 				07F9999C230EDC79002A9433 /* DrawInstructionsView.swift in Sources */,
 				07C72D9322A9443000023FCA /* ViewModelFactory.swift in Sources */,

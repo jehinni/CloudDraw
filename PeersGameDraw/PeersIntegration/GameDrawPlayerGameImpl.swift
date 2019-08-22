@@ -18,6 +18,10 @@ class GameDrawPlayerGameImpl: PlayerGame {
     var playerDrawViewController: PlayerDrawViewController
     var playerResultViewController: PlayerResultViewController
     
+    var points = 0
+    var finalGamePlayer: GamePlayer?
+    var finalRankingPosition: Int?
+    
     init(parentViewController: UIViewController) {
         containerViewController = parentViewController
         
@@ -31,8 +35,31 @@ class GameDrawPlayerGameImpl: PlayerGame {
         os_log("[GAME DRAW] deinit", type: .debug)
     }
     
+    // HostGame methods
+    
     func handle(message: Data, ofType: String) {
-        
+        do {
+            // TODO: handle messages
+            os_log("[GAME Draw] Received message %s.", type: .debug, ofType)
+            switch ofType {
+            case "\(GameStartMessage.self)":
+                switchViewController(old: playerInstructionsViewController, new: playerDrawViewController)
+            case "\(SubjectMessage.self)":
+                let data = try MessageWrapper.decodeData(type: SubjectMessage.self, data: message)
+            case "\(ResultRequestMessage.self)":
+                endGame()
+            case "\(RankingPositionMessage.self)":
+                let data = try MessageWrapper.decodeData(type: RankingPositionMessage.self, data: message)
+                finalGamePlayer = data.gamePlayer
+                finalRankingPosition = data.rankingPosition
+            case "\(GameEndMessage.self)":
+                switchViewController(old: playerDrawViewController, new: playerResultViewController)
+            default:
+                os_log("[GAME QUIZ] Received unknown message.", type: .error)
+            }
+        } catch {
+            os_log("[GAME QUIZ] Failed to decode message of type %s: %@", type: .error, ofType, error.localizedDescription)
+        }
     }
     
     // Called by the framework.
@@ -45,6 +72,14 @@ class GameDrawPlayerGameImpl: PlayerGame {
     // Remove the game view to pass back view control to the Peers App.
     func terminate(completionHandler: @escaping () -> Void) {
         
+    }
+    
+    // handler?? methods
+    
+    // Ends game: Stops timer and asks the players to send their result (final points).
+    func endGame() {
+        os_log("[GAME DRAW] Ending game: sending player result (%d points) to the host.", type: .debug, points)
+        self.framework?.sendGameDataToHost(message: ResultMessage(points: points), sendMode: .reliable)
     }
     
     
