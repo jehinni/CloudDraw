@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00A7661B22C8AB7F00FA9B1A /* imageCore.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 00A7661A22C8AB7F00FA9B1A /* imageCore.mlmodel */; };
-		00A7661D22C8AC3700FA9B1A /* ImageClassification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A7661C22C8AC3700FA9B1A /* ImageClassification.swift */; };
 		01833CD91BB56FD06BC8580B /* Pods_DrawUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B826811D8AEF0EC0051718DE /* Pods_DrawUITests.framework */; };
 		07368B5E2283029000621BEF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07368B5D2283029000621BEF /* AppDelegate.swift */; };
 		07368B602283029000621BEF /* DrawViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07368B5F2283029000621BEF /* DrawViewController.swift */; };
@@ -49,8 +47,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00A7661A22C8AB7F00FA9B1A /* imageCore.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = imageCore.mlmodel; sourceTree = "<group>"; };
-		00A7661C22C8AC3700FA9B1A /* ImageClassification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageClassification.swift; sourceTree = "<group>"; };
 		07368B5A2283029000621BEF /* PeersGameDraw.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PeersGameDraw.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07368B5D2283029000621BEF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		07368B5F2283029000621BEF /* DrawViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawViewController.swift; sourceTree = "<group>"; };
@@ -138,7 +134,6 @@
 		07368B5C2283029000621BEF /* PeersGameDraw */ = {
 			isa = PBXGroup;
 			children = (
-				07B1A01722E8A78D009953D2 /* CoreML */,
 				07B1A01622E8A775009953D2 /* Storyboards */,
 				07368B8B22837DC100621BEF /* View */,
 				07368B8C22837DC900621BEF /* View Model */,
@@ -197,15 +192,6 @@
 				07368B662283029600621BEF /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
-			sourceTree = "<group>";
-		};
-		07B1A01722E8A78D009953D2 /* CoreML */ = {
-			isa = PBXGroup;
-			children = (
-				00A7661C22C8AC3700FA9B1A /* ImageClassification.swift */,
-				00A7661A22C8AB7F00FA9B1A /* imageCore.mlmodel */,
-			);
-			path = CoreML;
 			sourceTree = "<group>";
 		};
 		07C72D8B22A921C100023FCA /* Model */ = {
@@ -472,8 +458,6 @@
 				07B1A01922E8BA9F009953D2 /* CloudManagerDelegate.swift in Sources */,
 				07C72D9322A9443000023FCA /* ViewModelFactory.swift in Sources */,
 				07B1A01B22E8BC77009953D2 /* DrawViewModelDelegate.swift in Sources */,
-				00A7661B22C8AB7F00FA9B1A /* imageCore.mlmodel in Sources */,
-				00A7661D22C8AC3700FA9B1A /* ImageClassification.swift in Sources */,
 				07368B5E2283029000621BEF /* AppDelegate.swift in Sources */,
 				07368B902283803A00621BEF /* DrawViewModelProtocol.swift in Sources */,
 			);
