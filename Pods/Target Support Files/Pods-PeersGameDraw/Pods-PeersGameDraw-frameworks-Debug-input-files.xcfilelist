@@ -1,3 +1,4 @@
 ${PODS_ROOT}/Target Support Files/Pods-PeersGameDraw/Pods-PeersGameDraw-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/PeersFramework/PeersFramework.framework
 ${BUILT_PRODUCTS_DIR}/PeersUI/PeersUI.framework
+${BUILT_PRODUCTS_DIR}/UICircularProgressRing/UICircularProgressRing.framework

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="13T-4o-gFV">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1M2-cg-QXB">
+                    <rect key="frame" x="0.0" y="0.0" width="834" height="1194"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3fS-cB-d1t" customClass="UICircularProgressRing" customModule="UICircularProgressRing">
+                    <rect key="frame" x="340" y="78" width="40" height="40"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="bij-pd-Ft0"/>
+                        <constraint firstAttribute="height" constant="40" id="eKX-9h-LjF"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="value">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="minValue">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="fullCircle" value="YES"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="shouldShowValueText" value="NO"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="maxValue">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="startAngle">
+                            <real key="value" value="-90"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="outerRingWidth">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="outerRingColor">
+                            <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="innerRingWidth">
+                            <real key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="innerRingColor">
+                            <color key="value" name="neonBlue"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isClockwise" value="NO"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TtU-ZQ-xOO">
+                    <rect key="frame" x="47" y="213" width="320" height="480"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Draw" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CfW-Wf-sZA" customClass="PeersHeadline1Label" customModule="PeersUI">
+                            <rect key="frame" x="101" y="130" width="118" height="49"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="118" id="JCO-zV-GKY"/>
+                                <constraint firstAttribute="height" constant="49" id="eyX-Rx-Mvo"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Draw the 4 given subjects. Be quick - you only have 5 seconds per drawing!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EcV-OM-LXq" customClass="PeersText1Label" customModule="PeersUI">
+                            <rect key="frame" x="75.5" y="225" width="169" height="81.5"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="169" id="471-f5-zCW"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="320" id="QV8-83-C0C"/>
+                        <constraint firstItem="CfW-Wf-sZA" firstAttribute="top" secondItem="TtU-ZQ-xOO" secondAttribute="top" constant="130" id="Sds-Da-Bt5"/>
+                        <constraint firstItem="EcV-OM-LXq" firstAttribute="top" secondItem="CfW-Wf-sZA" secondAttribute="bottom" constant="46" id="TJE-kV-iCB"/>
+                        <constraint firstItem="EcV-OM-LXq" firstAttribute="centerX" secondItem="TtU-ZQ-xOO" secondAttribute="centerX" id="W7e-d5-kpx"/>
+                        <constraint firstItem="CfW-Wf-sZA" firstAttribute="centerX" secondItem="TtU-ZQ-xOO" secondAttribute="centerX" id="ffm-dJ-ZGg"/>
+                        <constraint firstAttribute="height" constant="480" id="yk4-i1-MXA"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="TtU-ZQ-xOO" firstAttribute="centerY" secondItem="kkG-4j-dZX" secondAttribute="centerY" id="7VN-vm-B8b"/>
+                <constraint firstItem="kkG-4j-dZX" firstAttribute="trailing" secondItem="3fS-cB-d1t" secondAttribute="trailing" constant="34" id="L0O-H5-Tzk"/>
+                <constraint firstItem="TtU-ZQ-xOO" firstAttribute="centerX" secondItem="kkG-4j-dZX" secondAttribute="centerX" id="bdm-IR-VV9"/>
+                <constraint firstItem="3fS-cB-d1t" firstAttribute="top" secondItem="kkG-4j-dZX" secondAttribute="top" constant="34" id="ims-3i-hIZ"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="kkG-4j-dZX"/>
+            <point key="canvasLocation" x="48.201438848920866" y="34.673366834170857"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="neonBlue">
+            <color red="0.47058823529411764" green="0.93333333333333335" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

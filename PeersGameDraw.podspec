@@ -73,5 +73,6 @@ Pod::Spec.new do |spec|
 
   spec.dependency "PeersFramework"
   spec.dependency "PeersUI"
+  spec.dependency "UICircularProgressRing"
 
 end

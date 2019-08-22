@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 class ViewModelFactory {
-	class func createDrawViewModel(with imageView: UIImageView) -> DrawViewModel {
-		return DrawViewModel(with: imageView)
+	class func createPlayerDrawViewModel(with imageView: UIImageView) -> PlayerDrawViewModel {
+		return PlayerDrawViewModel(with: imageView)
 	}
 }

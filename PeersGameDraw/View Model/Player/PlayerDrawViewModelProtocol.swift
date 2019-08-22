@@ -1,5 +1,5 @@
 //
-//  DrawViewModelProtocol.swift
+//  PlayerDrawViewModelProtocol.swift
 //  Draw
 //
 //  Created by Johanna Reiting on 08.05.19.
@@ -9,13 +9,13 @@
 import Foundation
 import UIKit
 
-protocol DrawViewModelProtocol {
+protocol PlayerDrawViewModelProtocol {
 	var lastPoint: CGPoint { get set }
 	var currentPoint: CGPoint { get }
 	var swiped: Bool { get }
 	var pointStorage: PointStorage { get }
 	var cloudManager: CloudManager { get }
-	var drawViewModelDelegate: DrawViewModelDelegate? { get set}
+	var drawViewModelDelegate: PlayerDrawViewModelDelegate? { get set}
 	
 	func draw()
 	func userSwiped(to point: CGPoint)
