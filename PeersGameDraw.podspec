@@ -43,7 +43,7 @@ Pod::Spec.new do |spec|
 
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  spec.source       = { :git => "git@gitlab.mi.hdm-stuttgart.de:peers/draw-game.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "git@gitlab.com:peers/draw-game.git", :tag => "#{spec.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
