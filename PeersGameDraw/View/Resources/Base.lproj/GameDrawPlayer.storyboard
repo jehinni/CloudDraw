@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -167,6 +167,7 @@
                     </view>
                     <connections>
                         <outlet property="instructionsView" destination="Kk0-ox-GbC" id="gdS-bd-EWP"/>
+                        <outlet property="playerInstructionsView" destination="lbC-L4-vDd" id="bCl-ej-8L7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Tv-wl-59A" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -269,7 +270,9 @@
                     </view>
                     <connections>
                         <outlet property="countdown" destination="OGA-iw-kYr" id="Q6z-H2-Eym"/>
-                        <outlet property="emojiLabel" destination="swT-Me-OfC" id="qRi-mK-rSo"/>
+                        <outlet property="countdownView" destination="OGA-iw-kYr" id="gVA-wg-qcr"/>
+                        <outlet property="emojiLabel" destination="swT-Me-OfC" id="ifs-zB-kxU"/>
+                        <outlet property="resultLabel" destination="ttd-qT-tPI" id="odY-dX-9gU"/>
                         <outlet property="textLabel" destination="ttd-qT-tPI" id="gaZ-zp-qq3"/>
                     </connections>
                 </viewController>

@@ -26,7 +26,7 @@ class PlayerDrawViewController: UIViewController, PlayerDrawViewModelDelegate {
         // TODO: inject viewModel
         drawViewModel = ViewModelFactory.createPlayerDrawViewModel(with: mainImageView)
         drawViewModel?.drawViewModelDelegate = self
-        drawViewModel?.randomImage()
+        //        drawViewModel?.next(image: ) TODO: call in viewModel init?
     }
     
     // UIResponder methods
@@ -76,7 +76,7 @@ class PlayerDrawViewController: UIViewController, PlayerDrawViewModelDelegate {
         iSeeLabel.isHidden = false
     }
     
-    func randomImage(imageName: String) {
+    func didReceiveRandomImage(imageName: String) {
         drawingLabel.text = "Please draw: " + imageName
     }
 }

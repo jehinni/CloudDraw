@@ -10,5 +10,5 @@ import Foundation
 
 protocol PlayerDrawViewModelDelegate: AnyObject {
 	func didReceive(prediction: String)
-    func randomImage(imageName: String)
+    func didReceiveRandomImage(imageName: String)
 }

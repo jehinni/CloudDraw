@@ -18,6 +18,8 @@ class GameDrawPlayerGameImpl: PlayerGame {
     var playerDrawViewController: PlayerDrawViewController
     var playerResultViewController: PlayerResultViewController
     
+    var playerDrawViewModel: PlayerDrawViewModelProtocol?
+    
     var points = 0
     var finalGamePlayer: GamePlayer?
     var finalRankingPosition: Int?
@@ -35,7 +37,7 @@ class GameDrawPlayerGameImpl: PlayerGame {
         os_log("[GAME DRAW] deinit", type: .debug)
     }
     
-    // HostGame methods
+    // PlayerGame methods
     
     func handle(message: Data, ofType: String) {
         do {
@@ -46,6 +48,7 @@ class GameDrawPlayerGameImpl: PlayerGame {
                 switchViewController(old: playerInstructionsViewController, new: playerDrawViewController)
             case "\(SubjectMessage.self)":
                 let data = try MessageWrapper.decodeData(type: SubjectMessage.self, data: message)
+                nextImage(data.drawSubject)
             case "\(ResultRequestMessage.self)":
                 endGame()
             case "\(RankingPositionMessage.self)":
@@ -55,31 +58,37 @@ class GameDrawPlayerGameImpl: PlayerGame {
             case "\(GameEndMessage.self)":
                 switchViewController(old: playerDrawViewController, new: playerResultViewController)
             default:
-                os_log("[GAME QUIZ] Received unknown message.", type: .error)
+                os_log("[GAME DRAW] Received unknown message.", type: .error)
             }
         } catch {
-            os_log("[GAME QUIZ] Failed to decode message of type %s: %@", type: .error, ofType, error.localizedDescription)
+            os_log("[GAME DRAW] Failed to decode message of type %s: %@", type: .error, ofType, error.localizedDescription)
         }
     }
     
     // Called by the framework.
     // Show the instructions view to take (partial) view control from the Peers App.
     func play() {
-        
+        os_log("[GAME DRAW] Play: showing instructions view.", type: .debug)
+        switchViewController(old: nil, new: playerInstructionsViewController)
     }
     
     // Called by the framework.
     // Remove the game view to pass back view control to the Peers App.
     func terminate(completionHandler: @escaping () -> Void) {
-        
+        os_log("[GAME DRAW] Terminate: removing game view.", type: .debug)
+        switchViewController(old: self.playerResultViewController, new: nil, completionHandler: completionHandler)
     }
     
     // handler?? methods
     
+    func nextImage(_ subject: String) {
+        playerDrawViewModel?.next(image: subject)
+    }
+    
     // Ends game: Stops timer and asks the players to send their result (final points).
     func endGame() {
         os_log("[GAME DRAW] Ending game: sending player result (%d points) to the host.", type: .debug, points)
-        self.framework?.sendGameDataToHost(message: ResultMessage(points: points), sendMode: .reliable)
+        framework?.sendGameDataToHost(message: ResultMessage(points: points), sendMode: .reliable)
     }
     
     

@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 import CoreGraphics
+import os.log
 
 class PlayerDrawViewModel: PlayerDrawViewModelProtocol, CloudManagerDelegate {
     
@@ -20,8 +21,7 @@ class PlayerDrawViewModel: PlayerDrawViewModelProtocol, CloudManagerDelegate {
     var currentPoints: [CGPoint]
     var cloudManager: CloudManager
     var drawViewModelDelegate: PlayerDrawViewModelDelegate?
-    var imageElements = ["apple", "candle", "lightning"]
-    var randImage: String?
+    var randomImage: String?
     
     init(with imageView: UIImageView) {
         drawView = imageView
@@ -75,7 +75,7 @@ class PlayerDrawViewModel: PlayerDrawViewModelProtocol, CloudManagerDelegate {
     func deleteAll() {
         pointStorage.touchPoints.removeAll()
         drawView.image = nil
-        randomImage()
+        next()
     }
     
     func undo() {
@@ -119,14 +119,18 @@ class PlayerDrawViewModel: PlayerDrawViewModelProtocol, CloudManagerDelegate {
         let grayscaleBitmap = image.bitMap2DimensionalArray()
         
         guard let bitmap = grayscaleBitmap else { return }
-        if randImage == nil { return }
-        cloudManager.send(label: randImage!, bitmap: bitmap)
+        if randomImage == nil { return }
+        cloudManager.send(label: randomImage!, bitmap: bitmap)
     }
     
-    func randomImage() {
-        randImage = imageElements.randomElement() ?? "No Image Elements"
-        if randImage == nil { return }
-        drawViewModelDelegate?.randomImage(imageName: randImage!)
+    func next() {
+        drawViewModelDelegate?.didReceiveRandomImage(imageName: randomImage ?? "No image received")
+    }
+    
+    // TODO: for peers, move to adapter, call next() on viewModel
+    func next(image: String) {
+        randomImage = image
+        drawViewModelDelegate?.didReceiveRandomImage(imageName: randomImage ?? "No image received")
     }
     
     func drawFinalImage() {
@@ -157,6 +161,8 @@ class PlayerDrawViewModel: PlayerDrawViewModelProtocol, CloudManagerDelegate {
     
     func didReceive(prediction: [String : AnyObject]) {
         let predictedObject = prediction["prediction"] as! String
+        
+        // TODO: send to Host
         
         DispatchQueue.main.async {
             self.drawViewModelDelegate?.didReceive(prediction: predictedObject)

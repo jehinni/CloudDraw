@@ -9,6 +9,13 @@
 import Foundation
 import PeersFramework
 
+struct ImagePredictionMessage: Codable {
+    let prediction: String
+    init(prediction: String) {
+        self.prediction = prediction
+    }
+}
+
 struct PointsMessage: Codable {
     let points: Int
     init(points: Int) {

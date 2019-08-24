@@ -1,7 +1,258 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13142" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12042"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <scenes/>
+    <scenes>
+        <!--Host Instructions View Controller-->
+        <scene sceneID="C5e-5L-qGb">
+            <objects>
+                <viewController storyboardIdentifier="HostInstructionsViewController" id="Qf4-rj-lZR" customClass="HostInstructionsViewController" customModule="PeersGameDraw" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GUk-2p-03g">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZeC-2o-ZT6" customClass="DrawInstructionsView" customModule="PeersGameDraw" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="24" width="414" height="838"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="WGH-Dd-PyP" firstAttribute="top" secondItem="ZeC-2o-ZT6" secondAttribute="top" constant="20" id="GDL-yZ-GUc"/>
+                            <constraint firstItem="ZeC-2o-ZT6" firstAttribute="leading" secondItem="WGH-Dd-PyP" secondAttribute="leading" id="R2j-t7-oXm"/>
+                            <constraint firstItem="WGH-Dd-PyP" firstAttribute="bottom" secondItem="ZeC-2o-ZT6" secondAttribute="bottom" id="RMl-a1-RTm"/>
+                            <constraint firstItem="WGH-Dd-PyP" firstAttribute="trailing" secondItem="ZeC-2o-ZT6" secondAttribute="trailing" id="eMg-vZ-nBd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="WGH-Dd-PyP"/>
+                    </view>
+                    <connections>
+                        <outlet property="instructionsView" destination="ZeC-2o-ZT6" id="Ftm-s1-AWQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qm7-NN-9xw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-133.125" y="23.75"/>
+        </scene>
+        <!--Host Draw View Controller-->
+        <scene sceneID="Dej-Vv-Aef">
+            <objects>
+                <viewController storyboardIdentifier="HostDrawViewController" id="ivs-eW-jLm" customClass="HostDrawViewController" customModule="PeersGameDraw" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9k7-KN-rY7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LiR-vR-bp3" customClass="UICircularProgressRing" customModule="UICircularProgressRing">
+                                <rect key="frame" x="340" y="34" width="40" height="40"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="hPF-ky-bYN"/>
+                                    <constraint firstAttribute="height" constant="40" id="qAO-GI-swN"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="innerRingColor">
+                                        <color key="value" name="neonBlue"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="value">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="minValue">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="maxValue">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="fullCircle" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="shouldShowValueText" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="startAngle">
+                                        <real key="value" value="-90"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="outerRingWidth">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="outerRingColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="innerRingWidth">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isClockwise" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Mct-Pa-SUp">
+                                <rect key="frame" x="64" y="417" width="286.5" height="62"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Draw:" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OUW-uV-6yj" userLabel="Draw Label" customClass="PeersText1Label" customModule="PeersUI">
+                                        <rect key="frame" x="122.5" y="0.0" width="41.5" height="22"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LongLongLongLongLongLongName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ZK-Ms-30j" userLabel="Image Label" customClass="PeersHeadline4Label" customModule="PeersUI">
+                                        <rect key="frame" x="0.0" y="38" width="286.5" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Mct-Pa-SUp" firstAttribute="centerY" secondItem="9k7-KN-rY7" secondAttribute="centerY" id="dcs-Pg-cg2"/>
+                            <constraint firstItem="J2q-W7-3uy" firstAttribute="trailing" secondItem="LiR-vR-bp3" secondAttribute="trailing" constant="34" id="eRx-km-8MT"/>
+                            <constraint firstItem="Mct-Pa-SUp" firstAttribute="centerX" secondItem="9k7-KN-rY7" secondAttribute="centerX" id="s2O-mm-RRk"/>
+                            <constraint firstItem="LiR-vR-bp3" firstAttribute="top" secondItem="9k7-KN-rY7" secondAttribute="top" constant="34" id="tS4-HP-jHC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="J2q-W7-3uy"/>
+                    </view>
+                    <connections>
+                        <outlet property="countdown" destination="LiR-vR-bp3" id="hzH-aa-D0n"/>
+                        <outlet property="countdownView" destination="LiR-vR-bp3" id="kX9-ZD-boS"/>
+                        <outlet property="imageLabel" destination="3ZK-Ms-30j" id="Rrh-Br-WJt"/>
+                        <outlet property="questionLabel" destination="OUW-uV-6yj" id="RcG-fg-R7L"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uPA-ex-rWx" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="671.25" y="23.239436619718312"/>
+        </scene>
+        <!--Host Result View Controller-->
+        <scene sceneID="3mW-sm-Qhv">
+            <objects>
+                <viewController storyboardIdentifier="HostResultViewController" id="Ial-ZH-PRf" customClass="HostResultViewController" customModule="PeersGameDraw" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7Jl-6p-ApA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EF7-fa-F6f" userLabel="countdown" customClass="UICircularProgressRing" customModule="UICircularProgressRing">
+                                <rect key="frame" x="340" y="34" width="40" height="40"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="8fH-Dh-R2t"/>
+                                    <constraint firstAttribute="width" constant="40" id="rqK-Di-4Yh"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="value">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="minValue">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="fullCircle" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="shouldShowValueText" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="maxValue">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="startAngle">
+                                        <real key="value" value="-90"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="innerRingColor">
+                                        <color key="value" name="neonBlue"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="outerRingColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="outerRingWidth">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="innerRingWidth">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isClockwise" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="RpU-qp-MLR" userLabel="Result TableView">
+                                <rect key="frame" x="30" y="114" width="354" height="708"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="GameQuizHostResultCell" id="pV1-kI-py6" customClass="HostResultCell" customModule="PeersGameDraw" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="354" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pV1-kI-py6" id="LQS-Y5-MIs">
+                                            <rect key="frame" x="0.0" y="0.0" width="354" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MHl-4M-Cx3" userLabel="position" customClass="PeersHeadline4Label" customModule="PeersUI">
+                                                    <rect key="frame" x="20" y="11" width="30" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="30" id="5Vb-it-r3N"/>
+                                                        <constraint firstAttribute="height" constant="21" id="dio-1c-ATA"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Max Mustermann" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BSJ-Ey-deP" userLabel="name" customClass="PeersText1Label" customModule="PeersUI">
+                                                    <rect key="frame" x="50" y="11" width="119" height="22"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3/4" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KmP-mR-bnX" userLabel="points" customClass="PeersText1Label" customModule="PeersUI">
+                                                    <rect key="frame" x="299" y="11" width="35" height="22"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="35" id="uvh-R2-0S2"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="MHl-4M-Cx3" secondAttribute="bottom" id="HAi-nf-XTk"/>
+                                                <constraint firstItem="KmP-mR-bnX" firstAttribute="bottom" secondItem="LQS-Y5-MIs" secondAttribute="bottomMargin" id="Jgl-L5-HSY"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="BSJ-Ey-deP" secondAttribute="bottom" id="MWg-Ya-xci"/>
+                                                <constraint firstItem="KmP-mR-bnX" firstAttribute="top" secondItem="LQS-Y5-MIs" secondAttribute="topMargin" id="cVq-HG-2Io"/>
+                                                <constraint firstItem="BSJ-Ey-deP" firstAttribute="leading" secondItem="MHl-4M-Cx3" secondAttribute="trailing" id="mj0-2h-sbp"/>
+                                                <constraint firstItem="KmP-mR-bnX" firstAttribute="trailing" secondItem="LQS-Y5-MIs" secondAttribute="trailingMargin" id="mnQ-6y-6kn"/>
+                                                <constraint firstItem="MHl-4M-Cx3" firstAttribute="top" secondItem="LQS-Y5-MIs" secondAttribute="topMargin" id="whk-FS-Bad"/>
+                                                <constraint firstItem="MHl-4M-Cx3" firstAttribute="leading" secondItem="LQS-Y5-MIs" secondAttribute="leadingMargin" id="wmL-Dm-Vnp"/>
+                                                <constraint firstItem="BSJ-Ey-deP" firstAttribute="top" secondItem="LQS-Y5-MIs" secondAttribute="topMargin" id="zdZ-yy-cWc"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="nameLabel" destination="BSJ-Ey-deP" id="bpy-N8-TTY"/>
+                                            <outlet property="pointsLabel" destination="KmP-mR-bnX" id="jO7-A8-Ddd"/>
+                                            <outlet property="positionLabel" destination="MHl-4M-Cx3" id="YIH-YN-byP"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="RpU-qp-MLR" firstAttribute="leading" secondItem="E0y-3Z-kUG" secondAttribute="leading" constant="30" id="7AY-Gp-Kgw"/>
+                            <constraint firstItem="RpU-qp-MLR" firstAttribute="top" secondItem="EF7-fa-F6f" secondAttribute="bottom" constant="40" id="8wg-ZJ-HuA"/>
+                            <constraint firstAttribute="trailing" secondItem="EF7-fa-F6f" secondAttribute="trailing" constant="34" id="Fo7-iv-PKP"/>
+                            <constraint firstItem="E0y-3Z-kUG" firstAttribute="trailing" secondItem="RpU-qp-MLR" secondAttribute="trailing" constant="30" id="Je5-uZ-EnS"/>
+                            <constraint firstItem="EF7-fa-F6f" firstAttribute="top" secondItem="7Jl-6p-ApA" secondAttribute="top" constant="34" id="KlP-2w-uM6"/>
+                            <constraint firstItem="E0y-3Z-kUG" firstAttribute="bottom" secondItem="RpU-qp-MLR" secondAttribute="bottom" constant="40" id="vAk-V2-4RK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="E0y-3Z-kUG"/>
+                    </view>
+                    <connections>
+                        <outlet property="countdown" destination="EF7-fa-F6f" id="99v-pJ-ffa"/>
+                        <outlet property="countdownView" destination="EF7-fa-F6f" id="gpl-bi-xC8"/>
+                        <outlet property="tableView" destination="RpU-qp-MLR" id="egW-Vr-i1o"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fxI-ss-O3h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1451.25" y="23.239436619718312"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="neonBlue">
+            <color red="0.47058823529411764" green="0.93333333333333335" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>
