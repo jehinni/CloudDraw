@@ -65,6 +65,6 @@ git push origin $NEW_VERSION
 ##
 
 pod repo push peers-specs PeersGameDraw.podspec \
-    --sources='git@gitlab.mi.hdm-stuttgart.de:peers/specs.git,master' \
+    --sources='git@gitlab.com:peers-app/specs.git,master' \
     --allow-warnings
 
