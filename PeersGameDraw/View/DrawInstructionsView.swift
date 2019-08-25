@@ -35,5 +35,6 @@ class DrawInstructionsView: UIView {
         }
     }
 
-
 }
+
+private final class BundleToken {}
