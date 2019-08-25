@@ -1,6 +1,6 @@
 platform :ios, '11.0'
 
-source 'git@gitlab.mi.hdm-stuttgart.de:peers/specs.git'
+source 'git@gitlab.com:peers-app/specs.git'
 source 'https://github.com/CocoaPods/Specs.git'
 
 target 'PeersGameDraw' do
