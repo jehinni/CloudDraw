@@ -12,6 +12,7 @@ import UICircularProgressRing
 
 class HostDrawViewController: UIViewController, HostDrawViewModelDelegate {
     
+
     @IBOutlet weak var countdownView: UICircularProgressRing!
     @IBOutlet weak var imageLabel: PeersHeadline4Label!
     

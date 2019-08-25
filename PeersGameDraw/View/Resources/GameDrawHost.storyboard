@@ -113,8 +113,8 @@
                         <viewLayoutGuide key="safeArea" id="J2q-W7-3uy"/>
                     </view>
                     <connections>
-                        <outlet property="countdownView" destination="LiR-vR-bp3" id="kX9-ZD-boS"/>
-                        <outlet property="imageLabel" destination="3ZK-Ms-30j" id="Rrh-Br-WJt"/>
+                        <outlet property="countdownView" destination="LiR-vR-bp3" id="3HF-zb-ojT"/>
+                        <outlet property="imageLabel" destination="3ZK-Ms-30j" id="Us1-01-utB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uPA-ex-rWx" sceneMemberID="firstResponder"/>

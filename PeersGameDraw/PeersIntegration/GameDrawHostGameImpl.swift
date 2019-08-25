@@ -85,7 +85,7 @@ class GameDrawHostGameImpl: HostGame {
     // Showing instruction views for the specified time.
     // Then switching views and starting the drawing timer.
     func play() {
-        os_log("[GAME DRAW] Play: switching to instructions view and starting questions timer.", type: .debug)
+        os_log("[GAME DRAW] Play: switching to instructions view and starting drawing timer.", type: .debug)
         hostViewModel?.embedInstructionsViewController(in: containerViewController)
         DispatchQueue.main.async {
             self.instructionsTimer = Timer.scheduledTimer(withTimeInterval: TimeInterval(self.timeForInstructions), repeats: false, block: { [weak self] timer in
@@ -93,7 +93,7 @@ class GameDrawHostGameImpl: HostGame {
                     os_log("[GAME DRAW] self is undefined in scheduled timer in startCountdown().", type: .error)
                     return
                 }
-                os_log("[GAME DRAW] Play: triggering game start i.e. switching views and starting question timer.", type: .debug)
+                os_log("[GAME DRAW] Play: triggering game start i.e. switching views and starting drawing timer.", type: .debug)
                 this.hostViewModel?.embedDrawViewController(in: this.containerViewController)
                     this.messageToPlayers(message: "GameStartMessage")
                 this.startDrawingTimer()
@@ -161,7 +161,7 @@ class GameDrawHostGameImpl: HostGame {
                     self?.endGame(timer: timer)
                     return
                 }
-                os_log("[GAME DRAW] Showing next question and sending it to players (question %d/%d)", type: .debug, (currentRound + 1), self!.numberOfImages)
+                os_log("[GAME DRAW] Showing next image and sending it to players (image %d/%d)", type: .debug, (currentRound + 1), self!.numberOfImages)
                 let image: String = self!.images![currentRound]
                 self?.hostViewModel?.nextImage(image)
                 self?.framework?.sendGameDataToPlayers(message: NextImageMessage(randomImage: image), to: self?.players, sendMode: .reliable)
