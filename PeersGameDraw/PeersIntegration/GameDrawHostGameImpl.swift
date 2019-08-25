@@ -32,19 +32,11 @@ class GameDrawHostGameImpl: HostGame {
     var timeoutEndGame: Timer?
     
     unowned var containerViewController: UIViewController
-    var hostInstructionsViewController: HostInstructionsViewController
-    var hostDrawViewController: HostDrawViewController
-    var hostResultViewController: HostResultViewController
-    // TODO: remove viewController references
+
     var hostViewModel: HostViewModelAdapter?
     
     init(parentViewController: UIViewController) {
         containerViewController = parentViewController
-        
-         let storyboard = UIStoryboard(name: "GameDrawHost", bundle: Bundle(for: BundleToken.self))
-        hostInstructionsViewController = storyboard.instantiateViewController(withIdentifier: "HostInstructionsViewController") as! HostInstructionsViewController
-        hostDrawViewController = storyboard.instantiateViewController(withIdentifier: "HostDrawViewController") as! HostDrawViewController
-        hostResultViewController = storyboard.instantiateViewController(withIdentifier: "HostResultViewController") as! HostResultViewController
         
         // TODO: inject
         hostViewModel = ViewModelFactory.createHostViewModel()
@@ -94,7 +86,7 @@ class GameDrawHostGameImpl: HostGame {
     // Then switching views and starting the drawing timer.
     func play() {
         os_log("[GAME DRAW] Play: switching to instructions view and starting questions timer.", type: .debug)
-        switchViewController(old: nil, new: self.hostInstructionsViewController, messageToPlayers: nil)
+        hostViewModel?.embedInstructionsViewController(in: containerViewController)
         DispatchQueue.main.async {
             self.instructionsTimer = Timer.scheduledTimer(withTimeInterval: TimeInterval(self.timeForInstructions), repeats: false, block: { [weak self] timer in
                 guard let this = self else {
@@ -102,7 +94,8 @@ class GameDrawHostGameImpl: HostGame {
                     return
                 }
                 os_log("[GAME DRAW] Play: triggering game start i.e. switching views and starting question timer.", type: .debug)
-                this.switchViewController(old: this.hostInstructionsViewController, new: this.hostDrawViewController, messageToPlayers: "GameStartMessage")
+                this.hostViewModel?.embedDrawViewController(in: this.containerViewController)
+                    this.messageToPlayers(message: "GameStartMessage")
                 this.startDrawingTimer()
             })
         }
@@ -112,9 +105,11 @@ class GameDrawHostGameImpl: HostGame {
     // after showing the result view.
     func evaluate() -> [GamePlayer] {
         os_log("[GAME DRAW] Evaluate: removing game view and returning ranked players.", type: .debug)
-        switchViewController(old: hostDrawViewController, new: hostResultViewController, messageToPlayers: "GameEndMessage")
+        hostViewModel?.embedResultViewController(in: containerViewController)
+        messageToPlayers(message: "GameEndMessage")
+        
         sleep(UInt32(Int(timeForResult)))
-        switchViewController(old: hostResultViewController, new: nil, messageToPlayers: nil)
+        hostViewModel?.removeResultController(from: containerViewController)
         return gamePlayers
     }
     
@@ -240,48 +235,20 @@ class GameDrawHostGameImpl: HostGame {
     
 }
 
-// TODO: own file
 extension GameDrawHostGameImpl {
-    // Switches the view (app > instructions > game > result > app).
-    func switchViewController(old: UIViewController?, new: UIViewController?, messageToPlayers: String?) {
-        os_log("[GAME DRAW] Switching views: %s -> %s", type: .debug, String(describing: old.self), String(describing: new.self))
-        
-        DispatchQueue.main.async {
-            
-            if (old != nil) {
-                // remove old view
-                old!.view.removeFromSuperview()
-                old!.removeFromParent()
+    func messageToPlayers(message: String?) {
+        // send view change message to players
+        if (message != nil) {
+            switch message! {
+            case "GameStartMessage":
+                self.framework?.sendGameDataToPlayers(message: GameStartMessage(), to: self.players, sendMode: .reliable)
+            case "GameEndMessage":
+                self.framework?.sendGameDataToPlayers(message: GameEndMessage(), to: self.players, sendMode: .reliable)
+            default:
+                os_log("[GAME DRAW] Unknown message type in messageToPlayers(): %s", type: .debug, message!)
             }
-            
-            if (new != nil) {
-                // add new view
-                self.containerViewController.addChild(new!.self)
-                self.containerViewController.view.addSubview(new!.view)
-                
-                // add constraints
-                new!.view.translatesAutoresizingMaskIntoConstraints = false
-                new!.view.topAnchor.constraint(equalTo: self.containerViewController.view.topAnchor).isActive = true
-                new!.view.bottomAnchor.constraint(equalTo: self.containerViewController.view.bottomAnchor).isActive = true
-                new!.view.leadingAnchor.constraint(equalTo: self.containerViewController.view.leadingAnchor).isActive = true
-                new!.view.trailingAnchor.constraint(equalTo: self.containerViewController.view.trailingAnchor).isActive = true
-            }
-            
-            // send view change message to players
-            if (messageToPlayers != nil) {
-                switch messageToPlayers! {
-                case "GameStartMessage":
-                    self.framework?.sendGameDataToPlayers(message: GameStartMessage(), to: self.players, sendMode: .reliable)
-                case "GameEndMessage":
-                    self.framework?.sendGameDataToPlayers(message: GameEndMessage(), to: self.players, sendMode: .reliable)
-                default:
-                    os_log("[GAME DRAW] Unknown message type in switchView(): %s", type: .debug, messageToPlayers!)
-                }
-            }
-            
         }
-        
     }
 }
 
-private final class BundleToken {}
+

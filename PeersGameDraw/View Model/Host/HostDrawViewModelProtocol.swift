@@ -10,6 +10,9 @@ import Foundation
 
 protocol HostDrawViewModelProtocol {
     
+    var hostInstructionsViewController: HostInstructionsViewController { get }
+    var hostDrawViewController: HostDrawViewController { get }
+    var hostResultViewController: HostResultViewController { get }
     var drawViewModelDelegate: HostDrawViewModelDelegate? { get set }
     var image: String? { get set }
     

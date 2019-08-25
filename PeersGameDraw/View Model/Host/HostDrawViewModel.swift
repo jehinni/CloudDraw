@@ -8,8 +8,24 @@
 
 import Foundation
 import os.log
+import UIKit
 
 class HostDrawViewModel: HostDrawViewModelProtocol {
+    
+    var hostInstructionsViewController: HostInstructionsViewController
+    
+    var hostDrawViewController: HostDrawViewController
+    
+    var hostResultViewController: HostResultViewController
+    
+    init() {
+        let storyboard = UIStoryboard(name: "GameDrawHost", bundle: Bundle(for: BundleToken.self))
+        
+        hostInstructionsViewController = storyboard.instantiateViewController(withIdentifier: "HostInstructionsViewController") as! HostInstructionsViewController
+        hostDrawViewController = storyboard.instantiateViewController(withIdentifier: "HostDrawViewController") as! HostDrawViewController
+        hostResultViewController = storyboard.instantiateViewController(withIdentifier: "HostResultViewController") as! HostResultViewController
+        
+    }
     
     var image: String?
     weak var drawViewModelDelegate: HostDrawViewModelDelegate?
@@ -21,3 +37,5 @@ class HostDrawViewModel: HostDrawViewModelProtocol {
     }
     
 }
+
+private final class BundleToken {}
