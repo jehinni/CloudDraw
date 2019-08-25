@@ -16,6 +16,10 @@ protocol PlayerDrawViewModelProtocol {
 	var pointStorage: PointStorage { get }
 	var cloudManager: CloudManager { get }
 	var drawViewModelDelegate: PlayerDrawViewModelDelegate? { get set}
+    
+    var playerInstructionsViewController: PlayerInstructionsViewController { get }
+    var playerDrawViewController: PlayerDrawViewController { get }
+    var playerResultViewController: PlayerResultViewController { get }
 	
 	func draw()
 	func userSwiped(to point: CGPoint)

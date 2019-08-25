@@ -44,6 +44,8 @@
 		07F999B62311A2CC002A9433 /* HostDrawViewModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F999B52311A2CC002A9433 /* HostDrawViewModelDelegate.swift */; };
 		07F999B82311AA10002A9433 /* HostViewModelAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F999B72311AA10002A9433 /* HostViewModelAdapter.swift */; };
 		07F999BA2311AAF9002A9433 /* HostDrawViewModel+HostVIewModelAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F999B92311AAF9002A9433 /* HostDrawViewModel+HostVIewModelAdapter.swift */; };
+		07FAE7182312F1F20027A252 /* PlayerViewModelAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FAE7172312F1F20027A252 /* PlayerViewModelAdapter.swift */; };
+		07FAE71A2312F2580027A252 /* PlayerDrawViewModel+PlayerViewModelAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FAE7192312F2580027A252 /* PlayerDrawViewModel+PlayerViewModelAdapter.swift */; };
 		59D98CCC2FB163E3728B17FA /* Pods_PeersGameDraw.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02716CDA74520A14B5D69283 /* Pods_PeersGameDraw.framework */; };
 		831D6910FB34B7ADB3756541 /* Pods_PeersGameDrawTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4751FD0438D2540377C5055D /* Pods_PeersGameDrawTests.framework */; };
 		B6F037939D8D0CF217457FC7 /* Pods_PeersGameDrawUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4774998F38F92F0D6AB2F3AC /* Pods_PeersGameDrawUITests.framework */; };
@@ -111,6 +113,8 @@
 		07F999B52311A2CC002A9433 /* HostDrawViewModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostDrawViewModelDelegate.swift; sourceTree = "<group>"; };
 		07F999B72311AA10002A9433 /* HostViewModelAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostViewModelAdapter.swift; sourceTree = "<group>"; };
 		07F999B92311AAF9002A9433 /* HostDrawViewModel+HostVIewModelAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HostDrawViewModel+HostVIewModelAdapter.swift"; sourceTree = "<group>"; };
+		07FAE7172312F1F20027A252 /* PlayerViewModelAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewModelAdapter.swift; sourceTree = "<group>"; };
+		07FAE7192312F2580027A252 /* PlayerDrawViewModel+PlayerViewModelAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PlayerDrawViewModel+PlayerViewModelAdapter.swift"; sourceTree = "<group>"; };
 		198CC4ED4CF9E356FF47A864 /* Pods-DrawUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrawUITests.release.xcconfig"; path = "Target Support Files/Pods-DrawUITests/Pods-DrawUITests.release.xcconfig"; sourceTree = "<group>"; };
 		2730901C596C9D199B1729A3 /* Pods-PeersGameDraw.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PeersGameDraw.release.xcconfig"; path = "Target Support Files/Pods-PeersGameDraw/Pods-PeersGameDraw.release.xcconfig"; sourceTree = "<group>"; };
 		4751FD0438D2540377C5055D /* Pods_PeersGameDrawTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PeersGameDrawTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -270,6 +274,8 @@
 				07368B8D22837FF100621BEF /* PlayerDrawViewModel.swift */,
 				07368B8F2283803A00621BEF /* PlayerDrawViewModelProtocol.swift */,
 				07B1A01A22E8BC77009953D2 /* PlayerDrawViewModelDelegate.swift */,
+				07FAE7172312F1F20027A252 /* PlayerViewModelAdapter.swift */,
+				07FAE7192312F2580027A252 /* PlayerDrawViewModel+PlayerViewModelAdapter.swift */,
 			);
 			path = Player;
 			sourceTree = "<group>";
@@ -580,6 +586,7 @@
 			files = (
 				07C72D9122A9223100023FCA /* PointStorage.swift in Sources */,
 				07F999AE23118BD3002A9433 /* HostInstructionsViewController.swift in Sources */,
+				07FAE7182312F1F20027A252 /* PlayerViewModelAdapter.swift in Sources */,
 				07368B8E22837FF100621BEF /* PlayerDrawViewModel.swift in Sources */,
 				07F999AC23118B96002A9433 /* HostDrawViewController.swift in Sources */,
 				0787CE05230EB81800E409C6 /* PlayerInstructionsViewController.swift in Sources */,
@@ -600,6 +607,7 @@
 				07F999BA2311AAF9002A9433 /* HostDrawViewModel+HostVIewModelAdapter.swift in Sources */,
 				07F9999C230EDC79002A9433 /* DrawInstructionsView.swift in Sources */,
 				07C72D9322A9443000023FCA /* ViewModelFactory.swift in Sources */,
+				07FAE71A2312F2580027A252 /* PlayerDrawViewModel+PlayerViewModelAdapter.swift in Sources */,
 				07F999B023118BEE002A9433 /* HostResultViewController.swift in Sources */,
 				0787CE07230EB92E00E409C6 /* PlayerResultViewController.swift in Sources */,
 				07B1A01B22E8BC77009953D2 /* PlayerDrawViewModelDelegate.swift in Sources */,

@@ -13,13 +13,10 @@ import os.log
 class GameDrawPlayerGameImpl: PlayerGame {
     var framework: PlayerFramework?
     
-    weak var containerViewController: UIViewController?
-    var playerInstructionsViewController: PlayerInstructionsViewController
-    var playerDrawViewController: PlayerDrawViewController
-    var playerResultViewController: PlayerResultViewController
+    unowned var containerViewController: UIViewController
     
     // TODO: adapter + init
-    var playerDrawViewModel: PlayerDrawViewModelProtocol?
+    var playerViewModel: PlayerViewModelAdapter?
     
     var points = 0
     var finalGamePlayer: GamePlayer?
@@ -28,10 +25,7 @@ class GameDrawPlayerGameImpl: PlayerGame {
     init(parentViewController: UIViewController) {
         containerViewController = parentViewController
         
-        let storyboard = UIStoryboard(name: "GameDrawPlayer", bundle: Bundle(for: BundleToken.self))
-        playerInstructionsViewController = storyboard.instantiateViewController(withIdentifier: "PlayerInstructionsViewController") as! PlayerInstructionsViewController
-        playerDrawViewController = storyboard.instantiateViewController(withIdentifier: "PlayerDrawViewController") as! PlayerDrawViewController
-        playerResultViewController = storyboard.instantiateViewController(withIdentifier: "PlayerResultViewController") as! PlayerResultViewController
+        playerViewModel = ViewModelFactory.createPlayerViewModel()
         
     }
     
@@ -47,7 +41,7 @@ class GameDrawPlayerGameImpl: PlayerGame {
             os_log("[GAME Draw] Received message %s.", type: .debug, ofType)
             switch ofType {
             case "\(GameStartMessage.self)":
-                switchViewController(old: playerInstructionsViewController, new: playerDrawViewController)
+                playerViewModel?.embedDrawViewController(in: containerViewController, with: {})
             case "\(NextImageMessage.self)":
                 let data = try MessageWrapper.decodeData(type: NextImageMessage.self, data: message)
                 next(image: data.image)
@@ -58,7 +52,8 @@ class GameDrawPlayerGameImpl: PlayerGame {
                 finalGamePlayer = data.gamePlayer
                 finalRankingPosition = data.rankingPosition
             case "\(GameEndMessage.self)":
-                switchViewController(old: playerDrawViewController, new: playerResultViewController)
+                playerViewModel?.embedResultViewController(in: containerViewController, with: {})
+               
             default:
                 os_log("[GAME DRAW] Received unknown message.", type: .error)
             }
@@ -71,21 +66,19 @@ class GameDrawPlayerGameImpl: PlayerGame {
     // Show the instructions view to take (partial) view control from the Peers App.
     func play() {
         os_log("[GAME DRAW] Play: showing instructions view.", type: .debug)
-        switchViewController(old: nil, new: playerInstructionsViewController)
+        playerViewModel?.embedInstructionsViewController(in: containerViewController, with: {})
     }
     
     // Called by the framework.
     // Remove the game view to pass back view control to the Peers App.
     func terminate(completionHandler: @escaping () -> Void) {
         os_log("[GAME DRAW] Terminate: removing game view.", type: .debug)
-        switchViewController(old: self.playerResultViewController, new: nil, completionHandler: completionHandler)
+        playerViewModel?.removeResultController(from: containerViewController, with: completionHandler)
     }
     
-    // handler?? methods
-    
+    // Passes next image to draw
     func next(image: String) {
-        // TODO: adapter
-        playerDrawViewModel?.next(image: image)
+        playerViewModel?.nextImage(image)
     }
     
     // Ends game: Stops timer and asks the players to send their result (final points).
@@ -95,32 +88,6 @@ class GameDrawPlayerGameImpl: PlayerGame {
     }
     
     
-}
-
-// TODO: own file
-extension GameDrawPlayerGameImpl {
-    // Switches the view (app > instructions > game > result > app).
-    private func switchViewController(old: UIViewController?, new: UIViewController?, completionHandler: @escaping () -> Void = {}) {
-        os_log("[GAME DRAW] Switching views: %s -> %s", type: .debug, String(describing: old.self), String(describing: new.self))
-        
-        DispatchQueue.main.async {
-            guard let parentViewController = self.containerViewController else {
-                os_log("[GAME DRAW] Cannot switch views as parent view controller is dereferenced", type: .error)
-                return
-            }
-            if (new != nil && old == nil) {
-                // from app
-                parentViewController.present(new!, animated: true, completion: nil)
-            } else if (old != nil && new != nil) {
-                // switch view in game
-                old!.present(new!, animated: false, completion: nil)
-            } else if (old != nil && new == nil) {
-                // back to app
-                parentViewController.dismiss(animated: true, completion: nil)
-            }
-            completionHandler()
-        }
-    }
 }
 
 private final class BundleToken {}

@@ -23,7 +23,18 @@ class PlayerDrawViewModel: PlayerDrawViewModelProtocol, CloudManagerDelegate {
     var drawViewModelDelegate: PlayerDrawViewModelDelegate?
     var randomImage: String?
     
+    var playerInstructionsViewController: PlayerInstructionsViewController
+    var playerDrawViewController: PlayerDrawViewController
+    var playerResultViewController: PlayerResultViewController
+    
     init(with imageView: UIImageView) {
+        let storyboard = UIStoryboard(name: "GameDrawPlayer", bundle: Bundle(for: BundleToken.self))
+        
+        // TODO: instead of initialising viewControllers, call them via delegate calls; don't init controllers
+        playerInstructionsViewController = storyboard.instantiateViewController(withIdentifier: "PlayerInstructionsViewController") as! PlayerInstructionsViewController
+        playerDrawViewController = storyboard.instantiateViewController(withIdentifier: "PlayerDrawViewController") as! PlayerDrawViewController
+        playerResultViewController = storyboard.instantiateViewController(withIdentifier: "PlayerResultViewController") as! PlayerResultViewController
+        
         drawView = imageView
         pointStorage = PointStorage()
         lastPoint = CGPoint.zero
@@ -169,3 +180,5 @@ class PlayerDrawViewModel: PlayerDrawViewModelProtocol, CloudManagerDelegate {
         }
     }
 }
+
+private final class BundleToken {}
