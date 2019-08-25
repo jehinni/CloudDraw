@@ -52,8 +52,8 @@ Pod::Spec.new do |spec|
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  spec.resources = [ "PeersGameDraw/**/*", 'PeersGameDraw/*.{storyboard,xib,json}', 'PeersGameDraw/**/*.{storyboard,xib,json}' ]
-  # spec.resource_bundles = { "PeersGameDraw" => ["PeersGameDraw/**/*", 'PeersGameQuiz/*.{storyboard,xib,json}', 'PeersGameQuiz/**/*.{storyboard,xib,json}' ]}
+  spec.resources = ['PeersGameDraw/*.{storyboard,xib,json}', 'PeersGameDraw/**/*.{storyboard,xib,json}' ]
+  # spec.resource_bundles = { "PeersGameDraw" => ['PeersGameQuiz/*.{storyboard,xib,json}', 'PeersGameQuiz/**/*.{storyboard,xib,json}' ]}
   # spec.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
 
