@@ -163,7 +163,7 @@ class GameDrawHostGameImpl: HostGame {
                 }
                 os_log("[GAME DRAW] Showing next image and sending it to players (image %d/%d)", type: .debug, (currentRound + 1), self!.numberOfImages)
                 let image: String = self!.images![currentRound]
-                self?.hostViewModel?.nextImage(image)
+                self?.hostViewModel?.next(image: image)
                 self?.framework?.sendGameDataToPlayers(message: NextImageMessage(randomImage: image), to: self?.players, sendMode: .reliable)
             })
             
