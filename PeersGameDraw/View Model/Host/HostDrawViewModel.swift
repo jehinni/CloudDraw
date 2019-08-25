@@ -11,7 +11,7 @@ import os.log
 
 class HostDrawViewModel: HostDrawViewModelProtocol {
     
-    var randomImages: [String]?
+    var images: [String]?
     weak var drawViewModelDelegate: HostDrawViewModelDelegate?
     
     var currentImageIndex: Int
@@ -22,7 +22,7 @@ class HostDrawViewModel: HostDrawViewModelProtocol {
     }
     
     func next() {
-        let nextImage = randomImages?[currentImageIndex]
+        let nextImage = images?[currentImageIndex]
         guard let image = nextImage else {
             os_log("No images", type: .error)
             return

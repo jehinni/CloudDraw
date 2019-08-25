@@ -12,7 +12,7 @@ protocol HostDrawViewModelProtocol {
     
     var drawViewModelDelegate: HostDrawViewModelDelegate? { get set }
     var currentImageIndex: Int { get }
-    var randomImages: [String]? { get }
+    var images: [String]? { get set }
     
     func next()
     

@@ -8,13 +8,18 @@
 
 import Foundation
 
-// TODO: wtf????
-//extension HostDrawViewModel: HostViewModelAdapter {
-//
-//    // TODO: parameter unused?
-//    func next(image: String) {
-//        next()
-//    }
-//
-//    var images: [String]? { return randomImages }
-//}
+extension HostDrawViewModel: HostViewModelAdapter {
+    
+    func next(image: String) {
+        next()
+    }
+    
+    var randomImages: [String]? {
+        get {
+            return images
+        }
+        set {
+            images = newValue
+        }
+    }
+}
