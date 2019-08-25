@@ -147,7 +147,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kk0-ox-GbC" customClass="GameDrawInstructionsView" customModule="PeersGameDraw" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kk0-ox-GbC" customClass="DrawInstructionsView" customModule="PeersGameDraw" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="24" width="414" height="838"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
@@ -166,7 +166,7 @@
                         <viewLayoutGuide key="safeArea" id="fmY-WO-dVE"/>
                     </view>
                     <connections>
-                        <outlet property="playerInstructionsView" destination="lbC-L4-vDd" id="bCl-ej-8L7"/>
+                        <outlet property="playerInstructionsView" destination="Kk0-ox-GbC" id="YmO-P4-75l"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Tv-wl-59A" userLabel="First Responder" sceneMemberID="firstResponder"/>

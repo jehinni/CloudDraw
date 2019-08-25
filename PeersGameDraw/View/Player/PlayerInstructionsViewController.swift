@@ -10,6 +10,6 @@ import UIKit
 
 class PlayerInstructionsViewController: UIViewController {
 
-    @IBOutlet var playerInstructionsView: DrawInstructionsView!
-
+    @IBOutlet weak var playerInstructionsView: DrawInstructionsView!
+    
 }
