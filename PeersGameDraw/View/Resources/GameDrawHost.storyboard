@@ -238,9 +238,7 @@
                         <viewLayoutGuide key="safeArea" id="E0y-3Z-kUG"/>
                     </view>
                     <connections>
-                        <outlet property="countdown" destination="EF7-fa-F6f" id="99v-pJ-ffa"/>
                         <outlet property="countdownView" destination="EF7-fa-F6f" id="gpl-bi-xC8"/>
-                        <outlet property="tableView" destination="RpU-qp-MLR" id="egW-Vr-i1o"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fxI-ss-O3h" userLabel="First Responder" sceneMemberID="firstResponder"/>
