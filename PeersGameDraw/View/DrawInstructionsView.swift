@@ -31,7 +31,7 @@ class DrawInstructionsView: UIView {
     private func showCountdown() {
         DispatchQueue.main.async {
             self.progressView.animationTimingFunction = .linear
-            self.progressView.startProgress(to: 0, duration: TimeInterval(timeForInstructions))
+            self.progressView.startProgress(to: 0, duration: TimeInterval(self.timeForInstructions))
         }
     }
 
