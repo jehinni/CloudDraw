@@ -9,6 +9,7 @@
 import UIKit
 import PeersUI
 import UICircularProgressRing
+import os.log
 
 class HostDrawViewController: UIViewController, HostDrawViewModelDelegate {
     
@@ -28,7 +29,7 @@ class HostDrawViewController: UIViewController, HostDrawViewModelDelegate {
     
     func didUpdate(image: String) {
         imageLabel.text = image
-         print("controller image: \(image), controller label text: \(String(describing: imageLabel.text))")
+        os_log("controller image: %@, controller label text: %@", type: .debug, image, imageLabel.text ?? "no text")
     }
     
 }

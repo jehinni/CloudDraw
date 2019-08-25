@@ -10,8 +10,6 @@ import Foundation
 import UIKit
 
 protocol HostViewModelAdapter {
-    var randomImage: String? { get set }
-    
     func nextImage(_ image: String)
     func embedInstructionsViewController(in viewController: UIViewController)
     func embedDrawViewController(in viewController: UIViewController)

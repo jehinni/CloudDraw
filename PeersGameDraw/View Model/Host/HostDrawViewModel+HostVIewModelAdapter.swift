@@ -10,7 +10,11 @@ import Foundation
 import os.log
 import UIKit
 
-extension HostDrawViewModel {
+extension HostDrawViewModel: HostViewModelAdapter {
+    
+    func nextImage(_ image: String) {
+        nextImage(image)
+    }
     
     func embedInstructionsViewController(in viewController: UIViewController) {
         switchViewController(old: nil, new: hostInstructionsViewController, in: viewController)

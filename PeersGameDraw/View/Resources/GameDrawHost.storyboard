@@ -239,6 +239,7 @@
                     </view>
                     <connections>
                         <outlet property="countdownView" destination="EF7-fa-F6f" id="gpl-bi-xC8"/>
+                        <outlet property="tableView" destination="RpU-qp-MLR" id="lVL-O3-2EW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fxI-ss-O3h" userLabel="First Responder" sceneMemberID="firstResponder"/>
