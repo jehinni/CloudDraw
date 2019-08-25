@@ -39,26 +39,25 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I see:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vL0-ez-ch2" customClass="PeersHeadline4Label" customModule="PeersUI">
-                                <rect key="frame" x="120" y="725" width="40.5" height="20.5"/>
+                                <rect key="frame" x="120" y="725" width="44.5" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Prediction" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T92-2y-Fsx" userLabel="Prediction Label" customClass="PeersHeadline1Label" customModule="PeersUI">
-                                <rect key="frame" x="180.5" y="705" width="77.5" height="20.5"/>
+                                <rect key="frame" x="184.5" y="705" width="172" height="61.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please draw: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2aj-sx-RDM" customClass="PeersHeadline4Label" customModule="PeersUI">
-                                <rect key="frame" x="20" y="171" width="374" height="33"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please draw: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2aj-sx-RDM" customClass="PeersHeadline4Label" customModule="PeersUI">
+                                <rect key="frame" x="153" y="171" width="108.5" height="33"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gT5-zP-5qt" customClass="PeersButton" customModule="PeersUI">
-                                <rect key="frame" x="106" y="107" width="66" height="30"/>
+                                <rect key="frame" x="293" y="87" width="101" height="50"/>
                                 <state key="normal" title="Undo"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="style">
@@ -70,7 +69,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iIs-On-ciy" customClass="PeersButton" customModule="PeersUI">
-                                <rect key="frame" x="20" y="107" width="66" height="30"/>
+                                <rect key="frame" x="172" y="87" width="101" height="50"/>
                                 <state key="normal" title="Delete All"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="style">
@@ -81,18 +80,6 @@
                                     <action selector="deleteAll:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jNQ-mS-H9J"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ics-Fy-EaQ" userLabel="Finish" customClass="PeersButton" customModule="PeersUI">
-                                <rect key="frame" x="328" y="107" width="66" height="30"/>
-                                <state key="normal" title="Finish"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="style">
-                                        <integer key="value" value="3"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="finish:" destination="BYZ-38-t0r" eventType="touchUpInside" id="N74-ub-1d1"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -101,20 +88,20 @@
                             <constraint firstItem="T92-2y-Fsx" firstAttribute="top" secondItem="PH7-CM-wLl" secondAttribute="bottom" constant="50" id="4Nd-d7-TTj"/>
                             <constraint firstItem="PH7-CM-wLl" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="4u1-uu-Ln6"/>
                             <constraint firstItem="f5W-p7-EHe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="5IC-Y4-39Y"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ics-Fy-EaQ" secondAttribute="trailing" constant="20" id="6Hr-mZ-ca5"/>
                             <constraint firstAttribute="bottom" secondItem="f5W-p7-EHe" secondAttribute="bottom" id="6Lw-Zv-gJs"/>
+                            <constraint firstItem="2aj-sx-RDM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6jH-li-d57"/>
                             <constraint firstItem="gT5-zP-5qt" firstAttribute="width" secondItem="iIs-On-ciy" secondAttribute="width" id="7cu-ZJ-MVo"/>
                             <constraint firstItem="PH7-CM-wLl" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="EuY-W9-bqG"/>
                             <constraint firstItem="T92-2y-Fsx" firstAttribute="leading" secondItem="vL0-ez-ch2" secondAttribute="trailing" constant="20" id="JQe-10-C85"/>
                             <constraint firstItem="PH7-CM-wLl" firstAttribute="top" secondItem="gT5-zP-5qt" secondAttribute="bottom" constant="104" id="JmO-TY-g6P"/>
-                            <constraint firstItem="PH7-CM-wLl" firstAttribute="top" secondItem="Ics-Fy-EaQ" secondAttribute="bottom" constant="104" id="NiV-Vd-Q0Q"/>
                             <constraint firstItem="vL0-ez-ch2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="120" id="QpZ-bV-ZwH"/>
                             <constraint firstItem="PH7-CM-wLl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TeP-ub-9DL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gT5-zP-5qt" secondAttribute="trailing" constant="20" id="Wjk-3a-dk0"/>
+                            <constraint firstItem="2aj-sx-RDM" firstAttribute="top" secondItem="iIs-On-ciy" secondAttribute="bottom" constant="34" id="ZWG-NK-zaH"/>
                             <constraint firstItem="vL0-ez-ch2" firstAttribute="top" secondItem="PH7-CM-wLl" secondAttribute="bottom" constant="70" id="cHi-uN-sca"/>
-                            <constraint firstItem="iIs-On-ciy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="cPE-Bx-9fU"/>
+                            <constraint firstItem="PH7-CM-wLl" firstAttribute="top" secondItem="2aj-sx-RDM" secondAttribute="bottom" constant="37" id="h3j-w3-5gF"/>
                             <constraint firstItem="gT5-zP-5qt" firstAttribute="leading" secondItem="iIs-On-ciy" secondAttribute="trailing" constant="20" id="oxP-q4-Ty8"/>
                             <constraint firstItem="PH7-CM-wLl" firstAttribute="top" secondItem="iIs-On-ciy" secondAttribute="bottom" constant="104" id="q3a-hA-yAu"/>
-                            <constraint firstItem="Ics-Fy-EaQ" firstAttribute="width" secondItem="gT5-zP-5qt" secondAttribute="width" id="ujP-0j-SiZ"/>
                             <constraint firstItem="f5W-p7-EHe" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="v5A-E1-9sz"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
