@@ -19,12 +19,10 @@ class HostDrawViewModel: HostDrawViewModelProtocol {
     var hostResultViewController: HostResultViewController
     
     init() {
-        // TODO: instead of initialising viewControllers, call them via delegate calls
-        let storyboard = UIStoryboard(name: "GameDrawHost", bundle: Bundle(for: BundleToken.self))
         
-        hostInstructionsViewController = storyboard.instantiateViewController(withIdentifier: "HostInstructionsViewController") as! HostInstructionsViewController
-        hostDrawViewController = storyboard.instantiateViewController(withIdentifier: "HostDrawViewController") as! HostDrawViewController
-        hostResultViewController = storyboard.instantiateViewController(withIdentifier: "HostResultViewController") as! HostResultViewController
+        hostInstructionsViewController = ViewControllerFactory.createHostInstructionsViewController()
+        hostDrawViewController = ViewControllerFactory.createHostDrawViewController()
+        hostResultViewController = ViewControllerFactory.createHostResultViewController()
         
     }
     
@@ -39,5 +37,3 @@ class HostDrawViewModel: HostDrawViewModelProtocol {
     }
     
 }
-
-private final class BundleToken {}

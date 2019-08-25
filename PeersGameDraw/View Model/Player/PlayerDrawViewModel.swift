@@ -28,12 +28,10 @@ class PlayerDrawViewModel: PlayerDrawViewModelProtocol, CloudManagerDelegate {
     var playerResultViewController: PlayerResultViewController
     
     init(with imageView: UIImageView) {
-        let storyboard = UIStoryboard(name: "GameDrawPlayer", bundle: Bundle(for: BundleToken.self))
         
-        // TODO: instead of initialising viewControllers, call them via delegate calls; don't init controllers
-        playerInstructionsViewController = storyboard.instantiateViewController(withIdentifier: "PlayerInstructionsViewController") as! PlayerInstructionsViewController
-        playerDrawViewController = storyboard.instantiateViewController(withIdentifier: "PlayerDrawViewController") as! PlayerDrawViewController
-        playerResultViewController = storyboard.instantiateViewController(withIdentifier: "PlayerResultViewController") as! PlayerResultViewController
+        playerInstructionsViewController = ViewControllerFactory.createPlayerInstructionsViewController()
+        playerDrawViewController = ViewControllerFactory.createPlayerDrawViewController()
+        playerResultViewController = ViewControllerFactory.createPlayerResultViewController()
         
         drawView = imageView
         pointStorage = PointStorage()

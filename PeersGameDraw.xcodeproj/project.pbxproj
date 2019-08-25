@@ -47,6 +47,7 @@
 		07FAE7182312F1F20027A252 /* PlayerViewModelAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FAE7172312F1F20027A252 /* PlayerViewModelAdapter.swift */; };
 		07FAE71A2312F2580027A252 /* PlayerDrawViewModel+PlayerViewModelAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FAE7192312F2580027A252 /* PlayerDrawViewModel+PlayerViewModelAdapter.swift */; };
 		07FAE71C23130A900027A252 /* HostGameDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FAE71B23130A900027A252 /* HostGameDelegate.swift */; };
+		07FAE71E23130DB20027A252 /* ViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FAE71D23130DB20027A252 /* ViewControllerFactory.swift */; };
 		59D98CCC2FB163E3728B17FA /* Pods_PeersGameDraw.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02716CDA74520A14B5D69283 /* Pods_PeersGameDraw.framework */; };
 		831D6910FB34B7ADB3756541 /* Pods_PeersGameDrawTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4751FD0438D2540377C5055D /* Pods_PeersGameDrawTests.framework */; };
 		B6F037939D8D0CF217457FC7 /* Pods_PeersGameDrawUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4774998F38F92F0D6AB2F3AC /* Pods_PeersGameDrawUITests.framework */; };
@@ -117,6 +118,7 @@
 		07FAE7172312F1F20027A252 /* PlayerViewModelAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewModelAdapter.swift; sourceTree = "<group>"; };
 		07FAE7192312F2580027A252 /* PlayerDrawViewModel+PlayerViewModelAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PlayerDrawViewModel+PlayerViewModelAdapter.swift"; sourceTree = "<group>"; };
 		07FAE71B23130A900027A252 /* HostGameDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostGameDelegate.swift; sourceTree = "<group>"; };
+		07FAE71D23130DB20027A252 /* ViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFactory.swift; sourceTree = "<group>"; };
 		198CC4ED4CF9E356FF47A864 /* Pods-DrawUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrawUITests.release.xcconfig"; path = "Target Support Files/Pods-DrawUITests/Pods-DrawUITests.release.xcconfig"; sourceTree = "<group>"; };
 		2730901C596C9D199B1729A3 /* Pods-PeersGameDraw.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PeersGameDraw.release.xcconfig"; path = "Target Support Files/Pods-PeersGameDraw/Pods-PeersGameDraw.release.xcconfig"; sourceTree = "<group>"; };
 		4751FD0438D2540377C5055D /* Pods_PeersGameDrawTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PeersGameDrawTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -224,6 +226,7 @@
 				07F999AA23118B70002A9433 /* Host */,
 				0787CE02230EB50A00E409C6 /* Player */,
 				07F9999B230EDC79002A9433 /* DrawInstructionsView.swift */,
+				07FAE71D23130DB20027A252 /* ViewControllerFactory.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -594,6 +597,7 @@
 				07F999AC23118B96002A9433 /* HostDrawViewController.swift in Sources */,
 				0787CE05230EB81800E409C6 /* PlayerInstructionsViewController.swift in Sources */,
 				07F999B82311AA10002A9433 /* HostViewModelAdapter.swift in Sources */,
+				07FAE71E23130DB20027A252 /* ViewControllerFactory.swift in Sources */,
 				07F999B62311A2CC002A9433 /* HostDrawViewModelDelegate.swift in Sources */,
 				07B1A01322E60D7E009953D2 /* UIImage+GrayScaleBitmap.swift in Sources */,
 				07F999A9231180AD002A9433 /* HostDrawViewModelProtocol.swift in Sources */,
