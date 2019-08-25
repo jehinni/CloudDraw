@@ -86,16 +86,16 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Mct-Pa-SUp">
-                                <rect key="frame" x="64" y="417" width="286.5" height="62"/>
+                                <rect key="frame" x="70.5" y="419.5" width="273" height="57"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Draw:" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OUW-uV-6yj" userLabel="Draw Label" customClass="PeersText1Label" customModule="PeersUI">
-                                        <rect key="frame" x="122.5" y="0.0" width="41.5" height="22"/>
+                                        <rect key="frame" x="114.5" y="0.0" width="44.5" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LongLongLongLongLongLongName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ZK-Ms-30j" userLabel="Image Label" customClass="PeersHeadline4Label" customModule="PeersUI">
-                                        <rect key="frame" x="0.0" y="38" width="286.5" height="24"/>
+                                        <rect key="frame" x="0.0" y="36.5" width="273" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -113,10 +113,8 @@
                         <viewLayoutGuide key="safeArea" id="J2q-W7-3uy"/>
                     </view>
                     <connections>
-                        <outlet property="countdown" destination="LiR-vR-bp3" id="hzH-aa-D0n"/>
                         <outlet property="countdownView" destination="LiR-vR-bp3" id="kX9-ZD-boS"/>
                         <outlet property="imageLabel" destination="3ZK-Ms-30j" id="Rrh-Br-WJt"/>
-                        <outlet property="questionLabel" destination="OUW-uV-6yj" id="RcG-fg-R7L"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uPA-ex-rWx" sceneMemberID="firstResponder"/>
@@ -190,13 +188,13 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Max Mustermann" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BSJ-Ey-deP" userLabel="name" customClass="PeersText1Label" customModule="PeersUI">
-                                                    <rect key="frame" x="50" y="11" width="119" height="22"/>
+                                                    <rect key="frame" x="50" y="11" width="133" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3/4" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KmP-mR-bnX" userLabel="points" customClass="PeersText1Label" customModule="PeersUI">
-                                                    <rect key="frame" x="299" y="11" width="35" height="22"/>
+                                                    <rect key="frame" x="299" y="11" width="35" height="20.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="35" id="uvh-R2-0S2"/>
                                                     </constraints>
