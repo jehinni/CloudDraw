@@ -64,10 +64,6 @@ class PlayerDrawViewController: UIViewController, PlayerDrawViewModelDelegate {
         iSeeLabel.isHidden = true
     }
     
-    @IBAction func finish(_ sender: Any) {
-        drawViewModel?.finsih()
-    }
-    
     // PlayerDrawViewModelDelegate methods
     
     func didReceive(prediction: String) {

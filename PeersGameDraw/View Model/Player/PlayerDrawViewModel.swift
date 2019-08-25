@@ -118,6 +118,7 @@ class PlayerDrawViewModel: PlayerDrawViewModelProtocol, CloudManagerDelegate {
         currentPoints = []
     }
     
+    // TODO: aufrufen!!
     func finsih() {
         drawFinalImage()
         
