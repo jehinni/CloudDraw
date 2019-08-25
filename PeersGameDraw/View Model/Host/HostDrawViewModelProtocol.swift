@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 protocol HostDrawViewModelProtocol {
     
@@ -17,5 +18,10 @@ protocol HostDrawViewModelProtocol {
     var image: String? { get set }
     
     func next(image: String)
+    
+    func embedInstructionsViewController(in viewController: UIViewController)
+    func embedDrawViewController(in viewController: UIViewController)
+    func embedResultViewController(in viewController: UIViewController)
+    func removeResultController(from viewController: UIViewController)
     
 }
