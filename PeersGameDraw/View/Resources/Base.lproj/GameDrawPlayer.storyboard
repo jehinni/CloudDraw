@@ -166,7 +166,6 @@
                         <viewLayoutGuide key="safeArea" id="fmY-WO-dVE"/>
                     </view>
                     <connections>
-                        <outlet property="instructionsView" destination="Kk0-ox-GbC" id="gdS-bd-EWP"/>
                         <outlet property="playerInstructionsView" destination="lbC-L4-vDd" id="bCl-ej-8L7"/>
                     </connections>
                 </viewController>
@@ -269,11 +268,9 @@
                         <viewLayoutGuide key="safeArea" id="KIl-ec-7fd"/>
                     </view>
                     <connections>
-                        <outlet property="countdown" destination="OGA-iw-kYr" id="Q6z-H2-Eym"/>
                         <outlet property="countdownView" destination="OGA-iw-kYr" id="gVA-wg-qcr"/>
                         <outlet property="emojiLabel" destination="swT-Me-OfC" id="ifs-zB-kxU"/>
                         <outlet property="resultLabel" destination="ttd-qT-tPI" id="odY-dX-9gU"/>
-                        <outlet property="textLabel" destination="ttd-qT-tPI" id="gaZ-zp-qq3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P1Z-65-uob" userLabel="First Responder" sceneMemberID="firstResponder"/>
