@@ -34,6 +34,7 @@ class HostDrawViewModel: HostDrawViewModelProtocol {
     func next(image: String) {
         // TODO: no self
         self.image = image
+        print("viewModel image: \(image)")
         drawViewModelDelegate?.didUpdate(image: image)
     }
     

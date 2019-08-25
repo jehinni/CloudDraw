@@ -28,6 +28,7 @@ class HostDrawViewController: UIViewController, HostDrawViewModelDelegate {
     
     func didUpdate(image: String) {
         imageLabel.text = image
+         print("controller image: \(image), controller label text: \(String(describing: imageLabel.text))")
     }
     
 }
