@@ -22,7 +22,7 @@ class DrawInstructionsView: UIView {
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        Bundle(for: BundleToken.self).loadNibNamed("GameQuizInstructionsView", owner: self, options: nil)
+        Bundle(for: BundleToken.self).loadNibNamed("GameDrawInstructionsView", owner: self, options: nil)
         addSubview(self.instructionsView)
         self.instructionsView.frame = self.bounds
         self.showCountdown()
