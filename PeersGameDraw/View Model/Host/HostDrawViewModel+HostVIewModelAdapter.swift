@@ -13,7 +13,7 @@ import UIKit
 extension HostDrawViewModel: HostViewModelAdapter {
     
     func nextImage(_ image: String) {
-        nextImage(image)
+        next(image: image)
     }
     
     func embedInstructionsViewController(in viewController: UIViewController) {
