@@ -18,6 +18,7 @@ class GameDrawPlayerGameImpl: PlayerGame {
     var playerDrawViewController: PlayerDrawViewController
     var playerResultViewController: PlayerResultViewController
     
+    // TODO: adapter + init
     var playerDrawViewModel: PlayerDrawViewModelProtocol?
     
     var points = 0
@@ -27,14 +28,15 @@ class GameDrawPlayerGameImpl: PlayerGame {
     init(parentViewController: UIViewController) {
         containerViewController = parentViewController
         
-        let storyboard = UIStoryboard(name: "GameQuizPlayer", bundle: Bundle(for: BundleToken.self))
+        let storyboard = UIStoryboard(name: "GameDrawPlayer", bundle: Bundle(for: BundleToken.self))
         playerInstructionsViewController = storyboard.instantiateViewController(withIdentifier: "PlayerInstructionsViewController") as! PlayerInstructionsViewController
         playerDrawViewController = storyboard.instantiateViewController(withIdentifier: "PlayerDrawViewController") as! PlayerDrawViewController
         playerResultViewController = storyboard.instantiateViewController(withIdentifier: "PlayerResultViewController") as! PlayerResultViewController
+        
     }
     
     deinit {
-        os_log("[GAME DRAW] deinit", type: .debug)
+        os_log("[GAME DRAW] player deinit", type: .debug)
     }
     
     // PlayerGame methods
@@ -46,9 +48,9 @@ class GameDrawPlayerGameImpl: PlayerGame {
             switch ofType {
             case "\(GameStartMessage.self)":
                 switchViewController(old: playerInstructionsViewController, new: playerDrawViewController)
-            case "\(SubjectMessage.self)":
-                let data = try MessageWrapper.decodeData(type: SubjectMessage.self, data: message)
-                nextImage(data.drawSubject)
+            case "\(NextImageMessage.self)":
+                let data = try MessageWrapper.decodeData(type: NextImageMessage.self, data: message)
+                next(image: data.image)
             case "\(ResultRequestMessage.self)":
                 endGame()
             case "\(RankingPositionMessage.self)":
@@ -81,8 +83,9 @@ class GameDrawPlayerGameImpl: PlayerGame {
     
     // handler?? methods
     
-    func nextImage(_ subject: String) {
-        playerDrawViewModel?.next(image: subject)
+    func next(image: String) {
+        // TODO: adapter
+        playerDrawViewModel?.next(image: image)
     }
     
     // Ends game: Stops timer and asks the players to send their result (final points).

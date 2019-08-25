@@ -18,4 +18,8 @@ class ViewModelFactory {
     class func createHostDrawViewModel() -> HostDrawViewModelProtocol {
         return HostDrawViewModel()
     }
+    
+    class func createHostViewModel() -> HostViewModelAdapter {
+        return HostDrawViewModel()
+    }
 }

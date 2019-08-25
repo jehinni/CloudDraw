@@ -10,16 +10,16 @@ import Foundation
 
 extension HostDrawViewModel: HostViewModelAdapter {
     
-    func next(image: String) {
-        next()
+    func nextImage(_ image: String) {
+        next(image: image)
     }
     
-    var randomImages: [String]? {
+    var randomImage: String? {
         get {
-            return images
+            return image
         }
         set {
-            images = newValue
+            image = newValue
         }
     }
 }

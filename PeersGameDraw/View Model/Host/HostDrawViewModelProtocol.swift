@@ -11,9 +11,8 @@ import Foundation
 protocol HostDrawViewModelProtocol {
     
     var drawViewModelDelegate: HostDrawViewModelDelegate? { get set }
-    var currentImageIndex: Int { get }
-    var images: [String]? { get set }
+    var image: String? { get set }
     
-    func next()
+    func next(image: String)
     
 }

@@ -11,24 +11,13 @@ import os.log
 
 class HostDrawViewModel: HostDrawViewModelProtocol {
     
-    var images: [String]?
+    var image: String?
     weak var drawViewModelDelegate: HostDrawViewModelDelegate?
     
-    var currentImageIndex: Int
-    
-    init() {
-        currentImageIndex = 0
-        next()
-    }
-    
-    func next() {
-        let nextImage = images?[currentImageIndex]
-        guard let image = nextImage else {
-            os_log("No images", type: .error)
-            return
-        }
+    func next(image: String) {
+        // TODO: no self
+        self.image = image
         drawViewModelDelegate?.didUpdate(image: image)
-        
-        currentImageIndex += 1
     }
+    
 }

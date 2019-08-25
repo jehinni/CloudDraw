@@ -9,7 +9,6 @@
 import Foundation
 
 protocol HostViewModelAdapter {
-    var randomImages: [String]? { get set }
-    
-    func next(image: String)
+    var randomImage: String? { get set }
+    func nextImage(_ image: String)
 }

@@ -9,10 +9,10 @@
 import Foundation
 import PeersFramework
 
-struct SubjectMessage: Codable {
-    let drawSubject: String
-    init(subject: String) {
-        drawSubject = subject
+struct NextImageMessage: Codable {
+    let image: String
+    init(randomImage: String) {
+        image = randomImage
     }
 }
 

@@ -35,17 +35,23 @@ class GameDrawHostGameImpl: HostGame {
     var hostInstructionsViewController: HostInstructionsViewController
     var hostDrawViewController: HostDrawViewController
     var hostResultViewController: HostResultViewController
-    
-    // TODO: init
+    // TODO: remove viewController references
     var hostViewModel: HostViewModelAdapter?
     
     init(parentViewController: UIViewController) {
         containerViewController = parentViewController
         
-         let storyboard = UIStoryboard(name: "GameQuizHost", bundle: Bundle(for: BundleToken.self))
+         let storyboard = UIStoryboard(name: "GameDrawHost", bundle: Bundle(for: BundleToken.self))
         hostInstructionsViewController = storyboard.instantiateViewController(withIdentifier: "HostInstructionsViewController") as! HostInstructionsViewController
         hostDrawViewController = storyboard.instantiateViewController(withIdentifier: "HostDrawViewController") as! HostDrawViewController
         hostResultViewController = storyboard.instantiateViewController(withIdentifier: "HostResultViewController") as! HostResultViewController
+        
+        // TODO: inject
+        hostViewModel = ViewModelFactory.createHostViewModel()
+    }
+    
+    deinit {
+        os_log("[GAME DRAW] host deinit", type: .debug)
     }
     
     // HostGame methods
@@ -81,7 +87,6 @@ class GameDrawHostGameImpl: HostGame {
     func prepare(players: [Player]) {
         setGamePlayers(players)
         images = ImageGenerator.generateRandomImages(numberOfImages)
-        hostViewModel?.randomImages = images
     }
     
     // Called by the Framework.
@@ -163,8 +168,8 @@ class GameDrawHostGameImpl: HostGame {
                 }
                 os_log("[GAME DRAW] Showing next question and sending it to players (question %d/%d)", type: .debug, (currentRound + 1), self!.numberOfImages)
                 let image: String = self!.images![currentRound]
-                self?.hostViewModel?.next(image: image)
-                self?.framework?.sendGameDataToPlayers(message: SubjectMessage(subject: image), to: self?.players, sendMode: .reliable)
+                self?.hostViewModel?.nextImage(image)
+                self?.framework?.sendGameDataToPlayers(message: NextImageMessage(randomImage: image), to: self?.players, sendMode: .reliable)
             })
             
             timer.fire() // fire timer for 1st question immediately
