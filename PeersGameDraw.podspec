@@ -53,7 +53,7 @@ Pod::Spec.new do |spec|
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   spec.resources = "PeersGameDraw/*"
-  # spec.resource_bundles = { "PeersGamedraw" => ["PeersGameDraw/**/*"]}
+  # spec.resource_bundles = { "PeersGameDraw" => ["PeersGameDraw/**/*"]}
   # spec.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
 
