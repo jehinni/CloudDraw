@@ -60,13 +60,13 @@
                                         <color key="value" name="neonBlue"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="value">
-                                        <real key="value" value="15"/>
+                                        <real key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="minValue">
                                         <real key="value" value="0.0"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="maxValue">
-                                        <real key="value" value="15"/>
+                                        <real key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="fullCircle" value="YES"/>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="shouldShowValueText" value="NO"/>
@@ -86,16 +86,16 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Mct-Pa-SUp">
-                                <rect key="frame" x="70.5" y="419.5" width="273" height="57"/>
+                                <rect key="frame" x="64" y="417" width="286.5" height="62"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Draw:" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OUW-uV-6yj" userLabel="Draw Label" customClass="PeersText1Label" customModule="PeersUI">
-                                        <rect key="frame" x="114.5" y="0.0" width="44.5" height="20.5"/>
+                                        <rect key="frame" x="122.5" y="0.0" width="41.5" height="22"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LongLongLongLongLongLongName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ZK-Ms-30j" userLabel="Image Label" customClass="PeersHeadline4Label" customModule="PeersUI">
-                                        <rect key="frame" x="0.0" y="36.5" width="273" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="38" width="286.5" height="24"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
