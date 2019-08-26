@@ -197,6 +197,26 @@ class PlayerDrawViewModel: PlayerDrawViewModelProtocol, CloudManagerDelegate {
         
     }
     
+    
+    
+    
+    
+        func embedInstructionsViewController(in viewController: UIViewController, with completionHandler: @escaping () -> Void = {}) {
+            switchViewController(old: nil, new: playerInstructionsViewController, in: viewController, with: completionHandler)
+        }
+    
+        func embedDrawViewController(in viewController: UIViewController, with completionHandler: @escaping () -> Void = {}) {
+            switchViewController(old: playerInstructionsViewController, new: playerDrawViewController, in: viewController, with: completionHandler)
+        }
+    
+        func embedResultViewController(in viewController: UIViewController, with completionHandler: @escaping () -> Void = {}) {
+            switchViewController(old: playerDrawViewController, new: playerResultViewController, in: viewController, with: completionHandler)
+        }
+    
+        func removeResultController(from viewController: UIViewController, with completionHandler: @escaping () -> Void = {}) {
+            switchViewController(old: playerResultViewController, new: nil, in: viewController, with: completionHandler)
+        }
+    
 }
 
 private final class BundleToken {}

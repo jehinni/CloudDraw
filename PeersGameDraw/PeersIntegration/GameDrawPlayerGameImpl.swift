@@ -78,7 +78,7 @@ class GameDrawPlayerGameImpl: PlayerGame, PlayerGameDelegate {
     
     // Passes next image to draw
     func next(image: String) {
-        playerViewModel?.nextImage(image)
+        playerViewModel?.next(image: image)
     }
     
     // Ends game: Stops timer and asks the players to send their result (final points).
