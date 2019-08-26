@@ -9,7 +9,7 @@
 import Foundation
 
 class ImageGenerator {
-    private static let imageElements = ["apple", "candle", "lightning", "pants"]
+    private static let imageElements = ["apple", "book", "bowtie", "candle", "cloud", "cup", "door", "envelope", "eyeglasses", "guitar", "hammer", "hat", "ice cream", "leaf", "lightning", "pants", "scissors", "star", "tree", "t-shirt"]
     
     static func generateRandomImages(_ amount: Int) -> [String] {
         var randomImages = [String]()
