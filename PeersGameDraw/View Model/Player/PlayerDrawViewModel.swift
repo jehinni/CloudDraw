@@ -78,7 +78,6 @@ class PlayerDrawViewModel: PlayerDrawViewModelProtocol, CloudManagerDelegate {
     func deleteAll() {
         pointStorage.touchPoints.removeAll()
         drawView.image = nil
-        next()
     }
     
     func undo() {
@@ -141,7 +140,6 @@ class PlayerDrawViewModel: PlayerDrawViewModelProtocol, CloudManagerDelegate {
         drawViewModelDelegate?.didReceiveRandomImage(imageName: randomImage ?? "No image received")
     }
     
-    // TODO: for peers, move to adapter, call next() on viewModel
     func next(image: String) {
         randomImage = image
         drawViewModelDelegate?.didReceiveRandomImage(imageName: randomImage ?? "No image received")
