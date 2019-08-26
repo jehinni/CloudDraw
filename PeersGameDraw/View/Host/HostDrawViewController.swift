@@ -30,6 +30,7 @@ class HostDrawViewController: UIViewController, HostDrawViewModelDelegate {
     
     func next(image: String) {
         hostDrawViewModel?.next(image: image)
+        startCountdown(countdownView, for: 10, repeatingAfter3: true)
     }
     
     func didUpdate(image: String) {
@@ -37,4 +38,23 @@ class HostDrawViewController: UIViewController, HostDrawViewModelDelegate {
         os_log("controller image: %@, controller label text: %@", type: .debug, image, imageLabel.text ?? "no text")
     }
     
+}
+
+extension HostDrawViewController {
+    // Start a countdown for the specified time in seconds
+    func startCountdown(_ countdown: UICircularProgressRing, for seconds: Int, repeatingAfter3: Bool) {
+        DispatchQueue.main.async {
+            countdown.animationTimingFunction = .linear
+            if repeatingAfter3 {
+                countdown.layer.isHidden = false
+                countdown.startProgress(to: 0, duration: TimeInterval(seconds - 3), completion: {
+                    countdown.layer.isHidden = true
+                    countdown.startProgress(to: CGFloat(seconds), duration: 3)
+                })
+            } else {
+                countdown.startProgress(to: 0, duration: TimeInterval(seconds))
+            }
+        }
+    }
+
 }
