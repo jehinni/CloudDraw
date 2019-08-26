@@ -188,7 +188,7 @@ class GameDrawHostGameImpl: HostGame, HostGameDelegate {
         timer.invalidate()
         self.framework?.sendGameDataToPlayers(message: ResultRequestMessage(), to: self.players, sendMode: .reliable)
         // Timeout to finish game even if a player gets lots
-        self.timeoutEndGame = Timer.scheduledTimer(withTimeInterval: 5, repeats: false, block: { [weak self] timer in
+        self.timeoutEndGame = Timer.scheduledTimer(withTimeInterval: 8, repeats: false, block: { [weak self] timer in
             guard let this = self else {
                 os_log("[GAME DRAW] self is undefined in scheduled timer in endGame().", type: .error)
                 return
