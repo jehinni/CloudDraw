@@ -86,16 +86,16 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Mct-Pa-SUp">
-                                <rect key="frame" x="64" y="417" width="286.5" height="62"/>
+                                <rect key="frame" x="70.5" y="419.5" width="273" height="57"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Draw:" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OUW-uV-6yj" userLabel="Draw Label" customClass="PeersText1Label" customModule="PeersUI">
-                                        <rect key="frame" x="122.5" y="0.0" width="41.5" height="22"/>
+                                        <rect key="frame" x="114.5" y="0.0" width="44.5" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LongLongLongLongLongLongName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ZK-Ms-30j" userLabel="Image Label" customClass="PeersHeadline4Label" customModule="PeersUI">
-                                        <rect key="frame" x="0.0" y="38" width="286.5" height="24"/>
+                                        <rect key="frame" x="0.0" y="36.5" width="273" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -170,7 +170,7 @@
                                 <rect key="frame" x="30" y="114" width="354" height="708"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="GameQuizHostResultCell" id="pV1-kI-py6" customClass="HostResultCell" customModule="PeersGameDraw" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="HostResultCell" id="pV1-kI-py6" customClass="HostResultCell" customModule="PeersGameDraw" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="354" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pV1-kI-py6" id="LQS-Y5-MIs">
@@ -188,13 +188,13 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Max Mustermann" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BSJ-Ey-deP" userLabel="name" customClass="PeersText1Label" customModule="PeersUI">
-                                                    <rect key="frame" x="50" y="11" width="133" height="20.5"/>
+                                                    <rect key="frame" x="50" y="11" width="119" height="22"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3/4" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KmP-mR-bnX" userLabel="points" customClass="PeersText1Label" customModule="PeersUI">
-                                                    <rect key="frame" x="299" y="11" width="35" height="20.5"/>
+                                                    <rect key="frame" x="299" y="11" width="35" height="22"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="35" id="uvh-R2-0S2"/>
                                                     </constraints>

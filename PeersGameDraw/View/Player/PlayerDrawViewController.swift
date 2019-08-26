@@ -8,9 +8,11 @@
 
 import UIKit
 import PeersUI
+import UICircularProgressRing
 
 class PlayerDrawViewController: UIViewController, PlayerDrawViewModelDelegate {
 
+    @IBOutlet weak var countdownView: UICircularProgressRing!
     @IBOutlet weak var backgroundImageView: UIImageView!
     @IBOutlet weak var iSeeLabel: PeersHeadline4Label!
     @IBOutlet weak var predictionLabel: PeersHeadline2Label!
@@ -69,6 +71,7 @@ class PlayerDrawViewController: UIViewController, PlayerDrawViewModelDelegate {
     func next(image: String) {
         drawViewModel?.deleteAll()
         drawViewModel?.next(image: image)
+        startCountdown(countdownView, for: 10, repeatingAfter3: true)
         drawViewModel?.showSolutionOnCountdownEnd()
     }
     
@@ -83,5 +86,24 @@ class PlayerDrawViewController: UIViewController, PlayerDrawViewModelDelegate {
     func didReceiveRandomImage(imageName: String) {
         drawingLabel.text = "Please draw: " + imageName
     }
+}
+
+extension PlayerDrawViewController {
+    // Start a countdown for the specified time in seconds
+    func startCountdown(_ countdown: UICircularProgressRing, for seconds: Int, repeatingAfter3: Bool) {
+        DispatchQueue.main.async {
+            countdown.animationTimingFunction = .linear
+            if repeatingAfter3 {
+                countdown.layer.isHidden = false
+                countdown.startProgress(to: 0, duration: TimeInterval(seconds - 3), completion: {
+                    countdown.layer.isHidden = true
+                    countdown.startProgress(to: CGFloat(seconds), duration: 3)
+                })
+            } else {
+                countdown.startProgress(to: 0, duration: TimeInterval(seconds))
+            }
+        }
+    }
+    
 }
 

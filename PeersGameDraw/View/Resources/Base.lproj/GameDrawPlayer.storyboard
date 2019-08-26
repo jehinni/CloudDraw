@@ -57,7 +57,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gT5-zP-5qt" customClass="PeersButton" customModule="PeersUI">
-                                <rect key="frame" x="293" y="87" width="101" height="50"/>
+                                <rect key="frame" x="219" y="87" width="101" height="50"/>
                                 <state key="normal" title="Undo"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="style">
@@ -69,7 +69,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iIs-On-ciy" customClass="PeersButton" customModule="PeersUI">
-                                <rect key="frame" x="172" y="87" width="101" height="50"/>
+                                <rect key="frame" x="98" y="87" width="101" height="50"/>
                                 <state key="normal" title="Delete All"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="style">
@@ -80,12 +80,51 @@
                                     <action selector="deleteAll:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jNQ-mS-H9J"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="93f-FH-UR6" userLabel="Countdown" customClass="UICircularProgressRing" customModule="UICircularProgressRing">
+                                <rect key="frame" x="340" y="92" width="40" height="40"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="QQY-m0-EuE"/>
+                                    <constraint firstAttribute="width" constant="40" id="euZ-3k-xON"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="minValue">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="value">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="fullCircle" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="shouldShowValueText" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="maxValue">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="startAngle">
+                                        <real key="value" value="-90"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="outerRingColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="outerRingWidth">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="innerRingColor">
+                                        <color key="value" name="neonBlue"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="innerRingWidth">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isClockwise" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="93f-FH-UR6" secondAttribute="trailing" constant="34" id="0tD-cH-Qld"/>
                             <constraint firstItem="f5W-p7-EHe" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="1Fh-MT-80h"/>
                             <constraint firstItem="PH7-CM-wLl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="1ge-3z-FUg"/>
                             <constraint firstItem="T92-2y-Fsx" firstAttribute="top" secondItem="PH7-CM-wLl" secondAttribute="bottom" constant="50" id="4Nd-d7-TTj"/>
+                            <constraint firstItem="93f-FH-UR6" firstAttribute="centerY" secondItem="gT5-zP-5qt" secondAttribute="centerY" id="4pP-QW-APk"/>
                             <constraint firstItem="PH7-CM-wLl" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="4u1-uu-Ln6"/>
                             <constraint firstItem="f5W-p7-EHe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="5IC-Y4-39Y"/>
                             <constraint firstAttribute="bottom" secondItem="f5W-p7-EHe" secondAttribute="bottom" id="6Lw-Zv-gJs"/>
@@ -96,8 +135,8 @@
                             <constraint firstItem="PH7-CM-wLl" firstAttribute="top" secondItem="gT5-zP-5qt" secondAttribute="bottom" constant="104" id="JmO-TY-g6P"/>
                             <constraint firstItem="vL0-ez-ch2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="120" id="QpZ-bV-ZwH"/>
                             <constraint firstItem="PH7-CM-wLl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TeP-ub-9DL"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gT5-zP-5qt" secondAttribute="trailing" constant="20" id="Wjk-3a-dk0"/>
                             <constraint firstItem="2aj-sx-RDM" firstAttribute="top" secondItem="iIs-On-ciy" secondAttribute="bottom" constant="34" id="ZWG-NK-zaH"/>
+                            <constraint firstItem="93f-FH-UR6" firstAttribute="leading" secondItem="gT5-zP-5qt" secondAttribute="trailing" constant="20" id="b35-1g-s7L"/>
                             <constraint firstItem="vL0-ez-ch2" firstAttribute="top" secondItem="PH7-CM-wLl" secondAttribute="bottom" constant="70" id="cHi-uN-sca"/>
                             <constraint firstItem="PH7-CM-wLl" firstAttribute="top" secondItem="2aj-sx-RDM" secondAttribute="bottom" constant="37" id="h3j-w3-5gF"/>
                             <constraint firstItem="gT5-zP-5qt" firstAttribute="leading" secondItem="iIs-On-ciy" secondAttribute="trailing" constant="20" id="oxP-q4-Ty8"/>
@@ -108,6 +147,7 @@
                     </view>
                     <connections>
                         <outlet property="backgroundImageView" destination="f5W-p7-EHe" id="hmd-aA-xQP"/>
+                        <outlet property="countdownView" destination="93f-FH-UR6" id="zfX-ZI-9Lf"/>
                         <outlet property="drawingLabel" destination="2aj-sx-RDM" id="Tij-hu-MD7"/>
                         <outlet property="iSeeLabel" destination="vL0-ez-ch2" id="isD-Bi-B1M"/>
                         <outlet property="mainImageView" destination="PH7-CM-wLl" id="tbW-Qo-30N"/>
