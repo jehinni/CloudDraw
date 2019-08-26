@@ -57,10 +57,10 @@ class GameDrawHostGameImpl: HostGame, HostGameDelegate {
             os_log("[GAME DRAW] Explicitly ignoring messages from any peers", type: .info)
             return
         }
+        
         do {
             os_log("[GAME DRAW] Received message %s.", type: .debug, ofType)
             switch ofType {
-            // TODO: this message is not needed?
             case "\(ImagePredictionMessage.self)":
                 let data = try MessageWrapper.decodeData(type: ImagePredictionMessage.self, data: message)
                 setCurrentPlayerPrediction(data.prediction, for: peer)
@@ -89,6 +89,7 @@ class GameDrawHostGameImpl: HostGame, HostGameDelegate {
     // Then switching views and starting the drawing timer.
     func play() {
         os_log("[GAME DRAW] Play: switching to instructions view and starting drawing timer.", type: .debug)
+        
         switchViewController(old: nil, new: hostInstructionsViewController)
     
         DispatchQueue.main.async {
@@ -97,6 +98,7 @@ class GameDrawHostGameImpl: HostGame, HostGameDelegate {
                     os_log("[GAME DRAW] self is undefined in scheduled timer in startCountdown().", type: .error)
                     return
                 }
+                
                 os_log("[GAME DRAW] Play: triggering game start i.e. switching views and starting drawing timer.", type: .debug)
                 this.switchViewController(old: this.hostInstructionsViewController, new: this.hostDrawViewController)
                 this.messageToPlayers(message: "GameStartMessage")
@@ -109,20 +111,25 @@ class GameDrawHostGameImpl: HostGame, HostGameDelegate {
     // after showing the result view.
     func evaluate() -> [GamePlayer] {
         os_log("[GAME DRAW] Evaluate: removing game view and returning ranked players.", type: .debug)
+        
         switchViewController(old: hostDrawViewController, new: hostResultViewController)
         messageToPlayers(message: "GameEndMessage")
         
         sleep(UInt32(Int(timeForResult)))
         switchViewController(old: hostResultViewController, new: nil)
+        
         return gamePlayers
     }
     
     // Forces the game to stop, even mid-lifecycle.
     func terminate(completionHandler: @escaping () -> Void) {
         os_log("[GAME DRAW] Terminating now...", type: .info)
+        
         ignoreAnyMessages = true
+        
         drawTimer?.invalidate()
         timeoutEndGame?.invalidate()
+        
         completionHandler()
     }
     
@@ -165,7 +172,9 @@ class GameDrawHostGameImpl: HostGame, HostGameDelegate {
                     self?.endGame(timer: timer)
                     return
                 }
+                
                 os_log("[GAME DRAW] Showing next image and sending it to players (image %d/%d)", type: .debug, (currentRound + 1), numberOfImages)
+                
                 let image: String = self!.images![currentRound]
                 self?.hostDrawViewController.next(image: image)
                 self?.framework?.sendGameDataToPlayers(message: NextImageMessage(randomImage: image), to: self?.players, sendMode: .reliable)
@@ -185,14 +194,17 @@ class GameDrawHostGameImpl: HostGame, HostGameDelegate {
     // Ends game: Stops timer and asks the players to send their result (final points).
     private func endGame(timer: Timer) {
         os_log("[GAME DRAW] Ending game: asking players to send their result.", type: .debug)
+        
         timer.invalidate()
         self.framework?.sendGameDataToPlayers(message: ResultRequestMessage(), to: self.players, sendMode: .reliable)
+        
         // Timeout to finish game even if a player gets lots
         self.timeoutEndGame = Timer.scheduledTimer(withTimeInterval: 8, repeats: false, block: { [weak self] timer in
             guard let this = self else {
                 os_log("[GAME DRAW] self is undefined in scheduled timer in endGame().", type: .error)
                 return
             }
+            
             if this.allPlayerResultsSet {
                 this.calculateRankingAndBackToApp()
             }
@@ -205,8 +217,10 @@ class GameDrawHostGameImpl: HostGame, HostGameDelegate {
             os_log("[GAME DRAW] GamePlayer could not be found in playersWithResult.", type: .error)
             return
         }
+        
         os_log("[GAME DRAW] Setting %d points as result for game player \"%@\".", type: .debug, points, gamePlayer.player.peer.name)
         gamePlayer.result = points
+        
         if allPlayerResultsSet {
             timeoutEndGame?.invalidate()
             calculateRankingAndBackToApp()
@@ -216,9 +230,11 @@ class GameDrawHostGameImpl: HostGame, HostGameDelegate {
     // After the game has been finished, sends results (ranking position) to players.
     private func calculateRankingAndBackToApp() {
         os_log("[GAME DRAW] All player results set: calculating ranking & sending players their result.", type: .debug)
+        
         let rankedPlayers = Dictionary(grouping: self.gamePlayers, by: { $0.result! }).sorted(by: { $0.key > $1.key })
-        // Send each player their result (= position in the ranking)
         var rankingPosition = 1
+        
+        // Send each player their result (= position in the ranking)
         for (_, gamePlayers) in rankedPlayers {
             for gamePlayer in gamePlayers {
                 let player: Player = gamePlayer.player
@@ -228,6 +244,7 @@ class GameDrawHostGameImpl: HostGame, HostGameDelegate {
             }
             rankingPosition += 1
         }
+        
         self.endGame()
     }
     
@@ -238,52 +255,3 @@ class GameDrawHostGameImpl: HostGame, HostGameDelegate {
     }
     
 }
-
-extension GameDrawHostGameImpl {
-    func messageToPlayers(message: String?) {
-        // send view change message to players
-        if (message != nil) {
-            switch message! {
-            case "GameStartMessage":
-                self.framework?.sendGameDataToPlayers(message: GameStartMessage(), to: self.players, sendMode: .reliable)
-            case "GameEndMessage":
-                self.framework?.sendGameDataToPlayers(message: GameEndMessage(), to: self.players, sendMode: .reliable)
-            default:
-                os_log("[GAME DRAW] Unknown message type in messageToPlayers(): %s", type: .debug, message!)
-            }
-        }
-    }
-}
-
-extension GameDrawHostGameImpl {
-    // Switches the view (app > instructions > game > result > app).
-    func switchViewController(old: UIViewController?, new: UIViewController?) {
-        os_log("[GAME DRAW] Switching views: %s -> %s", type: .debug, String(describing: old.self), String(describing: new.self))
-        
-        DispatchQueue.main.async {
-            
-            if (old != nil) {
-                // remove old view
-                old!.view.removeFromSuperview()
-                old!.removeFromParent()
-            }
-            
-            if (new != nil) {
-                // add new view
-                self.containerViewController.addChild(new!.self)
-                self.containerViewController.view.addSubview(new!.view)
-                
-                // add constraints
-                new!.view.translatesAutoresizingMaskIntoConstraints = false
-                new!.view.topAnchor.constraint(equalTo: self.containerViewController.view.topAnchor).isActive = true
-                new!.view.bottomAnchor.constraint(equalTo: self.containerViewController.view.bottomAnchor).isActive = true
-                new!.view.leadingAnchor.constraint(equalTo: self.containerViewController.view.leadingAnchor).isActive = true
-                new!.view.trailingAnchor.constraint(equalTo: self.containerViewController.view.trailingAnchor).isActive = true
-            }
-            
-        }
-        
-    }
-}
-
-

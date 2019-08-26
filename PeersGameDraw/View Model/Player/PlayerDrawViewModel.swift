@@ -121,6 +121,8 @@ class PlayerDrawViewModel: PlayerDrawViewModelProtocol, CloudManagerDelegate {
         })
     }
     
+    // Convert final image to size that model needs
+    // Grab bitmap of final image and send bitmap to Cloud
     func finish() {
         drawFinalImage()
         
@@ -132,9 +134,11 @@ class PlayerDrawViewModel: PlayerDrawViewModelProtocol, CloudManagerDelegate {
         
         guard let bitmap = grayscaleBitmap else { return }
         if randomImage == nil { return }
-//        cloudManager.send(label: randomImage!, bitmap: bitmap)
+        cloudManager.send(label: randomImage!, bitmap: bitmap)
     }
     
+    // Next image to draw has been received.
+    // Update ViewController with new image subject.
     func next(image: String) {
         randomImage = image
         DispatchQueue.main.async {
@@ -142,6 +146,7 @@ class PlayerDrawViewModel: PlayerDrawViewModelProtocol, CloudManagerDelegate {
         }
     }
     
+    // Re-draw every line to join to one picture
     func drawFinalImage() {
         UIGraphicsBeginImageContext(drawView.frame.size)
         guard let context = UIGraphicsGetCurrentContext() else { return }

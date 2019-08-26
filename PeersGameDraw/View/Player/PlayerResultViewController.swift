@@ -27,7 +27,7 @@ class PlayerResultViewController: UIViewController {
     }
     
     // TODO: from ViewModel + emoji
-    private func setLabelTextsToWinner() {
+    func setLabelTextsToWinner() {
         emojiLabel.text = "" // = award icon
         resultLabel.text = "Congratulations! You won this game, keep going!"
     }

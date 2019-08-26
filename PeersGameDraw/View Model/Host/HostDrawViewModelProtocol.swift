@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import UICircularProgressRing
 
 protocol HostDrawViewModelProtocol {
 
@@ -15,6 +16,7 @@ protocol HostDrawViewModelProtocol {
     var hostGameDelegate: HostGameDelegate? { get set }
     var image: String? { get set }
     
-    func next(image: String)
+    func next(image: String, countdown: UICircularProgressRing)
+    func startCountdown(_ countdown: UICircularProgressRing, for seconds: Int, repeatingAfter3: Bool)
     
 }

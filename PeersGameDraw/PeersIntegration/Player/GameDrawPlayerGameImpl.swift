@@ -42,8 +42,8 @@ class GameDrawPlayerGameImpl: PlayerGame, PlayerGameDelegate {
     
     func handle(message: Data, ofType: String) {
         do {
-            // TODO: handle messages
             os_log("[GAME Draw] Received message %s.", type: .debug, ofType)
+            
             switch ofType {
             case "\(GameStartMessage.self)":
                 switchViewController(old: playerInstructionsViewController, new: playerDrawViewController, with: {})
@@ -112,28 +112,6 @@ class GameDrawPlayerGameImpl: PlayerGame, PlayerGameDelegate {
     }
     
     
-}
-
-extension GameDrawPlayerGameImpl {
-    // Switches the view (app > instructions > game > result > app).
-    func switchViewController(old: UIViewController?, new: UIViewController?, with completionHandler: @escaping () -> Void = {}) {
-        os_log("[GAME DRAW] Switching views: %s -> %s", type: .debug, String(describing: old.self), String(describing: new.self))
-        
-        DispatchQueue.main.async {
-            
-            if (new != nil && old == nil) {
-                // from app
-                self.containerViewController.present(new!, animated: true, completion: nil)
-            } else if (old != nil && new != nil) {
-                // switch view in game
-                old!.present(new!, animated: false, completion: nil)
-            } else if (old != nil && new == nil) {
-                // back to app
-                self.containerViewController.dismiss(animated: true, completion: nil)
-            }
-            completionHandler()
-        }
-    }
 }
 
 private final class BundleToken {}
