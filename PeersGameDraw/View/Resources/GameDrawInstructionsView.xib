@@ -78,7 +78,7 @@
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Draw the 4 given subjects. Be quick - you only have 5 seconds per drawing!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EcV-OM-LXq" customClass="PeersText1Label" customModule="PeersUI">
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Draw the 4 given subjects. Be quick - you only have a few seconds per drawing!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EcV-OM-LXq" customClass="PeersText1Label" customModule="PeersUI">
                             <rect key="frame" x="75.5" y="225" width="169" height="86.5"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="169" id="471-f5-zCW"/>

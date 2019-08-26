@@ -15,6 +15,7 @@ class GameDrawHostGameImpl: HostGame, HostGameDelegate {
     let timeForInstructions = 10
     let numberOfImages = 4
     let timeForResult = 5
+    let timeForDrawing = 10
     
     var framework: HostFramework?
     
@@ -161,7 +162,7 @@ class GameDrawHostGameImpl: HostGame, HostGameDelegate {
  
         var currentRound = -1
         DispatchQueue.main.async {
-            let timer = Timer.scheduledTimer(withTimeInterval: TimeInterval(self.timeForResult), repeats: true, block: { [weak self] timer in
+            let timer = Timer.scheduledTimer(withTimeInterval: TimeInterval(self.timeForDrawing), repeats: true, block: { [weak self] timer in
  
                 currentRound += 1
                 if currentRound == self?.numberOfImages {
