@@ -64,10 +64,10 @@ class PlayerDrawViewController: UIViewController, PlayerDrawViewModelDelegate {
         iSeeLabel.isHidden = true
     }
     
-//    func next(image: String) {
-//        drawViewModel?.next(image: image)
-//        drawViewModel?.showSolutionOnCountdownEnd()
-//    }
+    func next(image: String) {
+        drawViewModel?.next(image: image)
+        drawViewModel?.showSolutionOnCountdownEnd()
+    }
     
     // PlayerDrawViewModelDelegate methods
     

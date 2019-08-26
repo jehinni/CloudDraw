@@ -50,7 +50,7 @@ class GameDrawPlayerGameImpl: PlayerGame, PlayerGameDelegate {
                 switchViewController(old: playerInstructionsViewController, new: playerDrawViewController, with: {})
             case "\(NextImageMessage.self)":
                 let data = try MessageWrapper.decodeData(type: NextImageMessage.self, data: message)
-//                next(image: data.image)
+                next(image: data.image)
             case "\(ResultRequestMessage.self)":
                 endGame()
             case "\(RankingPositionMessage.self)":
@@ -83,9 +83,9 @@ class GameDrawPlayerGameImpl: PlayerGame, PlayerGameDelegate {
     }
     
     // Passes next image to draw
-//    func next(image: String) {
-//        playerDrawViewController.next(image: image)
-//    }
+    func next(image: String) {
+        playerDrawViewController.next(image: image)
+    }
     
     // Ends game: Stops timer and asks the players to send their result (final points).
     func endGame() {
