@@ -12,11 +12,6 @@ import os.log
 
 class GameDrawHostGameImpl: HostGame, HostGameDelegate {
     
-    let timeForInstructions = 10
-    let numberOfImages = 4
-    let timeForResult = 5
-    let timeForDrawing = 10
-    
     var framework: HostFramework?
     
     var gamePlayers: [GamePlayer] = []
@@ -97,7 +92,7 @@ class GameDrawHostGameImpl: HostGame, HostGameDelegate {
         switchViewController(old: nil, new: hostInstructionsViewController)
     
         DispatchQueue.main.async {
-            self.instructionsTimer = Timer.scheduledTimer(withTimeInterval: TimeInterval(self.timeForInstructions), repeats: false, block: { [weak self] timer in
+            self.instructionsTimer = Timer.scheduledTimer(withTimeInterval: TimeInterval(timeForInstructions), repeats: false, block: { [weak self] timer in
                 guard let this = self else {
                     os_log("[GAME DRAW] self is undefined in scheduled timer in startCountdown().", type: .error)
                     return
@@ -163,14 +158,14 @@ class GameDrawHostGameImpl: HostGame, HostGameDelegate {
  
         var currentRound = -1
         DispatchQueue.main.async {
-            let timer = Timer.scheduledTimer(withTimeInterval: TimeInterval(self.timeForDrawing), repeats: true, block: { [weak self] timer in
+            let timer = Timer.scheduledTimer(withTimeInterval: TimeInterval(timeForDrawing), repeats: true, block: { [weak self] timer in
  
                 currentRound += 1
-                if currentRound == self?.numberOfImages {
+                if currentRound == numberOfImages {
                     self?.endGame(timer: timer)
                     return
                 }
-                os_log("[GAME DRAW] Showing next image and sending it to players (image %d/%d)", type: .debug, (currentRound + 1), self!.numberOfImages)
+                os_log("[GAME DRAW] Showing next image and sending it to players (image %d/%d)", type: .debug, (currentRound + 1), numberOfImages)
                 let image: String = self!.images![currentRound]
                 self?.hostDrawViewController.next(image: image)
                 self?.framework?.sendGameDataToPlayers(message: NextImageMessage(randomImage: image), to: self?.players, sendMode: .reliable)

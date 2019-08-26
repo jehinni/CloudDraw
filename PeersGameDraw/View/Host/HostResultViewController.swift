@@ -13,8 +13,6 @@ import os.log
 
 class HostResultViewController: UIViewController {
     
-    let timeForResult = 5
-    
     weak var hostGameDelegate: HostGameDelegate?
     
     @IBOutlet weak var tableView: UITableView!

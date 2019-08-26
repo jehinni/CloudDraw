@@ -11,8 +11,6 @@ import PeersUI
 import UICircularProgressRing
 
 class DrawInstructionsView: UIView {
-    
-    let timeForInstructions = 5
 
     @IBOutlet var instructionsView: UIView!
     @IBOutlet weak var headlineLabel: PeersHeadline1Label!
@@ -31,7 +29,7 @@ class DrawInstructionsView: UIView {
     private func showCountdown() {
         DispatchQueue.main.async {
             self.progressView.animationTimingFunction = .linear
-            self.progressView.startProgress(to: 0, duration: TimeInterval(self.timeForInstructions))
+            self.progressView.startProgress(to: 0, duration: TimeInterval(timeForInstructions))
         }
     }
 

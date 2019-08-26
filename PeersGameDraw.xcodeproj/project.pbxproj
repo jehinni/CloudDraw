@@ -16,6 +16,7 @@
 		07368B7E2283029600621BEF /* PeersGameDrawUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07368B7D2283029600621BEF /* PeersGameDrawUITests.swift */; };
 		07368B8E22837FF100621BEF /* PlayerDrawViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07368B8D22837FF100621BEF /* PlayerDrawViewModel.swift */; };
 		07368B902283803A00621BEF /* PlayerDrawViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07368B8F2283803A00621BEF /* PlayerDrawViewModelProtocol.swift */; };
+		07562B2423141E1000B3041F /* GameDrawSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07562B2323141E1000B3041F /* GameDrawSettings.swift */; };
 		0787CDF9230EAACC00E409C6 /* GameDrawSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0787CDF8230EAACC00E409C6 /* GameDrawSetup.swift */; };
 		0787CDFB230EAD1300E409C6 /* GameDrawPlayerGameImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0787CDFA230EAD1300E409C6 /* GameDrawPlayerGameImpl.swift */; };
 		0787CDFD230EAE7300E409C6 /* GameDrawHostGameImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0787CDFC230EAE7300E409C6 /* GameDrawHostGameImpl.swift */; };
@@ -84,6 +85,7 @@
 		07368B7F2283029600621BEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07368B8D22837FF100621BEF /* PlayerDrawViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerDrawViewModel.swift; sourceTree = "<group>"; };
 		07368B8F2283803A00621BEF /* PlayerDrawViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerDrawViewModelProtocol.swift; sourceTree = "<group>"; };
+		07562B2323141E1000B3041F /* GameDrawSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDrawSettings.swift; sourceTree = "<group>"; };
 		0787CDF8230EAACC00E409C6 /* GameDrawSetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDrawSetup.swift; sourceTree = "<group>"; };
 		0787CDFA230EAD1300E409C6 /* GameDrawPlayerGameImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDrawPlayerGameImpl.swift; sourceTree = "<group>"; };
 		0787CDFC230EAE7300E409C6 /* GameDrawHostGameImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDrawHostGameImpl.swift; sourceTree = "<group>"; };
@@ -191,6 +193,7 @@
 				07368B5D2283029000621BEF /* AppDelegate.swift */,
 				07368B642283029600621BEF /* Assets.xcassets */,
 				07368B692283029600621BEF /* Info.plist */,
+				07562B2323141E1000B3041F /* GameDrawSettings.swift */,
 			);
 			path = PeersGameDraw;
 			sourceTree = "<group>";
@@ -591,6 +594,7 @@
 				07F999B62311A2CC002A9433 /* HostDrawViewModelDelegate.swift in Sources */,
 				07B1A01322E60D7E009953D2 /* UIImage+GrayScaleBitmap.swift in Sources */,
 				07F999A9231180AD002A9433 /* HostDrawViewModelProtocol.swift in Sources */,
+				07562B2423141E1000B3041F /* GameDrawSettings.swift in Sources */,
 				07368B602283029000621BEF /* PlayerDrawViewController.swift in Sources */,
 				07B1A01522E89444009953D2 /* CloudManager.swift in Sources */,
 				07B1A00F22E5CFCF009953D2 /* UIImage+Resize.swift in Sources */,
