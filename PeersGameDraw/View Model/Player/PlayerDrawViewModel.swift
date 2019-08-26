@@ -132,14 +132,8 @@ class PlayerDrawViewModel: PlayerDrawViewModelProtocol, CloudManagerDelegate {
         
         guard let bitmap = grayscaleBitmap else { return }
         if randomImage == nil { return }
-        cloudManager.send(label: randomImage!, bitmap: bitmap)
+//        cloudManager.send(label: randomImage!, bitmap: bitmap)
     }
-    
-//    func next() {
-//        DispatchQueue.main.async {
-//            self.drawViewModelDelegate?.didReceiveRandomImage(imageName: self.randomImage ?? "No image received")
-//        }
-//    }
     
     func next(image: String) {
         randomImage = image

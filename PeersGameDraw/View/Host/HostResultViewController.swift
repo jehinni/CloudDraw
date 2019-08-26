@@ -54,7 +54,7 @@ extension HostResultViewController: UITableViewDelegate, UITableViewDataSource {
     // Number of TableViewCells = number of players
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         guard let rankedPlayers = hostGameDelegate?.rankedPlayers else {
-            os_log("[GAME QUIZ] rankedPlayers are undefined in HostResultVC", type: .error)
+            os_log("[GAME DRAW] rankedPlayers are undefined in HostResultViewController", type: .error)
             return 0
         }
         return rankedPlayers.count
@@ -64,8 +64,7 @@ extension HostResultViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // Get player's data (name, points, ranking position)
         let rankedPlayers: [RankingPositionMessage] = hostGameDelegate!.rankedPlayers
-        let i = indexPath.row
-        let player = rankedPlayers[i]
+        let player = rankedPlayers[indexPath.row]
         let name = player.gamePlayer.player.peer.name
         let points = player.gamePlayer.result!
         let rankingPosition = player.rankingPosition

@@ -26,7 +26,6 @@ protocol PlayerDrawViewModelProtocol {
 	func touchesEnded()
 	func finish()
     func next(image: String)
-//    func next()
     
     func showSolutionOnCountdownEnd()
     
