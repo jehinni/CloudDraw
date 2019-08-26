@@ -65,6 +65,7 @@ class PlayerDrawViewController: UIViewController, PlayerDrawViewModelDelegate {
     }
     
     func next(image: String) {
+        drawViewModel?.deleteAll()
         drawViewModel?.next(image: image)
         drawViewModel?.showSolutionOnCountdownEnd()
     }
