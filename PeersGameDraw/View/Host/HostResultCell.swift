@@ -12,7 +12,7 @@ import PeersUI
 class HostResultCell: UITableViewCell {
     
     @IBOutlet weak var positionLabel: PeersHeadline4Label!
-    
     @IBOutlet weak var nameLabel: PeersText1Label!
     @IBOutlet weak var pointsLabel: PeersText1Label!
+    
 }

@@ -30,6 +30,8 @@ class GameDrawPlayerGameImpl: PlayerGame, PlayerGameDelegate {
         playerDrawViewController = ViewControllerFactory.createPlayerDrawViewController()
         playerResultViewController = ViewControllerFactory.createPlayerResultViewController()
         
+        playerResultViewController.playerGameDelegate = self
+        
     }
     
     deinit {

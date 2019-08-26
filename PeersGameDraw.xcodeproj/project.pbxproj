@@ -253,6 +253,8 @@
 				0787CDFC230EAE7300E409C6 /* GameDrawHostGameImpl.swift */,
 				07F9999E230EE0D6002A9433 /* GameDrawHostMessages.swift */,
 				0787CDF8230EAACC00E409C6 /* GameDrawSetup.swift */,
+				07FAE71B23130A900027A252 /* HostGameDelegate.swift */,
+				07FAE71F23138B3B0027A252 /* PlayerGameDelegate.swift */,
 			);
 			path = PeersIntegration;
 			sourceTree = "<group>";
@@ -273,7 +275,6 @@
 				07368B8D22837FF100621BEF /* PlayerDrawViewModel.swift */,
 				07368B8F2283803A00621BEF /* PlayerDrawViewModelProtocol.swift */,
 				07B1A01A22E8BC77009953D2 /* PlayerDrawViewModelDelegate.swift */,
-				07FAE71F23138B3B0027A252 /* PlayerGameDelegate.swift */,
 			);
 			path = Player;
 			sourceTree = "<group>";
@@ -313,7 +314,6 @@
 				07F999A523118095002A9433 /* HostDrawViewModel.swift */,
 				07F999A8231180AD002A9433 /* HostDrawViewModelProtocol.swift */,
 				07F999B52311A2CC002A9433 /* HostDrawViewModelDelegate.swift */,
-				07FAE71B23130A900027A252 /* HostGameDelegate.swift */,
 			);
 			path = Host;
 			sourceTree = "<group>";

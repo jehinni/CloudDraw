@@ -7,8 +7,13 @@
 //
 
 import Foundation
+import PeersFramework
 
 protocol PlayerGameDelegate: AnyObject {
+    
+    var finalGamePlayer: GamePlayer? { get }
+    var finalRankingPosition: Int? { get }
+    
     func didReceive(prediction: String)
     func didUpdate(points: Int)
 }

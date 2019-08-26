@@ -44,6 +44,8 @@ class GameDrawHostGameImpl: HostGame, HostGameDelegate {
         hostDrawViewController = ViewControllerFactory.createHostDrawViewController()
         hostResultViewController = ViewControllerFactory.createHostResultViewController()
         
+        hostResultViewController.hostGameDelegate = self
+        
         hostDrawViewController.hostDrawViewModel = ViewModelFactory.createHostDrawViewModel()
         hostDrawViewController.hostDrawViewModel?.hostGameDelegate = self
     }

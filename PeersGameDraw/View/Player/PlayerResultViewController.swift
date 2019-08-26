@@ -16,13 +16,17 @@ class PlayerResultViewController: UIViewController {
     @IBOutlet weak var emojiLabel: UILabel!
     @IBOutlet weak var resultLabel: PeersText1Label!
     
+    weak var playerGameDelegate: PlayerGameDelegate?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         startCountdown(countdownView, for: 10, repeatingAfter3: false)
-        // TODO: if winner change labels
+        if playerGameDelegate?.finalRankingPosition == 1 {
+            setLabelTextsToWinner()
+        }
     }
     
-    // TODO: from ViewModel
+    // TODO: from ViewModel + emoji
     private func setLabelTextsToWinner() {
         emojiLabel.text = "" // = award icon
         resultLabel.text = "Congratulations! You won this game, keep going!"
