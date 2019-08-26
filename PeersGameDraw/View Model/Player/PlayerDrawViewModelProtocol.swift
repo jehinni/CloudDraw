@@ -28,4 +28,6 @@ protocol PlayerDrawViewModelProtocol {
     func next(image: String)
     func next()
     
+    func showSolutionOnCountdownEnd()
+    
 }

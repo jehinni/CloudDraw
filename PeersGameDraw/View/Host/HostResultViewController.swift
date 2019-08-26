@@ -13,21 +13,46 @@ import os.log
 
 class HostResultViewController: UIViewController {
     
+    let timeForResult = 5
+    
     weak var hostGameDelegate: HostGameDelegate?
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var countdownView: UICircularProgressRing!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        startCountdown(countdownView, for: Int(timeForResult), repeatingAfter3: false)
+        initTableView()
+    }
+    
+    // Start a countdown for the specified time in seconds
+    func startCountdown(_ countdown: UICircularProgressRing, for seconds: Int, repeatingAfter3: Bool) {
+        DispatchQueue.main.async {
+            countdown.animationTimingFunction = .linear
+            if repeatingAfter3 {
+                countdown.layer.isHidden = false
+                countdown.startProgress(to: 0, duration: TimeInterval(seconds - 3), completion: {
+                    countdown.layer.isHidden = true
+                    countdown.startProgress(to: CGFloat(seconds), duration: 3)
+                })
+            } else {
+                countdown.startProgress(to: 0, duration: TimeInterval(seconds))
+            }
+        }
+    }
+
 }
 
 extension HostResultViewController: UITableViewDelegate, UITableViewDataSource {
     
-    private func initTableView() {
+    func initTableView() {
         tableView.dataSource = self
         tableView.delegate = self
     }
     
     // Number of TableViewCells = number of players
-    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         guard let rankedPlayers = hostGameDelegate?.rankedPlayers else {
             os_log("[GAME QUIZ] rankedPlayers are undefined in HostResultVC", type: .error)
             return 0
@@ -36,7 +61,7 @@ extension HostResultViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     // Each TableViewCell presents a player's ranking position, name and points in the game.
-    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // Get player's data (name, points, ranking position)
         let rankedPlayers: [RankingPositionMessage] = hostGameDelegate!.rankedPlayers
         let i = indexPath.row

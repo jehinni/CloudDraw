@@ -113,7 +113,6 @@ class PlayerDrawViewModel: PlayerDrawViewModelProtocol, CloudManagerDelegate {
     }
     
     func showSolutionOnCountdownEnd() {
-        // TODO: timer für fragen erhöhen
         Timer.scheduledTimer(withTimeInterval: TimeInterval(10 - 3), repeats: false, block: { [weak self] timer in
             guard let this = self else {
                 os_log("[GAME DRAW] self is undefined in scheduled timer in showSolutionOnCountdownEnd().", type: .error)
