@@ -33,7 +33,7 @@ import UIKit
 // TODO: own file
 extension PlayerDrawViewModel {
     // Switches the view (app > instructions > game > result > app).
-    private func switchViewController(old: UIViewController?, new: UIViewController?, in container: UIViewController, with completionHandler: @escaping () -> Void = {}) {
+    func switchViewController(old: UIViewController?, new: UIViewController?, in container: UIViewController, with completionHandler: @escaping () -> Void = {}) {
         os_log("[GAME DRAW] Switching views: %s -> %s", type: .debug, String(describing: old.self), String(describing: new.self))
         
         DispatchQueue.main.async {
