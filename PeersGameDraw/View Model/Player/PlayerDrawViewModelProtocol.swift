@@ -24,7 +24,7 @@ protocol PlayerDrawViewModelProtocol {
 	func deleteAll()
 	func undo()
 	func touchesEnded()
-	func finsih()
+	func finish()
     func next(image: String)
     func next()
     

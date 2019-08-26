@@ -84,7 +84,12 @@ class GameDrawPlayerGameImpl: PlayerGame, PlayerGameDelegate {
     
     // Passes next image to draw
     func next(image: String) {
-        playerDrawViewController.next(image: image)
+        os_log("[GAME DRAW] Setting and showing next image: %@", type: .debug, image)
+        
+        DispatchQueue.main.async {
+            self.playerDrawViewController.next(image: image)
+        }
+        
     }
     
     // Ends game: Stops timer and asks the players to send their result (final points).

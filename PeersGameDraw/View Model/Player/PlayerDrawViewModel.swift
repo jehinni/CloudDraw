@@ -117,12 +117,11 @@ class PlayerDrawViewModel: PlayerDrawViewModelProtocol, CloudManagerDelegate {
                 os_log("[GAME DRAW] self is undefined in scheduled timer in showSolutionOnCountdownEnd().", type: .error)
                 return
             }
-            this.finsih()
+            this.finish()
         })
     }
     
-    // TODO: aufrufen!!
-    func finsih() {
+    func finish() {
         drawFinalImage()
         
         let finalImage = drawView.image
