@@ -11,8 +11,8 @@ import UIKit
 
 class ViewModelFactory {
     
-	class func createPlayerDrawViewModel() -> PlayerDrawViewModelProtocol {
-		return PlayerDrawViewModel()
+    class func createPlayerDrawViewModel(with imageView: UIImageView) -> PlayerDrawViewModelProtocol {
+		return PlayerDrawViewModel(with: imageView)
 	}
     
 //    class func createPlayerViewModel() -> PlayerViewModelAdapter {

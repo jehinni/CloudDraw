@@ -42,10 +42,6 @@
 		07F999B023118BEE002A9433 /* HostResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F999AF23118BEE002A9433 /* HostResultViewController.swift */; };
 		07F999B223118D80002A9433 /* HostResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F999B123118D80002A9433 /* HostResultCell.swift */; };
 		07F999B62311A2CC002A9433 /* HostDrawViewModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F999B52311A2CC002A9433 /* HostDrawViewModelDelegate.swift */; };
-		07F999B82311AA10002A9433 /* HostViewModelAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F999B72311AA10002A9433 /* HostViewModelAdapter.swift */; };
-		07F999BA2311AAF9002A9433 /* HostDrawViewModel+HostVIewModelAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F999B92311AAF9002A9433 /* HostDrawViewModel+HostVIewModelAdapter.swift */; };
-		07FAE7182312F1F20027A252 /* PlayerViewModelAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FAE7172312F1F20027A252 /* PlayerViewModelAdapter.swift */; };
-		07FAE71A2312F2580027A252 /* PlayerDrawViewModel+PlayerViewModelAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FAE7192312F2580027A252 /* PlayerDrawViewModel+PlayerViewModelAdapter.swift */; };
 		07FAE71C23130A900027A252 /* HostGameDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FAE71B23130A900027A252 /* HostGameDelegate.swift */; };
 		07FAE71E23130DB20027A252 /* ViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FAE71D23130DB20027A252 /* ViewControllerFactory.swift */; };
 		07FAE72023138B3B0027A252 /* PlayerGameDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FAE71F23138B3B0027A252 /* PlayerGameDelegate.swift */; };
@@ -114,10 +110,6 @@
 		07F999AF23118BEE002A9433 /* HostResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostResultViewController.swift; sourceTree = "<group>"; };
 		07F999B123118D80002A9433 /* HostResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostResultCell.swift; sourceTree = "<group>"; };
 		07F999B52311A2CC002A9433 /* HostDrawViewModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostDrawViewModelDelegate.swift; sourceTree = "<group>"; };
-		07F999B72311AA10002A9433 /* HostViewModelAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostViewModelAdapter.swift; sourceTree = "<group>"; };
-		07F999B92311AAF9002A9433 /* HostDrawViewModel+HostVIewModelAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HostDrawViewModel+HostVIewModelAdapter.swift"; sourceTree = "<group>"; };
-		07FAE7172312F1F20027A252 /* PlayerViewModelAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewModelAdapter.swift; sourceTree = "<group>"; };
-		07FAE7192312F2580027A252 /* PlayerDrawViewModel+PlayerViewModelAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PlayerDrawViewModel+PlayerViewModelAdapter.swift"; sourceTree = "<group>"; };
 		07FAE71B23130A900027A252 /* HostGameDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostGameDelegate.swift; sourceTree = "<group>"; };
 		07FAE71D23130DB20027A252 /* ViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFactory.swift; sourceTree = "<group>"; };
 		07FAE71F23138B3B0027A252 /* PlayerGameDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerGameDelegate.swift; sourceTree = "<group>"; };
@@ -281,8 +273,6 @@
 				07368B8D22837FF100621BEF /* PlayerDrawViewModel.swift */,
 				07368B8F2283803A00621BEF /* PlayerDrawViewModelProtocol.swift */,
 				07B1A01A22E8BC77009953D2 /* PlayerDrawViewModelDelegate.swift */,
-				07FAE7172312F1F20027A252 /* PlayerViewModelAdapter.swift */,
-				07FAE7192312F2580027A252 /* PlayerDrawViewModel+PlayerViewModelAdapter.swift */,
 				07FAE71F23138B3B0027A252 /* PlayerGameDelegate.swift */,
 			);
 			path = Player;
@@ -323,8 +313,6 @@
 				07F999A523118095002A9433 /* HostDrawViewModel.swift */,
 				07F999A8231180AD002A9433 /* HostDrawViewModelProtocol.swift */,
 				07F999B52311A2CC002A9433 /* HostDrawViewModelDelegate.swift */,
-				07F999B72311AA10002A9433 /* HostViewModelAdapter.swift */,
-				07F999B92311AAF9002A9433 /* HostDrawViewModel+HostVIewModelAdapter.swift */,
 				07FAE71B23130A900027A252 /* HostGameDelegate.swift */,
 			);
 			path = Host;
@@ -595,12 +583,10 @@
 			files = (
 				07C72D9122A9223100023FCA /* PointStorage.swift in Sources */,
 				07F999AE23118BD3002A9433 /* HostInstructionsViewController.swift in Sources */,
-				07FAE7182312F1F20027A252 /* PlayerViewModelAdapter.swift in Sources */,
 				07368B8E22837FF100621BEF /* PlayerDrawViewModel.swift in Sources */,
 				07F999AC23118B96002A9433 /* HostDrawViewController.swift in Sources */,
 				07FAE72023138B3B0027A252 /* PlayerGameDelegate.swift in Sources */,
 				0787CE05230EB81800E409C6 /* PlayerInstructionsViewController.swift in Sources */,
-				07F999B82311AA10002A9433 /* HostViewModelAdapter.swift in Sources */,
 				07FAE71E23130DB20027A252 /* ViewControllerFactory.swift in Sources */,
 				07F999B62311A2CC002A9433 /* HostDrawViewModelDelegate.swift in Sources */,
 				07B1A01322E60D7E009953D2 /* UIImage+GrayScaleBitmap.swift in Sources */,
@@ -615,10 +601,8 @@
 				0787CDFD230EAE7300E409C6 /* GameDrawHostGameImpl.swift in Sources */,
 				07F9999F230EE0D6002A9433 /* GameDrawHostMessages.swift in Sources */,
 				0787CDFB230EAD1300E409C6 /* GameDrawPlayerGameImpl.swift in Sources */,
-				07F999BA2311AAF9002A9433 /* HostDrawViewModel+HostVIewModelAdapter.swift in Sources */,
 				07F9999C230EDC79002A9433 /* DrawInstructionsView.swift in Sources */,
 				07C72D9322A9443000023FCA /* ViewModelFactory.swift in Sources */,
-				07FAE71A2312F2580027A252 /* PlayerDrawViewModel+PlayerViewModelAdapter.swift in Sources */,
 				07F999B023118BEE002A9433 /* HostResultViewController.swift in Sources */,
 				0787CE07230EB92E00E409C6 /* PlayerResultViewController.swift in Sources */,
 				07FAE71C23130A900027A252 /* HostGameDelegate.swift in Sources */,

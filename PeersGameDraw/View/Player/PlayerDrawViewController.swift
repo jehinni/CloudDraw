@@ -16,17 +16,17 @@ class PlayerDrawViewController: UIViewController, PlayerDrawViewModelDelegate {
     @IBOutlet weak var predictionLabel: PeersHeadline2Label!
     @IBOutlet weak var drawingLabel: PeersHeadline4Label!
     @IBOutlet weak var mainImageView: UIImageView!
-    var drawViewModel: PlayerDrawViewModelProtocol?
+    var drawViewModel: PlayerDrawViewModelProtocol? {
+        didSet {
+            drawViewModel?.drawViewModelDelegate = self
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         backgroundImageView.backgroundColor = PeersColors.intensePurple.color
         iSeeLabel.isHidden = true
         predictionLabel.isHidden = true
-        // TODO: inject viewModel
-        drawViewModel = ViewModelFactory.createPlayerDrawViewModel()
-        drawViewModel?.drawViewModelDelegate = self
-        //        drawViewModel?.next(image: ) TODO: call in viewModel init?
     }
     
     // UIResponder methods
@@ -62,6 +62,10 @@ class PlayerDrawViewController: UIViewController, PlayerDrawViewModelDelegate {
         drawViewModel?.undo()
         predictionLabel.isHidden = true
         iSeeLabel.isHidden = true
+    }
+    
+    func next(image: String) {
+        drawViewModel?.next(image: image)
     }
     
     // PlayerDrawViewModelDelegate methods

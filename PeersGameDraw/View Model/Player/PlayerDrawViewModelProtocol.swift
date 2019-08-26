@@ -17,10 +17,6 @@ protocol PlayerDrawViewModelProtocol {
 	var cloudManager: CloudManager { get }
 	var drawViewModelDelegate: PlayerDrawViewModelDelegate? { get set}
     
-    var playerInstructionsViewController: PlayerInstructionsViewController { get }
-    var playerDrawViewController: PlayerDrawViewController { get }
-    var playerResultViewController: PlayerResultViewController { get }
-    
     var playerGameDelegate: PlayerGameDelegate? { get set }
 	
 	func draw()
@@ -32,9 +28,4 @@ protocol PlayerDrawViewModelProtocol {
     func next(image: String)
     func next()
     
-    
-    func embedInstructionsViewController(in viewController: UIViewController, with completionHandler: @escaping () -> Void)
-    func embedDrawViewController(in viewController: UIViewController, with completionHandler:  @escaping () -> Void)
-    func embedResultViewController(in viewController: UIViewController, with completionHandler: @escaping () -> Void)
-    func removeResultController(from viewController: UIViewController, with completionHandler: @escaping () -> Void)
 }

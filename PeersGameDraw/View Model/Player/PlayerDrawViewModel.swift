@@ -23,19 +23,11 @@ class PlayerDrawViewModel: PlayerDrawViewModelProtocol, CloudManagerDelegate {
     var drawViewModelDelegate: PlayerDrawViewModelDelegate?
     var randomImage: String?
     
-    var playerInstructionsViewController: PlayerInstructionsViewController
-    var playerDrawViewController: PlayerDrawViewController
-    var playerResultViewController: PlayerResultViewController
-    
     var playerGameDelegate: PlayerGameDelegate?
     
-    init() {
+    init(with imageView: UIImageView) {
         
-        playerInstructionsViewController = ViewControllerFactory.createPlayerInstructionsViewController()
-        playerDrawViewController = ViewControllerFactory.createPlayerDrawViewController()
-        playerResultViewController = ViewControllerFactory.createPlayerResultViewController()
-        
-        drawView = playerDrawViewController.mainImageView
+        drawView = imageView
         pointStorage = PointStorage()
         lastPoint = CGPoint.zero
         currentPoint = CGPoint.zero
@@ -197,26 +189,4 @@ class PlayerDrawViewModel: PlayerDrawViewModelProtocol, CloudManagerDelegate {
         
     }
     
-    
-    
-    
-    
-        func embedInstructionsViewController(in viewController: UIViewController, with completionHandler: @escaping () -> Void = {}) {
-            switchViewController(old: nil, new: playerInstructionsViewController, in: viewController, with: completionHandler)
-        }
-    
-        func embedDrawViewController(in viewController: UIViewController, with completionHandler: @escaping () -> Void = {}) {
-            switchViewController(old: playerInstructionsViewController, new: playerDrawViewController, in: viewController, with: completionHandler)
-        }
-    
-        func embedResultViewController(in viewController: UIViewController, with completionHandler: @escaping () -> Void = {}) {
-            switchViewController(old: playerDrawViewController, new: playerResultViewController, in: viewController, with: completionHandler)
-        }
-    
-        func removeResultController(from viewController: UIViewController, with completionHandler: @escaping () -> Void = {}) {
-            switchViewController(old: playerResultViewController, new: nil, in: viewController, with: completionHandler)
-        }
-    
 }
-
-private final class BundleToken {}

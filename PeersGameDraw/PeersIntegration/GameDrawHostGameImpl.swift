@@ -33,15 +33,18 @@ class GameDrawHostGameImpl: HostGame, HostGameDelegate {
     var timeoutEndGame: Timer?
     
     unowned var containerViewController: UIViewController
-
-    var hostViewModel: HostDrawViewModelProtocol?
+    var hostInstructionsViewController: HostInstructionsViewController
+    var hostDrawViewController: HostDrawViewController
+    var hostResultViewController: HostResultViewController
     
     init(parentViewController: UIViewController) {
         containerViewController = parentViewController
+        hostInstructionsViewController = ViewControllerFactory.createHostInstructionsViewController()
+        hostDrawViewController = ViewControllerFactory.createHostDrawViewController()
+        hostResultViewController = ViewControllerFactory.createHostResultViewController()
         
-        // TODO: inject
-        hostViewModel = ViewModelFactory.createHostDrawViewModel()
-        hostViewModel?.hostGameDelegate = self
+        hostDrawViewController.hostDrawViewModel = ViewModelFactory.createHostDrawViewModel()
+        hostDrawViewController.hostDrawViewModel?.hostGameDelegate = self
     }
     
     deinit {
@@ -88,7 +91,8 @@ class GameDrawHostGameImpl: HostGame, HostGameDelegate {
     // Then switching views and starting the drawing timer.
     func play() {
         os_log("[GAME DRAW] Play: switching to instructions view and starting drawing timer.", type: .debug)
-        hostViewModel?.embedInstructionsViewController(in: containerViewController)
+        switchViewController(old: nil, new: hostInstructionsViewController)
+    
         DispatchQueue.main.async {
             self.instructionsTimer = Timer.scheduledTimer(withTimeInterval: TimeInterval(self.timeForInstructions), repeats: false, block: { [weak self] timer in
                 guard let this = self else {
@@ -96,8 +100,8 @@ class GameDrawHostGameImpl: HostGame, HostGameDelegate {
                     return
                 }
                 os_log("[GAME DRAW] Play: triggering game start i.e. switching views and starting drawing timer.", type: .debug)
-                this.hostViewModel?.embedDrawViewController(in: this.containerViewController)
-                    this.messageToPlayers(message: "GameStartMessage")
+                this.switchViewController(old: this.hostInstructionsViewController, new: this.hostDrawViewController)
+                this.messageToPlayers(message: "GameStartMessage")
                 this.startDrawingTimer()
             })
         }
@@ -107,11 +111,11 @@ class GameDrawHostGameImpl: HostGame, HostGameDelegate {
     // after showing the result view.
     func evaluate() -> [GamePlayer] {
         os_log("[GAME DRAW] Evaluate: removing game view and returning ranked players.", type: .debug)
-        hostViewModel?.embedResultViewController(in: containerViewController)
+        switchViewController(old: hostDrawViewController, new: hostResultViewController)
         messageToPlayers(message: "GameEndMessage")
         
         sleep(UInt32(Int(timeForResult)))
-        hostViewModel?.removeResultController(from: containerViewController)
+        switchViewController(old: hostResultViewController, new: nil)
         return gamePlayers
     }
     
@@ -166,7 +170,7 @@ class GameDrawHostGameImpl: HostGame, HostGameDelegate {
                 }
                 os_log("[GAME DRAW] Showing next image and sending it to players (image %d/%d)", type: .debug, (currentRound + 1), self!.numberOfImages)
                 let image: String = self!.images![currentRound]
-                self?.hostViewModel?.next(image: image)
+                self?.hostDrawViewController.next(image: image)
                 self?.framework?.sendGameDataToPlayers(message: NextImageMessage(randomImage: image), to: self?.players, sendMode: .reliable)
             })
             
@@ -251,6 +255,37 @@ extension GameDrawHostGameImpl {
                 os_log("[GAME DRAW] Unknown message type in messageToPlayers(): %s", type: .debug, message!)
             }
         }
+    }
+}
+
+extension GameDrawHostGameImpl {
+    // Switches the view (app > instructions > game > result > app).
+    func switchViewController(old: UIViewController?, new: UIViewController?) {
+        os_log("[GAME DRAW] Switching views: %s -> %s", type: .debug, String(describing: old.self), String(describing: new.self))
+        
+        DispatchQueue.main.async {
+            
+            if (old != nil) {
+                // remove old view
+                old!.view.removeFromSuperview()
+                old!.removeFromParent()
+            }
+            
+            if (new != nil) {
+                // add new view
+                self.containerViewController.addChild(new!.self)
+                self.containerViewController.view.addSubview(new!.view)
+                
+                // add constraints
+                new!.view.translatesAutoresizingMaskIntoConstraints = false
+                new!.view.topAnchor.constraint(equalTo: self.containerViewController.view.topAnchor).isActive = true
+                new!.view.bottomAnchor.constraint(equalTo: self.containerViewController.view.bottomAnchor).isActive = true
+                new!.view.leadingAnchor.constraint(equalTo: self.containerViewController.view.leadingAnchor).isActive = true
+                new!.view.trailingAnchor.constraint(equalTo: self.containerViewController.view.trailingAnchor).isActive = true
+            }
+            
+        }
+        
     }
 }
 
