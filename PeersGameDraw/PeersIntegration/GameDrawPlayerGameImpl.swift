@@ -30,9 +30,6 @@ class GameDrawPlayerGameImpl: PlayerGame, PlayerGameDelegate {
         playerDrawViewController = ViewControllerFactory.createPlayerDrawViewController()
         playerResultViewController = ViewControllerFactory.createPlayerResultViewController()
         
-        playerDrawViewController.drawViewModel? = ViewModelFactory.createPlayerDrawViewModel(with: playerDrawViewController.mainImageView)
-        playerDrawViewController.drawViewModel?.playerGameDelegate = self
-        
     }
     
     deinit {
@@ -48,6 +45,8 @@ class GameDrawPlayerGameImpl: PlayerGame, PlayerGameDelegate {
             switch ofType {
             case "\(GameStartMessage.self)":
                 switchViewController(old: playerInstructionsViewController, new: playerDrawViewController, with: {})
+                playerDrawViewController.drawViewModel? = ViewModelFactory.createPlayerDrawViewModel(with: playerDrawViewController.mainImageView)
+                playerDrawViewController.drawViewModel?.playerGameDelegate = self
             case "\(NextImageMessage.self)":
                 let data = try MessageWrapper.decodeData(type: NextImageMessage.self, data: message)
                 next(image: data.image)
