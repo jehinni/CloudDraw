@@ -26,7 +26,6 @@ class PlayerResultViewController: UIViewController {
         }
     }
     
-    // TODO: from ViewModel + emoji
     func setLabelTextsToWinner() {
         emojiLabel.text = "" // = award icon
         resultLabel.text = "Congratulations! You won this game, keep going!"
@@ -34,7 +33,6 @@ class PlayerResultViewController: UIViewController {
 
 }
 
- // TODO: from ViewModel
 extension PlayerResultViewController {
     // Start a countdown for the specified time in seconds
     func startCountdown(_ countdown: UICircularProgressRing, for seconds: Int, repeatingAfter3: Bool) {
