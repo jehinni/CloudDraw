@@ -27,6 +27,8 @@ class PlayerDrawViewModel: PlayerDrawViewModelProtocol, CloudManagerDelegate {
     var playerDrawViewController: PlayerDrawViewController
     var playerResultViewController: PlayerResultViewController
     
+    var playerGameDelegate: PlayerGameDelegate?
+    
     init(with imageView: UIImageView) {
         
         playerInstructionsViewController = ViewControllerFactory.createPlayerInstructionsViewController()
@@ -118,6 +120,17 @@ class PlayerDrawViewModel: PlayerDrawViewModelProtocol, CloudManagerDelegate {
         currentPoints = []
     }
     
+    func showSolutionOnCountdownEnd() {
+        // TODO: timer für fragen erhöhen
+        Timer.scheduledTimer(withTimeInterval: TimeInterval(5 - 3), repeats: false, block: { [weak self] timer in
+            guard let this = self else {
+                os_log("[GAME DRAW] self is undefined in scheduled timer in showSolutionOnCountdownEnd().", type: .error)
+                return
+            }
+            this.finsih()
+        })
+    }
+    
     // TODO: aufrufen!!
     func finsih() {
         drawFinalImage()
@@ -172,12 +185,18 @@ class PlayerDrawViewModel: PlayerDrawViewModelProtocol, CloudManagerDelegate {
     func didReceive(prediction: [String : AnyObject]) {
         let predictedObject = prediction["prediction"] as! String
         
-        // TODO: send to Host
-        
         DispatchQueue.main.async {
+            self.playerGameDelegate?.didReceive(prediction: predictedObject)
+            
+            if predictedObject == self.randomImage {
+                self.playerGameDelegate?.didUpdate(points: 1)
+            }
+            
             self.drawViewModelDelegate?.didReceive(prediction: predictedObject)
         }
+        
     }
+    
 }
 
 private final class BundleToken {}

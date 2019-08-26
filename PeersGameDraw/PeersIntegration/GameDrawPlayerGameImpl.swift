@@ -10,7 +10,7 @@ import Foundation
 import PeersFramework
 import os.log
 
-class GameDrawPlayerGameImpl: PlayerGame {
+class GameDrawPlayerGameImpl: PlayerGame, PlayerGameDelegate {
     var framework: PlayerFramework?
     
     unowned var containerViewController: UIViewController
@@ -85,6 +85,19 @@ class GameDrawPlayerGameImpl: PlayerGame {
     func endGame() {
         os_log("[GAME DRAW] Ending game: sending player result (%d points) to the host.", type: .debug, points)
         framework?.sendGameDataToHost(message: ResultMessage(points: points), sendMode: .reliable)
+    }
+    
+    // PlayerGameDelegate method
+    
+    func didReceive(prediction: String) {
+        os_log("[GAME DRAW] Received prediction.", type: .debug)
+        framework?.sendGameDataToHost(message: ImagePredictionMessage(prediction: prediction), sendMode: .reliable)
+    }
+    
+    func didUpdate(points: Int) {
+        os_log("[GAME DRAW] Update player points.", type: .debug)
+        self.points = points
+        framework?.sendGameDataToHost(message: ResultMessage(points: self.points), sendMode: .unreliable)
     }
     
     

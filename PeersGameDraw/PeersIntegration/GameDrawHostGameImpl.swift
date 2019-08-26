@@ -10,7 +10,7 @@ import Foundation
 import PeersFramework
 import os.log
 
-class GameDrawHostGameImpl: HostGame {
+class GameDrawHostGameImpl: HostGame, HostGameDelegate {
     
     let timeForInstructions = 10
     let numberOfImages = 4
@@ -22,6 +22,7 @@ class GameDrawHostGameImpl: HostGame {
     var players: [Player] { return self.gamePlayers.map({ $0.player }) }
     var rankedPlayers: [RankingPositionMessage] = []
     var allPlayerResultsSet: Bool { return self.gamePlayers.filter({ $0.result == nil }).count == 0 }
+    var gamePlayerCurrentAnswers: [String] = []
     
     var ignoreAnyMessages: Bool = false
     
@@ -135,16 +136,17 @@ class GameDrawHostGameImpl: HostGame {
             return
         }
         os_log("[GAME DRAW] Setting prediction to %d for game player with index %d.", type: .debug, prediction, gamePlayerIndex)
+        gamePlayerCurrentAnswers[gamePlayerIndex] = prediction
     }
     
     // Sets the current points for the player, so these can be displayed.
     private func setCurrentPlayerPoints(_ points: Int, for peer: Peer) {
-        // TODO: instead of points send if prediction was correct???
         guard let gamePlayer: GamePlayer = gamePlayers.first(where: { $0.player.peer == peer }) else {
             os_log("[GAME DRAW] GamePlayer could not be found in playersWithResult in setCurrentPlayerPoints.", type: .error)
             return
         }
         os_log("[GAME DRAW] Setting %d current points for game player \"%@\".", type: .debug, points, gamePlayer.player.peer.name)
+        // TODO: should this be += ?
         gamePlayer.points = points
     }
     

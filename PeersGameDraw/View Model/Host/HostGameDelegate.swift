@@ -12,7 +12,7 @@ import PeersFramework
 protocol HostGameDelegate: class {
     
     var players: [Player] { get }
-    var gamePlayerCurrentAnswers: [Int] { get set }
+    var gamePlayerCurrentAnswers: [String] { get set }
     
     var rankedPlayers: [RankingPositionMessage] { get }
 }

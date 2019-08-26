@@ -20,6 +20,8 @@ protocol PlayerDrawViewModelProtocol {
     var playerInstructionsViewController: PlayerInstructionsViewController { get }
     var playerDrawViewController: PlayerDrawViewController { get }
     var playerResultViewController: PlayerResultViewController { get }
+    
+    var playerGameDelegate: PlayerGameDelegate? { get set }
 	
 	func draw()
 	func userSwiped(to point: CGPoint)
