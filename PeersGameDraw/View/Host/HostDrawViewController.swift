@@ -17,14 +17,14 @@ class HostDrawViewController: UIViewController, HostDrawViewModelDelegate {
     @IBOutlet weak var countdownView: UICircularProgressRing!
     @IBOutlet weak var imageLabel: PeersHeadline4Label!
     
-    var drawViewModel: HostDrawViewModelProtocol?
+    var hostDrawViewModel: HostDrawViewModelProtocol?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // TODO: inject
-        drawViewModel? = ViewModelFactory.createHostDrawViewModel()
-        drawViewModel?.drawViewModelDelegate = self
+        hostDrawViewModel? = ViewModelFactory.createHostDrawViewModel()
+        hostDrawViewModel?.drawViewModelDelegate = self
     }
     
     func didUpdate(image: String) {

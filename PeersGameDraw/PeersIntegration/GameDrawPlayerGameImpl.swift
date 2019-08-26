@@ -15,8 +15,7 @@ class GameDrawPlayerGameImpl: PlayerGame, PlayerGameDelegate {
     
     unowned var containerViewController: UIViewController
     
-    // TODO: adapter + init
-    var playerViewModel: PlayerViewModelAdapter?
+    var playerViewModel: PlayerDrawViewModelProtocol?
     
     var points = 0
     var finalGamePlayer: GamePlayer?
@@ -25,7 +24,8 @@ class GameDrawPlayerGameImpl: PlayerGame, PlayerGameDelegate {
     init(parentViewController: UIViewController) {
         containerViewController = parentViewController
         
-        playerViewModel = ViewModelFactory.createPlayerViewModel()
+        playerViewModel = ViewModelFactory.createPlayerDrawViewModel()
+        playerViewModel?.playerGameDelegate = self
         
     }
     

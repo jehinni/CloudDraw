@@ -31,4 +31,10 @@ protocol PlayerDrawViewModelProtocol {
 	func finsih()
     func next(image: String)
     func next()
+    
+    
+    func embedInstructionsViewController(in viewController: UIViewController, with completionHandler: @escaping () -> Void)
+    func embedDrawViewController(in viewController: UIViewController, with completionHandler:  @escaping () -> Void)
+    func embedResultViewController(in viewController: UIViewController, with completionHandler: @escaping () -> Void)
+    func removeResultController(from viewController: UIViewController, with completionHandler: @escaping () -> Void)
 }

@@ -10,29 +10,29 @@ import Foundation
 import os.log
 import UIKit
 
-extension HostDrawViewModel: HostViewModelAdapter {
-    
-    func nextImage(_ image: String) {
-        next(image: image)
-    }
-    
-    func embedInstructionsViewController(in viewController: UIViewController) {
-        switchViewController(old: nil, new: hostInstructionsViewController, in: viewController)
-    }
-    
-    func embedDrawViewController(in viewController: UIViewController) {
-        switchViewController(old: hostInstructionsViewController, new: hostDrawViewController, in: viewController)
-    }
-    
-    func embedResultViewController(in viewController: UIViewController) {
-        switchViewController(old: hostDrawViewController, new: hostResultViewController, in: viewController)
-    }
-    
-    func removeResultController(from viewController: UIViewController) {
-        switchViewController(old: hostResultViewController, new: nil, in: viewController)
-    }
- 
-}
+//extension HostDrawViewModel: HostViewModelAdapter {
+//
+//    func nextImage(_ image: String) {
+//        next(image: image)
+//    }
+//
+//    func embedInstructionsViewController(in viewController: UIViewController) {
+//        switchViewController(old: nil, new: hostInstructionsViewController, in: viewController)
+//    }
+//
+//    func embedDrawViewController(in viewController: UIViewController) {
+//        switchViewController(old: hostInstructionsViewController, new: hostDrawViewController, in: viewController)
+//    }
+//
+//    func embedResultViewController(in viewController: UIViewController) {
+//        switchViewController(old: hostDrawViewController, new: hostResultViewController, in: viewController)
+//    }
+//
+//    func removeResultController(from viewController: UIViewController) {
+//        switchViewController(old: hostResultViewController, new: nil, in: viewController)
+//    }
+//
+//}
 
 // TODO: own file
 extension HostDrawViewModel {

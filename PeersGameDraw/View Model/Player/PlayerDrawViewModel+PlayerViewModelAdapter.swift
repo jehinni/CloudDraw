@@ -10,29 +10,25 @@ import Foundation
 import os.log
 import UIKit
 
-extension PlayerDrawViewModel: PlayerViewModelAdapter {
-    
-    func nextImage(_ image: String) {
-        next(image: image)
-    }
-    
-    func embedInstructionsViewController(in viewController: UIViewController, with completionHandler: @escaping () -> Void = {}) {
-        switchViewController(old: nil, new: playerInstructionsViewController, in: viewController, with: completionHandler)
-    }
-    
-    func embedDrawViewController(in viewController: UIViewController, with completionHandler: @escaping () -> Void = {}) {
-        switchViewController(old: playerInstructionsViewController, new: playerDrawViewController, in: viewController, with: completionHandler)
-    }
-    
-    func embedResultViewController(in viewController: UIViewController, with completionHandler: @escaping () -> Void = {}) {
-        switchViewController(old: playerDrawViewController, new: playerResultViewController, in: viewController, with: completionHandler)
-    }
-    
-    func removeResultController(from viewController: UIViewController, with completionHandler: @escaping () -> Void = {}) {
-        switchViewController(old: playerResultViewController, new: nil, in: viewController, with: completionHandler)
-    }
-    
-}
+//extension PlayerDrawViewModel: PlayerViewModelAdapter {
+//    
+//    func embedInstructionsViewController(in viewController: UIViewController, with completionHandler: @escaping () -> Void = {}) {
+//        switchViewController(old: nil, new: playerInstructionsViewController, in: viewController, with: completionHandler)
+//    }
+//    
+//    func embedDrawViewController(in viewController: UIViewController, with completionHandler: @escaping () -> Void = {}) {
+//        switchViewController(old: playerInstructionsViewController, new: playerDrawViewController, in: viewController, with: completionHandler)
+//    }
+//    
+//    func embedResultViewController(in viewController: UIViewController, with completionHandler: @escaping () -> Void = {}) {
+//        switchViewController(old: playerDrawViewController, new: playerResultViewController, in: viewController, with: completionHandler)
+//    }
+//    
+//    func removeResultController(from viewController: UIViewController, with completionHandler: @escaping () -> Void = {}) {
+//        switchViewController(old: playerResultViewController, new: nil, in: viewController, with: completionHandler)
+//    }
+//    
+//}
 
 // TODO: own file
 extension PlayerDrawViewModel {

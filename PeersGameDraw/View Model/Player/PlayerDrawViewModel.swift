@@ -29,13 +29,13 @@ class PlayerDrawViewModel: PlayerDrawViewModelProtocol, CloudManagerDelegate {
     
     var playerGameDelegate: PlayerGameDelegate?
     
-    init(with imageView: UIImageView) {
+    init() {
         
         playerInstructionsViewController = ViewControllerFactory.createPlayerInstructionsViewController()
         playerDrawViewController = ViewControllerFactory.createPlayerDrawViewController()
         playerResultViewController = ViewControllerFactory.createPlayerResultViewController()
         
-        drawView = imageView
+        drawView = playerDrawViewController.mainImageView
         pointStorage = PointStorage()
         lastPoint = CGPoint.zero
         currentPoint = CGPoint.zero

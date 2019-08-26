@@ -24,7 +24,7 @@ class PlayerDrawViewController: UIViewController, PlayerDrawViewModelDelegate {
         iSeeLabel.isHidden = true
         predictionLabel.isHidden = true
         // TODO: inject viewModel
-        drawViewModel = ViewModelFactory.createPlayerDrawViewModel(with: mainImageView)
+        drawViewModel = ViewModelFactory.createPlayerDrawViewModel()
         drawViewModel?.drawViewModelDelegate = self
         //        drawViewModel?.next(image: ) TODO: call in viewModel init?
     }

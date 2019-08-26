@@ -11,20 +11,19 @@ import UIKit
 
 class ViewModelFactory {
     
-	class func createPlayerDrawViewModel(with imageView: UIImageView) -> PlayerDrawViewModelProtocol {
-		return PlayerDrawViewModel(with: imageView)
+	class func createPlayerDrawViewModel() -> PlayerDrawViewModelProtocol {
+		return PlayerDrawViewModel()
 	}
     
-    class func createPlayerViewModel() -> PlayerViewModelAdapter {
-        // TODO: init imageView
-        return PlayerDrawViewModel(with: UIImageView())
-    }
+//    class func createPlayerViewModel() -> PlayerViewModelAdapter {
+//        return PlayerDrawViewModel()
+//    }
     
     class func createHostDrawViewModel() -> HostDrawViewModelProtocol {
         return HostDrawViewModel()
     }
 
-    class func createHostViewModel() -> HostViewModelAdapter {
-        return HostDrawViewModel()
-    }
+//    class func createHostViewModel() -> HostViewModelAdapter {
+//        return HostDrawViewModel()
+//    }
 }
