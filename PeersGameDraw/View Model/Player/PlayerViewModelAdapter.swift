@@ -17,5 +17,4 @@ protocol PlayerViewModelAdapter {
     func embedDrawViewController(in viewController: UIViewController, with completionHandler:  @escaping () -> Void)
     func embedResultViewController(in viewController: UIViewController, with completionHandler: @escaping () -> Void)
     func removeResultController(from viewController: UIViewController, with completionHandler: @escaping () -> Void)
-    func determineCurrentScore(with prediction: String)
 }

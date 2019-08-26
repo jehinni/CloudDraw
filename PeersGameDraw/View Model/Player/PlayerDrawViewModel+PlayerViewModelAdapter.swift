@@ -32,13 +32,6 @@ extension PlayerDrawViewModel: PlayerViewModelAdapter {
         switchViewController(old: playerResultViewController, new: nil, in: viewController, with: completionHandler)
     }
     
-    func determineCurrentScore(with prediction: String) {
-        if prediction == randomImage {
-            currentScore += 1
-        }
-    }
-    
-    
 }
 
 // TODO: own file
