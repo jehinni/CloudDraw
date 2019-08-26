@@ -48,7 +48,7 @@ class GameDrawPlayerGameImpl: PlayerGame, PlayerGameDelegate {
                 playerDrawViewController.drawViewModel?.playerGameDelegate = self
             case "\(NextImageMessage.self)":
                 let data = try MessageWrapper.decodeData(type: NextImageMessage.self, data: message)
-                next(image: data.image)
+//                next(image: data.image)
             case "\(ResultRequestMessage.self)":
                 endGame()
             case "\(RankingPositionMessage.self)":
