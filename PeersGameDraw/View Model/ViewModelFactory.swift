@@ -15,15 +15,8 @@ class ViewModelFactory {
 		return PlayerDrawViewModel(with: imageView)
 	}
     
-//    class func createPlayerViewModel() -> PlayerViewModelAdapter {
-//        return PlayerDrawViewModel()
-//    }
-    
     class func createHostDrawViewModel() -> HostDrawViewModelProtocol {
         return HostDrawViewModel()
     }
-
-//    class func createHostViewModel() -> HostViewModelAdapter {
-//        return HostDrawViewModel()
-//    }
+    
 }
