@@ -152,7 +152,6 @@ class GameDrawHostGameImpl: HostGame, HostGameDelegate {
             return
         }
         os_log("[GAME DRAW] Setting %d current points for game player \"%@\".", type: .debug, points, gamePlayer.player.peer.name)
-        // TODO: should this be += ?
         gamePlayer.points = points
     }
     

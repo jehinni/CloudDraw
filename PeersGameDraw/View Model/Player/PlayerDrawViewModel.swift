@@ -135,13 +135,17 @@ class PlayerDrawViewModel: PlayerDrawViewModelProtocol, CloudManagerDelegate {
         cloudManager.send(label: randomImage!, bitmap: bitmap)
     }
     
-    func next() {
-        drawViewModelDelegate?.didReceiveRandomImage(imageName: randomImage ?? "No image received")
-    }
+//    func next() {
+//        DispatchQueue.main.async {
+//            self.drawViewModelDelegate?.didReceiveRandomImage(imageName: self.randomImage ?? "No image received")
+//        }
+//    }
     
     func next(image: String) {
         randomImage = image
-        drawViewModelDelegate?.didReceiveRandomImage(imageName: randomImage ?? "No image received")
+        DispatchQueue.main.async {
+            self.drawViewModelDelegate?.didReceiveRandomImage(imageName: self.randomImage ?? "No image received")
+        }
     }
     
     func drawFinalImage() {
