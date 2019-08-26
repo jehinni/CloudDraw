@@ -27,6 +27,8 @@ class PlayerDrawViewController: UIViewController, PlayerDrawViewModelDelegate {
         backgroundImageView.backgroundColor = PeersColors.intensePurple.color
         iSeeLabel.isHidden = true
         predictionLabel.isHidden = true
+        
+        drawViewModel = ViewModelFactory.createPlayerDrawViewModel(with: mainImageView)
     }
     
     // UIResponder methods
