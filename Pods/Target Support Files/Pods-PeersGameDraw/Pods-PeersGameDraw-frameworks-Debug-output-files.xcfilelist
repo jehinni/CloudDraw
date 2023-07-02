@@ -1,3 +1,0 @@
-${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PeersFramework.framework
-${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PeersUI.framework
-${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UICircularProgressRing.framework
